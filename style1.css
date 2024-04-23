@@ -1,0 +1,19 @@
+
+
+
+
+
+#kl1-map {
+	width: 480px;
+	height: auto;
+	align-self: center;
+}
+
+.welcome-box {
+	width: 400px;
+	height: 240px;
+	border: solid black;
+	background-color: gray;
+	align-self: center;
+}
+
