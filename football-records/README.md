@@ -23,7 +23,7 @@ python3 -m http.server 8000
 |---|---|---|
 | matches.csv | 경기 1개 | match_id, season, league, date(YYYY-MM-DD), home_team, away_team, home_score, away_score, attendance, source |
 | roster.csv | 선수 1명 | player_id, name, birth_date, position(GK/DF/MF/FW), team, source |
-| events.csv | 경기 중 사건 1개 | match_id, minute, type, player_id, team, related_player_id, source |
+| events.csv | 경기 중 사건 1개 | match_id, minute, extra_minute(선택), type, player_id, team, related_player_id, source |
 
 events의 `type`: `START`(선발) `SUB_IN` `SUB_OUT` `GOAL` `OWN_GOAL`(team은 점수를 얻은 쪽) `YELLOW` `RED`.
 도움은 GOAL 행의 `related_player_id`, 교체 상대는 SUB_IN/SUB_OUT 행의 `related_player_id`에 넣습니다.
@@ -46,3 +46,11 @@ Cloudflare Pages나 Railway 정적 서비스에서 GitHub 저장소를 연결하
 - `records.js` CSV 파싱, 데이터 점검, 모든 기록 계산 (브라우저와 Node 양쪽에서 동작)
 - `data/` 실제 데이터 (헤더만 있는 빈 양식), `data/sample/` 가상 샘플
 - `tools/make_sample.py` 샘플 생성, `tools/verify.py` JS 계산을 파이썬으로 따로 계산해 대조 (`python3 tools/verify.py`)
+
+
+추가시간: 90+5분 골은 `minute`=90, `extra_minute`=5 로 입력합니다 (전반 추가시간은 45 + extra_minute). 컬럼을 비우거나 아예 없어도 됩니다.
+
+출전 시간은 교체·퇴장 시각과 추가시간으로 계산합니다. 실제 추가시간은 `matches.csv`의 `first_half_extra`(전반), `second_half_extra`(후반)에 분 단위로 적으세요.
+비워 두면 events에 적힌 추가시간 중 가장 긴 값으로 대신 계산합니다(실제보다 짧을 수 있음 → 데이터 현황에 '참고'로 표시).
+
+'선수' 탭에서 경기·선발·출전 시간·골·도움·경고·퇴장·무실점을 한 표로 보고, 머리글을 눌러 정렬합니다. 리그·시즌·구단으로 거를 수 있습니다.

@@ -1,1 +1,332 @@
-event_id,match_id,minute,type,player_id,team,related_player_id,source
+event_id,match_id,minute,extra_minute,type,player_id,team,related_player_id,source
+E00001,K3-2026-0315-JB-DK,0,,START,JB26-51,전북현대모터스,,https://www.kfa.or.kr/competition/k3_2026.php
+E00002,K3-2026-0315-JB-DK,0,,START,JB26-55,전북현대모터스,,https://www.kfa.or.kr/competition/k3_2026.php
+E00003,K3-2026-0315-JB-DK,0,,START,JB26-22,전북현대모터스,,https://www.kfa.or.kr/competition/k3_2026.php
+E00004,K3-2026-0315-JB-DK,0,,START,JB26-44,전북현대모터스,,https://www.kfa.or.kr/competition/k3_2026.php
+E00005,K3-2026-0315-JB-DK,0,,START,JB26-39,전북현대모터스,,https://www.kfa.or.kr/competition/k3_2026.php
+E00006,K3-2026-0315-JB-DK,0,,START,JB26-42,전북현대모터스,,https://www.kfa.or.kr/competition/k3_2026.php
+E00007,K3-2026-0315-JB-DK,0,,START,JB26-88,전북현대모터스,,https://www.kfa.or.kr/competition/k3_2026.php
+E00008,K3-2026-0315-JB-DK,0,,START,JB26-30,전북현대모터스,,https://www.kfa.or.kr/competition/k3_2026.php
+E00009,K3-2026-0315-JB-DK,0,,START,JB26-90,전북현대모터스,,https://www.kfa.or.kr/competition/k3_2026.php
+E00010,K3-2026-0315-JB-DK,0,,START,JB26-34,전북현대모터스,,https://www.kfa.or.kr/competition/k3_2026.php
+E00011,K3-2026-0315-JB-DK,0,,START,JB26-33,전북현대모터스,,https://www.kfa.or.kr/competition/k3_2026.php
+E00012,K3-2026-0315-JB-DK,0,,START,DK26-01,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00013,K3-2026-0315-JB-DK,0,,START,DK26-44,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00014,K3-2026-0315-JB-DK,0,,START,DK26-15,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00015,K3-2026-0315-JB-DK,0,,START,DK26-13,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00016,K3-2026-0315-JB-DK,0,,START,DK26-04,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00017,K3-2026-0315-JB-DK,0,,START,DK26-03,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00018,K3-2026-0315-JB-DK,0,,START,DK26-06,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00019,K3-2026-0315-JB-DK,0,,START,DK26-77,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00020,K3-2026-0315-JB-DK,0,,START,DK26-91,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00021,K3-2026-0315-JB-DK,0,,START,DK26-09,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00022,K3-2026-0315-JB-DK,0,,START,DK26-07,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00023,K3-2026-0315-JB-DK,14,,YELLOW,JB26-34,전북현대모터스,,https://www.kfa.or.kr/competition/k3_2026.php
+E00024,K3-2026-0315-JB-DK,32,,GOAL,DK26-91,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00025,K3-2026-0315-JB-DK,44,,YELLOW,DK26-44,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00026,K3-2026-0315-JB-DK,46,,SUB_OUT,DK26-09,대전 코레일 FC,DK26-10,https://www.kfa.or.kr/competition/k3_2026.php
+E00027,K3-2026-0315-JB-DK,46,,SUB_IN,DK26-10,대전 코레일 FC,DK26-09,https://www.kfa.or.kr/competition/k3_2026.php
+E00028,K3-2026-0315-JB-DK,53,,GOAL,DK26-10,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00029,K3-2026-0315-JB-DK,57,,SUB_OUT,JB26-90,전북현대모터스,JB26-47,https://www.kfa.or.kr/competition/k3_2026.php
+E00030,K3-2026-0315-JB-DK,57,,SUB_OUT,JB26-34,전북현대모터스,JB26-92,https://www.kfa.or.kr/competition/k3_2026.php
+E00031,K3-2026-0315-JB-DK,57,,SUB_IN,JB26-47,전북현대모터스,JB26-90,https://www.kfa.or.kr/competition/k3_2026.php
+E00032,K3-2026-0315-JB-DK,57,,SUB_IN,JB26-92,전북현대모터스,JB26-34,https://www.kfa.or.kr/competition/k3_2026.php
+E00033,K3-2026-0315-JB-DK,61,,YELLOW,DK26-06,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00034,K3-2026-0315-JB-DK,62,,SUB_OUT,DK26-91,대전 코레일 FC,DK26-11,https://www.kfa.or.kr/competition/k3_2026.php
+E00035,K3-2026-0315-JB-DK,62,,SUB_IN,DK26-11,대전 코레일 FC,DK26-91,https://www.kfa.or.kr/competition/k3_2026.php
+E00036,K3-2026-0315-JB-DK,63,,GOAL,JB26-47,전북현대모터스,,https://www.kfa.or.kr/competition/k3_2026.php
+E00037,K3-2026-0315-JB-DK,69,,YELLOW,DK26-04,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00038,K3-2026-0315-JB-DK,70,,SUB_OUT,JB26-88,전북현대모터스,JB26-40,https://www.kfa.or.kr/competition/k3_2026.php
+E00039,K3-2026-0315-JB-DK,70,,SUB_OUT,JB26-33,전북현대모터스,JB26-79,https://www.kfa.or.kr/competition/k3_2026.php
+E00040,K3-2026-0315-JB-DK,70,,SUB_IN,JB26-40,전북현대모터스,JB26-88,https://www.kfa.or.kr/competition/k3_2026.php
+E00041,K3-2026-0315-JB-DK,70,,SUB_IN,JB26-79,전북현대모터스,JB26-33,https://www.kfa.or.kr/competition/k3_2026.php
+E00042,K3-2026-0315-JB-DK,72,,SUB_OUT,DK26-06,대전 코레일 FC,DK26-16,https://www.kfa.or.kr/competition/k3_2026.php
+E00043,K3-2026-0315-JB-DK,72,,SUB_IN,DK26-16,대전 코레일 FC,DK26-06,https://www.kfa.or.kr/competition/k3_2026.php
+E00044,K3-2026-0315-JB-DK,77,,GOAL,JB26-79,전북현대모터스,,https://www.kfa.or.kr/competition/k3_2026.php
+E00045,K3-2026-0315-JB-DK,81,,SUB_OUT,DK26-07,대전 코레일 FC,DK26-14,https://www.kfa.or.kr/competition/k3_2026.php
+E00046,K3-2026-0315-JB-DK,81,,SUB_OUT,DK26-77,대전 코레일 FC,DK26-88,https://www.kfa.or.kr/competition/k3_2026.php
+E00047,K3-2026-0315-JB-DK,81,,SUB_IN,DK26-14,대전 코레일 FC,DK26-07,https://www.kfa.or.kr/competition/k3_2026.php
+E00048,K3-2026-0315-JB-DK,81,,SUB_IN,DK26-88,대전 코레일 FC,DK26-77,https://www.kfa.or.kr/competition/k3_2026.php
+E00049,K3-2026-0315-JB-DK,85,,SUB_OUT,JB26-42,전북현대모터스,JB26-70,https://www.kfa.or.kr/competition/k3_2026.php
+E00050,K3-2026-0315-JB-DK,85,,SUB_IN,JB26-70,전북현대모터스,JB26-42,https://www.kfa.or.kr/competition/k3_2026.php
+E00051,K3-2026-0315-JB-DK,88,,GOAL,DK26-10,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00052,K3-2026-0315-JB-DK,88,,YELLOW,DK26-10,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00053,K3-2026-0315-JB-DK,90,5,GOAL,JB26-40,전북현대모터스,,https://www.kfa.or.kr/competition/k3_2026.php
+E00054,K3-2026-0308-DK-CC,0,,START,DK26-01,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00055,K3-2026-0308-DK-CC,0,,START,DK26-44,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00056,K3-2026-0308-DK-CC,0,,START,DK26-13,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00057,K3-2026-0308-DK-CC,0,,START,DK26-03,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00058,K3-2026-0308-DK-CC,0,,START,DK26-05,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00059,K3-2026-0308-DK-CC,0,,START,DK26-04,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00060,K3-2026-0308-DK-CC,0,,START,DK26-77,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00061,K3-2026-0308-DK-CC,0,,START,DK26-06,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00062,K3-2026-0308-DK-CC,0,,START,DK26-91,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00063,K3-2026-0308-DK-CC,0,,START,DK26-07,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00064,K3-2026-0308-DK-CC,0,,START,DK26-09,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00065,K3-2026-0308-DK-CC,0,,START,CC26-01,춘천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00066,K3-2026-0308-DK-CC,0,,START,CC26-08,춘천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00067,K3-2026-0308-DK-CC,0,,START,CC26-04,춘천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00068,K3-2026-0308-DK-CC,0,,START,CC26-05,춘천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00069,K3-2026-0308-DK-CC,0,,START,CC26-23,춘천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00070,K3-2026-0308-DK-CC,0,,START,CC26-32,춘천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00071,K3-2026-0308-DK-CC,0,,START,CC26-10,춘천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00072,K3-2026-0308-DK-CC,0,,START,CC26-61,춘천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00073,K3-2026-0308-DK-CC,0,,START,CC26-88,춘천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00074,K3-2026-0308-DK-CC,0,,START,CC26-09,춘천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00075,K3-2026-0308-DK-CC,0,,START,CC26-33,춘천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00076,K3-2026-0308-DK-CC,8,,GOAL,CC26-33,춘천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00077,K3-2026-0308-DK-CC,38,,SUB_OUT,DK26-09,대전 코레일 FC,DK26-10,https://www.kfa.or.kr/competition/k3_2026.php
+E00078,K3-2026-0308-DK-CC,38,,SUB_IN,DK26-10,대전 코레일 FC,DK26-09,https://www.kfa.or.kr/competition/k3_2026.php
+E00079,K3-2026-0308-DK-CC,42,,GOAL,DK26-04,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00080,K3-2026-0308-DK-CC,49,,SUB_OUT,DK26-05,대전 코레일 FC,DK26-15,https://www.kfa.or.kr/competition/k3_2026.php
+E00081,K3-2026-0308-DK-CC,49,,SUB_IN,DK26-15,대전 코레일 FC,DK26-05,https://www.kfa.or.kr/competition/k3_2026.php
+E00082,K3-2026-0308-DK-CC,57,,GOAL,DK26-04,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00083,K3-2026-0308-DK-CC,64,,YELLOW,DK26-06,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00084,K3-2026-0308-DK-CC,65,,SUB_OUT,CC26-23,춘천시민축구단,CC26-17,https://www.kfa.or.kr/competition/k3_2026.php
+E00085,K3-2026-0308-DK-CC,65,,SUB_OUT,CC26-08,춘천시민축구단,CC26-07,https://www.kfa.or.kr/competition/k3_2026.php
+E00086,K3-2026-0308-DK-CC,65,,SUB_IN,CC26-17,춘천시민축구단,CC26-23,https://www.kfa.or.kr/competition/k3_2026.php
+E00087,K3-2026-0308-DK-CC,65,,SUB_IN,CC26-07,춘천시민축구단,CC26-08,https://www.kfa.or.kr/competition/k3_2026.php
+E00088,K3-2026-0308-DK-CC,73,,SUB_OUT,DK26-07,대전 코레일 FC,DK26-14,https://www.kfa.or.kr/competition/k3_2026.php
+E00089,K3-2026-0308-DK-CC,73,,SUB_OUT,DK26-06,대전 코레일 FC,DK26-16,https://www.kfa.or.kr/competition/k3_2026.php
+E00090,K3-2026-0308-DK-CC,73,,SUB_OUT,DK26-91,대전 코레일 FC,DK26-88,https://www.kfa.or.kr/competition/k3_2026.php
+E00091,K3-2026-0308-DK-CC,73,,SUB_IN,DK26-14,대전 코레일 FC,DK26-07,https://www.kfa.or.kr/competition/k3_2026.php
+E00092,K3-2026-0308-DK-CC,73,,SUB_IN,DK26-16,대전 코레일 FC,DK26-06,https://www.kfa.or.kr/competition/k3_2026.php
+E00093,K3-2026-0308-DK-CC,73,,SUB_IN,DK26-88,대전 코레일 FC,DK26-91,https://www.kfa.or.kr/competition/k3_2026.php
+E00094,K3-2026-0308-DK-CC,75,,YELLOW,CC26-04,춘천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00095,K3-2026-0308-DK-CC,80,,SUB_OUT,CC26-33,춘천시민축구단,CC26-18,https://www.kfa.or.kr/competition/k3_2026.php
+E00096,K3-2026-0308-DK-CC,80,,SUB_IN,CC26-18,춘천시민축구단,CC26-33,https://www.kfa.or.kr/competition/k3_2026.php
+E00097,K3-2026-0308-DK-CC,81,,GOAL,DK26-16,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00098,K3-2026-0308-DK-CC,84,,SUB_OUT,CC26-09,춘천시민축구단,CC26-03,https://www.kfa.or.kr/competition/k3_2026.php
+E00099,K3-2026-0308-DK-CC,84,,SUB_OUT,CC26-61,춘천시민축구단,CC26-20,https://www.kfa.or.kr/competition/k3_2026.php
+E00100,K3-2026-0308-DK-CC,84,,SUB_IN,CC26-03,춘천시민축구단,CC26-09,https://www.kfa.or.kr/competition/k3_2026.php
+E00101,K3-2026-0308-DK-CC,84,,SUB_IN,CC26-20,춘천시민축구단,CC26-61,https://www.kfa.or.kr/competition/k3_2026.php
+E00102,K3-2026-0308-DK-CC,90,3,YELLOW,CC26-03,춘천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00103,K3-2026-0321-BT-DK,0,,START,BT26-01,부산교통공사축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00104,K3-2026-0321-BT-DK,0,,START,BT26-15,부산교통공사축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00105,K3-2026-0321-BT-DK,0,,START,BT26-13,부산교통공사축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00106,K3-2026-0321-BT-DK,0,,START,BT26-03,부산교통공사축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00107,K3-2026-0321-BT-DK,0,,START,BT26-05,부산교통공사축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00108,K3-2026-0321-BT-DK,0,,START,BT26-06,부산교통공사축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00109,K3-2026-0321-BT-DK,0,,START,BT26-08,부산교통공사축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00110,K3-2026-0321-BT-DK,0,,START,BT26-10,부산교통공사축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00111,K3-2026-0321-BT-DK,0,,START,BT26-07,부산교통공사축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00112,K3-2026-0321-BT-DK,0,,START,BT26-09,부산교통공사축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00113,K3-2026-0321-BT-DK,0,,START,BT26-11,부산교통공사축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00114,K3-2026-0321-BT-DK,0,,START,DK26-01,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00115,K3-2026-0321-BT-DK,0,,START,DK26-44,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00116,K3-2026-0321-BT-DK,0,,START,DK26-15,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00117,K3-2026-0321-BT-DK,0,,START,DK26-13,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00118,K3-2026-0321-BT-DK,0,,START,DK26-03,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00119,K3-2026-0321-BT-DK,0,,START,DK26-08,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00120,K3-2026-0321-BT-DK,0,,START,DK26-77,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00121,K3-2026-0321-BT-DK,0,,START,DK26-17,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00122,K3-2026-0321-BT-DK,0,,START,DK26-91,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00123,K3-2026-0321-BT-DK,0,,START,DK26-16,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00124,K3-2026-0321-BT-DK,0,,START,DK26-07,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00125,K3-2026-0321-BT-DK,58,,SUB_OUT,DK26-91,대전 코레일 FC,DK26-10,https://www.kfa.or.kr/competition/k3_2026.php
+E00126,K3-2026-0321-BT-DK,58,,SUB_IN,DK26-10,대전 코레일 FC,DK26-91,https://www.kfa.or.kr/competition/k3_2026.php
+E00127,K3-2026-0321-BT-DK,61,,SUB_OUT,BT26-11,부산교통공사축구단,BT26-90,https://www.kfa.or.kr/competition/k3_2026.php
+E00128,K3-2026-0321-BT-DK,61,,SUB_IN,BT26-90,부산교통공사축구단,BT26-11,https://www.kfa.or.kr/competition/k3_2026.php
+E00129,K3-2026-0321-BT-DK,63,,YELLOW,DK26-15,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00130,K3-2026-0321-BT-DK,67,,SUB_OUT,DK26-07,대전 코레일 FC,DK26-14,https://www.kfa.or.kr/competition/k3_2026.php
+E00131,K3-2026-0321-BT-DK,67,,SUB_OUT,DK26-17,대전 코레일 FC,DK26-88,https://www.kfa.or.kr/competition/k3_2026.php
+E00132,K3-2026-0321-BT-DK,67,,SUB_IN,DK26-14,대전 코레일 FC,DK26-07,https://www.kfa.or.kr/competition/k3_2026.php
+E00133,K3-2026-0321-BT-DK,67,,SUB_IN,DK26-88,대전 코레일 FC,DK26-17,https://www.kfa.or.kr/competition/k3_2026.php
+E00134,K3-2026-0321-BT-DK,69,,SUB_OUT,BT26-10,부산교통공사축구단,BT26-22,https://www.kfa.or.kr/competition/k3_2026.php
+E00135,K3-2026-0321-BT-DK,69,,SUB_IN,BT26-22,부산교통공사축구단,BT26-10,https://www.kfa.or.kr/competition/k3_2026.php
+E00136,K3-2026-0321-BT-DK,77,,SUB_OUT,DK26-15,대전 코레일 FC,DK26-04,https://www.kfa.or.kr/competition/k3_2026.php
+E00137,K3-2026-0321-BT-DK,77,,SUB_IN,DK26-04,대전 코레일 FC,DK26-15,https://www.kfa.or.kr/competition/k3_2026.php
+E00138,K3-2026-0321-BT-DK,86,,YELLOW,DK26-88,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00139,K3-2026-0321-BT-DK,90,2,SUB_OUT,BT26-07,부산교통공사축구단,BT26-29,https://www.kfa.or.kr/competition/k3_2026.php
+E00140,K3-2026-0321-BT-DK,90,2,SUB_IN,BT26-29,부산교통공사축구단,BT26-07,https://www.kfa.or.kr/competition/k3_2026.php
+E00141,K3-2026-0328-GJ-DK,0,,START,GJ26-81,경주한수원FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00142,K3-2026-0328-GJ-DK,0,,START,GJ26-03,경주한수원FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00143,K3-2026-0328-GJ-DK,0,,START,GJ26-62,경주한수원FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00144,K3-2026-0328-GJ-DK,0,,START,GJ26-16,경주한수원FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00145,K3-2026-0328-GJ-DK,0,,START,GJ26-14,경주한수원FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00146,K3-2026-0328-GJ-DK,0,,START,GJ26-07,경주한수원FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00147,K3-2026-0328-GJ-DK,0,,START,GJ26-08,경주한수원FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00148,K3-2026-0328-GJ-DK,0,,START,GJ26-77,경주한수원FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00149,K3-2026-0328-GJ-DK,0,,START,GJ26-26,경주한수원FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00150,K3-2026-0328-GJ-DK,0,,START,GJ26-17,경주한수원FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00151,K3-2026-0328-GJ-DK,0,,START,GJ26-19,경주한수원FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00152,K3-2026-0328-GJ-DK,0,,START,DK26-01,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00153,K3-2026-0328-GJ-DK,0,,START,DK26-44,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00154,K3-2026-0328-GJ-DK,0,,START,DK26-15,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00155,K3-2026-0328-GJ-DK,0,,START,DK26-13,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00156,K3-2026-0328-GJ-DK,0,,START,DK26-03,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00157,K3-2026-0328-GJ-DK,0,,START,DK26-77,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00158,K3-2026-0328-GJ-DK,0,,START,DK26-17,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00159,K3-2026-0328-GJ-DK,0,,START,DK26-08,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00160,K3-2026-0328-GJ-DK,0,,START,DK26-16,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00161,K3-2026-0328-GJ-DK,0,,START,DK26-10,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00162,K3-2026-0328-GJ-DK,0,,START,DK26-07,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00163,K3-2026-0328-GJ-DK,3,,GOAL,DK26-77,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00164,K3-2026-0328-GJ-DK,24,,YELLOW,DK26-16,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00165,K3-2026-0328-GJ-DK,45,,YELLOW,DK26-44,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00166,K3-2026-0328-GJ-DK,46,,SUB_OUT,GJ26-03,경주한수원FC,GJ26-06,https://www.kfa.or.kr/competition/k3_2026.php
+E00167,K3-2026-0328-GJ-DK,46,,SUB_OUT,GJ26-07,경주한수원FC,GJ26-22,https://www.kfa.or.kr/competition/k3_2026.php
+E00168,K3-2026-0328-GJ-DK,46,,SUB_OUT,GJ26-16,경주한수원FC,GJ26-45,https://www.kfa.or.kr/competition/k3_2026.php
+E00169,K3-2026-0328-GJ-DK,46,,SUB_OUT,DK26-15,대전 코레일 FC,DK26-04,https://www.kfa.or.kr/competition/k3_2026.php
+E00170,K3-2026-0328-GJ-DK,46,,SUB_IN,GJ26-06,경주한수원FC,GJ26-03,https://www.kfa.or.kr/competition/k3_2026.php
+E00171,K3-2026-0328-GJ-DK,46,,SUB_IN,GJ26-22,경주한수원FC,GJ26-07,https://www.kfa.or.kr/competition/k3_2026.php
+E00172,K3-2026-0328-GJ-DK,46,,SUB_IN,GJ26-45,경주한수원FC,GJ26-16,https://www.kfa.or.kr/competition/k3_2026.php
+E00173,K3-2026-0328-GJ-DK,46,,SUB_IN,DK26-04,대전 코레일 FC,DK26-15,https://www.kfa.or.kr/competition/k3_2026.php
+E00174,K3-2026-0328-GJ-DK,54,,SUB_OUT,GJ26-26,경주한수원FC,GJ26-18,https://www.kfa.or.kr/competition/k3_2026.php
+E00175,K3-2026-0328-GJ-DK,54,,SUB_IN,GJ26-18,경주한수원FC,GJ26-26,https://www.kfa.or.kr/competition/k3_2026.php
+E00176,K3-2026-0328-GJ-DK,58,,YELLOW,DK26-08,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00177,K3-2026-0328-GJ-DK,64,,SUB_OUT,DK26-07,대전 코레일 FC,DK26-06,https://www.kfa.or.kr/competition/k3_2026.php
+E00178,K3-2026-0328-GJ-DK,64,,SUB_IN,DK26-06,대전 코레일 FC,DK26-07,https://www.kfa.or.kr/competition/k3_2026.php
+E00179,K3-2026-0328-GJ-DK,65,,GOAL,GJ26-19,경주한수원FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00180,K3-2026-0328-GJ-DK,65,,YELLOW,DK26-17,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00181,K3-2026-0328-GJ-DK,73,,SUB_OUT,DK26-17,대전 코레일 FC,DK26-88,https://www.kfa.or.kr/competition/k3_2026.php
+E00182,K3-2026-0328-GJ-DK,73,,SUB_OUT,DK26-08,대전 코레일 FC,DK26-14,https://www.kfa.or.kr/competition/k3_2026.php
+E00183,K3-2026-0328-GJ-DK,73,,SUB_IN,DK26-88,대전 코레일 FC,DK26-17,https://www.kfa.or.kr/competition/k3_2026.php
+E00184,K3-2026-0328-GJ-DK,73,,SUB_IN,DK26-14,대전 코레일 FC,DK26-08,https://www.kfa.or.kr/competition/k3_2026.php
+E00185,K3-2026-0328-GJ-DK,89,,SUB_OUT,GJ26-17,경주한수원FC,GJ26-10,https://www.kfa.or.kr/competition/k3_2026.php
+E00186,K3-2026-0328-GJ-DK,89,,SUB_IN,GJ26-10,경주한수원FC,GJ26-17,https://www.kfa.or.kr/competition/k3_2026.php
+E00187,K3-2026-0404-DK-PC,0,,START,DK26-01,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00188,K3-2026-0404-DK-PC,0,,START,DK26-15,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00189,K3-2026-0404-DK-PC,0,,START,DK26-13,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00190,K3-2026-0404-DK-PC,0,,START,DK26-03,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00191,K3-2026-0404-DK-PC,0,,START,DK26-44,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00192,K3-2026-0404-DK-PC,0,,START,DK26-77,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00193,K3-2026-0404-DK-PC,0,,START,DK26-17,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00194,K3-2026-0404-DK-PC,0,,START,DK26-06,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00195,K3-2026-0404-DK-PC,0,,START,DK26-08,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00196,K3-2026-0404-DK-PC,0,,START,DK26-11,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00197,K3-2026-0404-DK-PC,0,,START,DK26-16,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00198,K3-2026-0404-DK-PC,0,,START,PC26-25,포천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00199,K3-2026-0404-DK-PC,0,,START,PC26-29,포천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00200,K3-2026-0404-DK-PC,0,,START,PC26-20,포천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00201,K3-2026-0404-DK-PC,0,,START,PC26-23,포천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00202,K3-2026-0404-DK-PC,0,,START,PC26-14,포천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00203,K3-2026-0404-DK-PC,0,,START,PC26-24,포천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00204,K3-2026-0404-DK-PC,0,,START,PC26-07,포천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00205,K3-2026-0404-DK-PC,0,,START,PC26-10,포천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00206,K3-2026-0404-DK-PC,0,,START,PC26-19,포천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00207,K3-2026-0404-DK-PC,0,,START,PC26-18,포천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00208,K3-2026-0404-DK-PC,0,,START,PC26-09,포천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00209,K3-2026-0404-DK-PC,35,,YELLOW,PC26-24,포천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00210,K3-2026-0404-DK-PC,38,,YELLOW,DK26-77,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00211,K3-2026-0404-DK-PC,46,,SUB_OUT,DK26-11,대전 코레일 FC,DK26-07,https://www.kfa.or.kr/competition/k3_2026.php
+E00212,K3-2026-0404-DK-PC,46,,SUB_OUT,DK26-16,대전 코레일 FC,DK26-10,https://www.kfa.or.kr/competition/k3_2026.php
+E00213,K3-2026-0404-DK-PC,46,,SUB_OUT,PC26-09,포천시민축구단,PC26-27,https://www.kfa.or.kr/competition/k3_2026.php
+E00214,K3-2026-0404-DK-PC,46,,SUB_OUT,PC26-20,포천시민축구단,PC26-06,https://www.kfa.or.kr/competition/k3_2026.php
+E00215,K3-2026-0404-DK-PC,46,,SUB_IN,DK26-07,대전 코레일 FC,DK26-11,https://www.kfa.or.kr/competition/k3_2026.php
+E00216,K3-2026-0404-DK-PC,46,,SUB_IN,DK26-10,대전 코레일 FC,DK26-16,https://www.kfa.or.kr/competition/k3_2026.php
+E00217,K3-2026-0404-DK-PC,46,,SUB_IN,PC26-27,포천시민축구단,PC26-09,https://www.kfa.or.kr/competition/k3_2026.php
+E00218,K3-2026-0404-DK-PC,46,,SUB_IN,PC26-06,포천시민축구단,PC26-20,https://www.kfa.or.kr/competition/k3_2026.php
+E00219,K3-2026-0404-DK-PC,49,,GOAL,PC26-18,포천시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00220,K3-2026-0404-DK-PC,68,,SUB_OUT,PC26-29,포천시민축구단,PC26-05,https://www.kfa.or.kr/competition/k3_2026.php
+E00221,K3-2026-0404-DK-PC,68,,SUB_IN,PC26-05,포천시민축구단,PC26-29,https://www.kfa.or.kr/competition/k3_2026.php
+E00222,K3-2026-0404-DK-PC,77,,SUB_OUT,DK26-08,대전 코레일 FC,DK26-04,https://www.kfa.or.kr/competition/k3_2026.php
+E00223,K3-2026-0404-DK-PC,77,,SUB_OUT,DK26-17,대전 코레일 FC,DK26-09,https://www.kfa.or.kr/competition/k3_2026.php
+E00224,K3-2026-0404-DK-PC,77,,SUB_IN,DK26-04,대전 코레일 FC,DK26-08,https://www.kfa.or.kr/competition/k3_2026.php
+E00225,K3-2026-0404-DK-PC,77,,SUB_IN,DK26-09,대전 코레일 FC,DK26-17,https://www.kfa.or.kr/competition/k3_2026.php
+E00226,K3-2026-0404-DK-PC,82,,SUB_OUT,PC26-19,포천시민축구단,PC26-13,https://www.kfa.or.kr/competition/k3_2026.php
+E00227,K3-2026-0404-DK-PC,82,,SUB_IN,PC26-13,포천시민축구단,PC26-19,https://www.kfa.or.kr/competition/k3_2026.php
+E00228,K3-2026-0404-DK-PC,89,,SUB_OUT,DK26-06,대전 코레일 FC,DK26-14,https://www.kfa.or.kr/competition/k3_2026.php
+E00229,K3-2026-0404-DK-PC,89,,SUB_OUT,DK26-77,대전 코레일 FC,DK26-88,https://www.kfa.or.kr/competition/k3_2026.php
+E00230,K3-2026-0404-DK-PC,89,,SUB_IN,DK26-14,대전 코레일 FC,DK26-06,https://www.kfa.or.kr/competition/k3_2026.php
+E00231,K3-2026-0404-DK-PC,89,,SUB_IN,DK26-88,대전 코레일 FC,DK26-77,https://www.kfa.or.kr/competition/k3_2026.php
+E00232,K3-2026-0404-DK-PC,90,5,SUB_OUT,PC26-10,포천시민축구단,PC26-17,https://www.kfa.or.kr/competition/k3_2026.php
+E00233,K3-2026-0404-DK-PC,90,5,SUB_IN,PC26-17,포천시민축구단,PC26-10,https://www.kfa.or.kr/competition/k3_2026.php
+E00234,K3-2026-0404-DK-PC,90,6,RED,DK26-07,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00235,K3-2026-0411-DK-SH,0,,START,DK26-01,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00236,K3-2026-0411-DK-SH,0,,START,DK26-15,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00237,K3-2026-0411-DK-SH,0,,START,DK26-13,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00238,K3-2026-0411-DK-SH,0,,START,DK26-03,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00239,K3-2026-0411-DK-SH,0,,START,DK26-44,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00240,K3-2026-0411-DK-SH,0,,START,DK26-77,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00241,K3-2026-0411-DK-SH,0,,START,DK26-20,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00242,K3-2026-0411-DK-SH,0,,START,DK26-17,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00243,K3-2026-0411-DK-SH,0,,START,DK26-06,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00244,K3-2026-0411-DK-SH,0,,START,DK26-08,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00245,K3-2026-0411-DK-SH,0,,START,DK26-09,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00246,K3-2026-0411-DK-SH,0,,START,SH26-01,시흥시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00247,K3-2026-0411-DK-SH,0,,START,SH26-29,시흥시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00248,K3-2026-0411-DK-SH,0,,START,SH26-24,시흥시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00249,K3-2026-0411-DK-SH,0,,START,SH26-20,시흥시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00250,K3-2026-0411-DK-SH,0,,START,SH26-07,시흥시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00251,K3-2026-0411-DK-SH,0,,START,SH26-04,시흥시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00252,K3-2026-0411-DK-SH,0,,START,SH26-08,시흥시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00253,K3-2026-0411-DK-SH,0,,START,SH26-17,시흥시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00254,K3-2026-0411-DK-SH,0,,START,SH26-09,시흥시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00255,K3-2026-0411-DK-SH,0,,START,SH26-10,시흥시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00256,K3-2026-0411-DK-SH,0,,START,SH26-77,시흥시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00257,K3-2026-0411-DK-SH,9,,YELLOW,DK26-06,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00258,K3-2026-0411-DK-SH,23,,YELLOW,DK26-77,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00259,K3-2026-0411-DK-SH,24,,YELLOW,DK26-08,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00260,K3-2026-0411-DK-SH,34,,YELLOW,SH26-09,시흥시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00261,K3-2026-0411-DK-SH,46,,SUB_OUT,SH26-24,시흥시민축구단,SH26-02,https://www.kfa.or.kr/competition/k3_2026.php
+E00262,K3-2026-0411-DK-SH,46,,SUB_IN,SH26-02,시흥시민축구단,SH26-24,https://www.kfa.or.kr/competition/k3_2026.php
+E00263,K3-2026-0411-DK-SH,56,,SUB_OUT,SH26-17,시흥시민축구단,SH26-34,https://www.kfa.or.kr/competition/k3_2026.php
+E00264,K3-2026-0411-DK-SH,56,,SUB_OUT,SH26-10,시흥시민축구단,SH26-30,https://www.kfa.or.kr/competition/k3_2026.php
+E00265,K3-2026-0411-DK-SH,56,,SUB_IN,SH26-34,시흥시민축구단,SH26-17,https://www.kfa.or.kr/competition/k3_2026.php
+E00266,K3-2026-0411-DK-SH,56,,SUB_IN,SH26-30,시흥시민축구단,SH26-10,https://www.kfa.or.kr/competition/k3_2026.php
+E00267,K3-2026-0411-DK-SH,59,,SUB_OUT,DK26-09,대전 코레일 FC,DK26-10,https://www.kfa.or.kr/competition/k3_2026.php
+E00268,K3-2026-0411-DK-SH,59,,SUB_IN,DK26-10,대전 코레일 FC,DK26-09,https://www.kfa.or.kr/competition/k3_2026.php
+E00269,K3-2026-0411-DK-SH,63,,YELLOW,DK26-13,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00270,K3-2026-0411-DK-SH,66,,YELLOW,SH26-30,시흥시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00271,K3-2026-0411-DK-SH,73,,SUB_OUT,SH26-77,시흥시민축구단,SH26-12,https://www.kfa.or.kr/competition/k3_2026.php
+E00272,K3-2026-0411-DK-SH,73,,SUB_IN,SH26-12,시흥시민축구단,SH26-77,https://www.kfa.or.kr/competition/k3_2026.php
+E00273,K3-2026-0411-DK-SH,76,,SUB_OUT,DK26-77,대전 코레일 FC,DK26-88,https://www.kfa.or.kr/competition/k3_2026.php
+E00274,K3-2026-0411-DK-SH,76,,SUB_IN,DK26-88,대전 코레일 FC,DK26-77,https://www.kfa.or.kr/competition/k3_2026.php
+E00275,K3-2026-0411-DK-SH,82,,SUB_OUT,DK26-08,대전 코레일 FC,DK26-14,https://www.kfa.or.kr/competition/k3_2026.php
+E00276,K3-2026-0411-DK-SH,82,,SUB_OUT,DK26-20,대전 코레일 FC,DK26-04,https://www.kfa.or.kr/competition/k3_2026.php
+E00277,K3-2026-0411-DK-SH,82,,SUB_OUT,SH26-09,시흥시민축구단,SH26-32,https://www.kfa.or.kr/competition/k3_2026.php
+E00278,K3-2026-0411-DK-SH,82,,SUB_IN,DK26-14,대전 코레일 FC,DK26-08,https://www.kfa.or.kr/competition/k3_2026.php
+E00279,K3-2026-0411-DK-SH,82,,SUB_IN,DK26-04,대전 코레일 FC,DK26-20,https://www.kfa.or.kr/competition/k3_2026.php
+E00280,K3-2026-0411-DK-SH,82,,SUB_IN,SH26-32,시흥시민축구단,SH26-09,https://www.kfa.or.kr/competition/k3_2026.php
+E00281,K3-2026-0411-DK-SH,84,,YELLOW,SH26-34,시흥시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00282,K3-2026-0411-DK-SH,90,4,GOAL,SH26-29,시흥시민축구단,,https://www.kfa.or.kr/competition/k3_2026.php
+E00283,K3-2026-0419-YP-DK,0,,START,YP26-41,양평FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00284,K3-2026-0419-YP-DK,0,,START,YP26-03,양평FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00285,K3-2026-0419-YP-DK,0,,START,YP26-75,양평FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00286,K3-2026-0419-YP-DK,0,,START,YP26-44,양평FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00287,K3-2026-0419-YP-DK,0,,START,YP26-23,양평FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00288,K3-2026-0419-YP-DK,0,,START,YP26-34,양평FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00289,K3-2026-0419-YP-DK,0,,START,YP26-05,양평FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00290,K3-2026-0419-YP-DK,0,,START,YP26-07,양평FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00291,K3-2026-0419-YP-DK,0,,START,YP26-11,양평FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00292,K3-2026-0419-YP-DK,0,,START,YP26-17,양평FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00293,K3-2026-0419-YP-DK,0,,START,YP26-21,양평FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00294,K3-2026-0419-YP-DK,0,,START,DK26-01,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00295,K3-2026-0419-YP-DK,0,,START,DK26-66,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00296,K3-2026-0419-YP-DK,0,,START,DK26-03,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00297,K3-2026-0419-YP-DK,0,,START,DK26-15,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00298,K3-2026-0419-YP-DK,0,,START,DK26-13,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00299,K3-2026-0419-YP-DK,0,,START,DK26-20,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00300,K3-2026-0419-YP-DK,0,,START,DK26-77,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00301,K3-2026-0419-YP-DK,0,,START,DK26-08,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00302,K3-2026-0419-YP-DK,0,,START,DK26-09,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00303,K3-2026-0419-YP-DK,0,,START,DK26-16,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00304,K3-2026-0419-YP-DK,0,,START,DK26-88,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00305,K3-2026-0419-YP-DK,1,,GOAL,DK26-16,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00306,K3-2026-0419-YP-DK,45,,YELLOW,DK26-66,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00307,K3-2026-0419-YP-DK,53,,YELLOW,YP26-34,양평FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00308,K3-2026-0419-YP-DK,54,,SUB_OUT,YP26-05,양평FC,YP26-14,https://www.kfa.or.kr/competition/k3_2026.php
+E00309,K3-2026-0419-YP-DK,54,,SUB_OUT,YP26-34,양평FC,YP26-18,https://www.kfa.or.kr/competition/k3_2026.php
+E00310,K3-2026-0419-YP-DK,54,,SUB_IN,YP26-14,양평FC,YP26-05,https://www.kfa.or.kr/competition/k3_2026.php
+E00311,K3-2026-0419-YP-DK,54,,SUB_IN,YP26-18,양평FC,YP26-34,https://www.kfa.or.kr/competition/k3_2026.php
+E00312,K3-2026-0419-YP-DK,58,,YELLOW,YP26-75,양평FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00313,K3-2026-0419-YP-DK,63,,SUB_OUT,YP26-11,양평FC,YP26-08,https://www.kfa.or.kr/competition/k3_2026.php
+E00314,K3-2026-0419-YP-DK,63,,SUB_OUT,YP26-21,양평FC,YP26-73,https://www.kfa.or.kr/competition/k3_2026.php
+E00315,K3-2026-0419-YP-DK,63,,SUB_IN,YP26-08,양평FC,YP26-11,https://www.kfa.or.kr/competition/k3_2026.php
+E00316,K3-2026-0419-YP-DK,63,,SUB_IN,YP26-73,양평FC,YP26-21,https://www.kfa.or.kr/competition/k3_2026.php
+E00317,K3-2026-0419-YP-DK,67,,SUB_OUT,DK26-09,대전 코레일 FC,DK26-10,https://www.kfa.or.kr/competition/k3_2026.php
+E00318,K3-2026-0419-YP-DK,67,,SUB_OUT,DK26-88,대전 코레일 FC,DK26-17,https://www.kfa.or.kr/competition/k3_2026.php
+E00319,K3-2026-0419-YP-DK,67,,SUB_IN,DK26-10,대전 코레일 FC,DK26-09,https://www.kfa.or.kr/competition/k3_2026.php
+E00320,K3-2026-0419-YP-DK,67,,SUB_IN,DK26-17,대전 코레일 FC,DK26-88,https://www.kfa.or.kr/competition/k3_2026.php
+E00321,K3-2026-0419-YP-DK,73,,GOAL,DK26-77,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00322,K3-2026-0419-YP-DK,77,,SUB_OUT,DK26-77,대전 코레일 FC,DK26-44,https://www.kfa.or.kr/competition/k3_2026.php
+E00323,K3-2026-0419-YP-DK,77,,SUB_IN,DK26-44,대전 코레일 FC,DK26-77,https://www.kfa.or.kr/competition/k3_2026.php
+E00324,K3-2026-0419-YP-DK,82,,YELLOW,YP26-14,양평FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00325,K3-2026-0419-YP-DK,83,,GOAL,DK26-15,대전 코레일 FC,,https://www.kfa.or.kr/competition/k3_2026.php
+E00326,K3-2026-0419-YP-DK,85,,SUB_OUT,DK26-16,대전 코레일 FC,DK26-14,https://www.kfa.or.kr/competition/k3_2026.php
+E00327,K3-2026-0419-YP-DK,85,,SUB_OUT,DK26-13,대전 코레일 FC,DK26-22,https://www.kfa.or.kr/competition/k3_2026.php
+E00328,K3-2026-0419-YP-DK,85,,SUB_IN,DK26-14,대전 코레일 FC,DK26-16,https://www.kfa.or.kr/competition/k3_2026.php
+E00329,K3-2026-0419-YP-DK,85,,SUB_IN,DK26-22,대전 코레일 FC,DK26-13,https://www.kfa.or.kr/competition/k3_2026.php
+E00330,K3-2026-0419-YP-DK,86,,SUB_OUT,YP26-17,양평FC,YP26-06,https://www.kfa.or.kr/competition/k3_2026.php
+E00331,K3-2026-0419-YP-DK,86,,SUB_IN,YP26-06,양평FC,YP26-17,https://www.kfa.or.kr/competition/k3_2026.php

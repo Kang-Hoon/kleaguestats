@@ -109,12 +109,29 @@
 
     const eventsByMatch = new Map();
     raw.events.forEach(e => {
-      const ev = Object.assign({}, e, { minute: toInt(e.minute) });
+      const ev = Object.assign({}, e, { minute: toInt(e.minute), extra: toInt(e.extra_minute) || 0 });
+      if (ev.extra && ev.minute !== 45 && ev.minute !== 90)
+        addIssue('warn', 'bad_extra', e.event_id + ': extra_minute(추가시간)는 minute가 45 또는 90일 때만 써요');
       if (!matchById.has(e.match_id)) { addIssue('error', 'orphan_event', e.event_id + ': 없는 match_id (' + e.match_id + ')'); return; }
       if (!players.has(e.player_id)) addIssue('error', 'unknown_player', e.event_id + ': roster에 없는 player_id (' + e.player_id + ')');
       if (ev.minute === null) addIssue('warn', 'no_minute', e.event_id + ': minute가 비어 있어요');
       if (!eventsByMatch.has(e.match_id)) eventsByMatch.set(e.match_id, []);
       eventsByMatch.get(e.match_id).push(ev);
+    });
+
+    // 경기 길이: matches.csv의 first_half_extra / second_half_extra 가 있으면 그 값,
+    // 없으면 이벤트에 기록된 추가시간 중 가장 긴 값(= 최소치)을 쓴다
+    matches.forEach(m => {
+      const evs = eventsByMatch.get(m.match_id) || [];
+      const obs = at => evs.reduce((n, e) => (e.minute === at && e.extra > n ? e.extra : n), 0);
+      const fh = toInt(m.first_half_extra), sh = toInt(m.second_half_extra);
+      m.fhx = fh !== null ? fh : obs(45);
+      m.shx = sh !== null ? sh : obs(90);
+      m.length = 90 + m.fhx + m.shx;
+      m.extraKnown = fh !== null && sh !== null;
+      if (evs.length && !m.extraKnown)
+        addIssue('info', 'extra_estimated', m.match_id + ': 추가시간을 matches.csv에 적지 않아, 이벤트에 적힌 값(전반 +' + m.fhx + ' · 후반 +' + m.shx +
+          ')으로 출전 시간을 계산했어요. 실제 경기 시간보다 짧을 수 있어요');
     });
 
     // 점수 vs 득점 이벤트 대조
@@ -205,6 +222,14 @@
     return best;
   }
 
+  // 경기 시작부터 흐른 시간(분). 전반 추가시간만큼 후반 이벤트가 뒤로 밀린다
+  function clock(e, m) {
+    if (e.minute === null) return null;
+    const x = e.extra || 0;
+    if (e.minute <= 45) return e.minute + (e.minute === 45 ? x : 0);
+    return e.minute + (m.fhx || 0) + (e.minute === 90 ? x : 0);
+  }
+
   // ---------- 조회 ----------
   function query(model, filter) {
     const f = Object.assign({ league: 'all', season: 'all', team: null }, filter || {});
@@ -228,11 +253,12 @@
       const by = new Map();
       list.forEach(e => {
         if ((e.type === 'START' || e.type === 'SUB_IN') && !by.has(e.player_id))
-          by.set(e.player_id, { pid: e.player_id, team: e.team, m, start: e.type === 'START', from: e.type === 'START' ? 0 : (e.minute || 0), to: 90, source: e.source });
+          by.set(e.player_id, { pid: e.player_id, team: e.team, m, start: e.type === 'START', from: e.type === 'START' ? 0 : (clock(e, m) || 0), to: m.length, source: e.source });
       });
       list.forEach(e => {
         const a = by.get(e.player_id);
-        if (a && (e.type === 'SUB_OUT' || e.type === 'RED') && e.minute !== null && e.minute >= a.from) a.to = Math.min(a.to, e.minute);
+        const t = clock(e, m);
+        if (a && (e.type === 'SUB_OUT' || e.type === 'RED') && t !== null && t >= a.from) a.to = Math.min(a.to, t);
       });
       by.forEach(a => { a.minutes = Math.max(0, a.to - a.from); apps.push(a); });
     });
@@ -240,14 +266,14 @@
     // 선수별 통산
     const stats = new Map();
     const S = (pid, team) => {
-      if (!stats.has(pid)) stats.set(pid, { pid, team, apps: 0, starts: 0, minutes: 0, goals: 0, assists: 0, cleanSheets: 0 });
+      if (!stats.has(pid)) stats.set(pid, { pid, team, apps: 0, starts: 0, minutes: 0, goals: 0, assists: 0, yellow: 0, red: 0, cleanSheets: 0 });
       const s = stats.get(pid); if (team) s.team = team; return s;
     };
     apps.forEach(a => {
       const s = S(a.pid, a.team);
       s.apps++; if (a.start) s.starts++; s.minutes += a.minutes;
       const p = P(a.pid), m = a.m;
-      if (p && p.position === 'GK' && a.start && a.to === 90) {
+      if (p && p.position === 'GK' && a.start && a.to >= m.length) {
         const conceded = a.team === m.home_team ? m.away_score : m.home_score;
         if (conceded === 0) s.cleanSheets++;
       }
@@ -258,7 +284,8 @@
         S(e.player_id, e.team).goals++;
         goalEvents.push({ e, m });
         if (e.related_player_id) S(e.related_player_id, null).assists++;
-      }
+      } else if (e.type === 'YELLOW') S(e.player_id, e.team).yellow++;
+      else if (e.type === 'RED') S(e.player_id, e.team).red++;
     }));
 
     const row = (o) => o;
@@ -268,7 +295,7 @@
       return ranked(items, s => s[field], TOP_N).map(s => row({
         rank: s.rank, name: nameOf(s.pid), team: s.team || '', pid: s.pid,
         value: s[field] + label,
-        sub: field === 'apps' ? s.starts + '경기 선발 · ' + s.minutes + '분' : s.apps + '경기 출장',
+        sub: field === 'apps' ? s.starts + '경기 선발 · ' + s.minutes + '분' : s.apps + '경기 출장 · ' + s.minutes + '분',
       }));
     };
 
@@ -327,10 +354,10 @@
       }));
     const fastest = ranked(
       goalEvents.filter(g => g.e.minute !== null && g.e.minute >= 1)
-        .sort((a, b) => a.e.minute - b.e.minute || (a.m.date < b.m.date ? -1 : 1)),
-      g => g.e.minute, TOP_N).map(g => row({
+        .sort((a, b) => (a.e.minute * 100 + a.e.extra) - (b.e.minute * 100 + b.e.extra) || (a.m.date < b.m.date ? -1 : 1)),
+      g => g.e.minute * 100 + g.e.extra, TOP_N).map(g => row({
         rank: g.rank, name: nameOf(g.e.player_id), team: g.e.team, pid: g.e.player_id,
-        value: g.e.minute + '분', sub: matchLabel(g.m), matchId: g.m.match_id, source: g.e.source || g.m.source,
+        value: g.e.minute + (g.e.extra ? '+' + g.e.extra : '') + '분', sub: matchLabel(g.m), matchId: g.m.match_id, source: g.e.source || g.m.source,
       }));
 
     // 경기(팀) 기록
@@ -382,6 +409,9 @@
       { id: 'apps', group: 'player', title: '통산 출장', rows: topList('apps', '경기'), empty: '출장 기록이 아직 없어요 (events.csv에 START / SUB_IN 입력)' },
       { id: 'goals', group: 'player', title: '통산 득점', rows: topList('goals', '골'), empty: '득점 기록이 아직 없어요 (events.csv에 GOAL 입력)' },
       { id: 'assists', group: 'player', title: '통산 도움', rows: topList('assists', '개'), empty: '도움 기록이 없어요 (GOAL 행의 related_player_id에 입력)' },
+      { id: 'minutes', group: 'player', title: '통산 출전 시간', rows: topList('minutes', '분'), empty: '출전 시간 기록이 없어요' },
+      { id: 'yellow', group: 'player', title: '통산 경고', rows: topList('yellow', '회'), empty: '경고 기록이 없어요 (events.csv에 YELLOW 입력)' },
+      { id: 'red', group: 'player', title: '통산 퇴장', rows: topList('red', '회'), empty: '퇴장 기록이 없어요 (events.csv에 RED 입력)' },
       { id: 'cs', group: 'player', title: '통산 무실점 경기 (GK)', rows: topList('cleanSheets', '경기'), empty: '무실점 경기 기록이 없어요' },
 
       { id: 'young_goal', group: 'unusual', title: '최연소 득점', rows: gA.rows, excluded: gA.excluded, empty: '생년월일이 입력된 득점자가 없어요' },
@@ -414,6 +444,8 @@
         withEvents: ms.filter(m => (model.eventsByMatch.get(m.match_id) || []).length > 0).length,
       },
       lists,
+      table: Array.from(stats.values()).map(s => Object.assign({ name: nameOf(s.pid) }, s))
+        .filter(s => s.apps || s.goals || s.assists || s.yellow || s.red),
     };
   }
 
