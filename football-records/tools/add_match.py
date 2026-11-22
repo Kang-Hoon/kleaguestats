@@ -156,7 +156,8 @@ def main():
             if hit:
                 pid[(s['name'], no)] = hit['player_id']; taken.add(hit['player_id']); continue
             i = f"{code}{str(a.season)[2:]}-{no:02d}"
-            while i in used: i += 'x'
+            base, suf = i, iter('bcdefghij')
+            while i in used: i = base + next(suf)
             used.add(i); taken.add(i); pid[(s['name'], no)] = i
             row = dict(player_id=i, name=name, birth_date='', position=pos, team=site, shirt_no=str(no), source=a.source)
             rrows.append(row); byname.setdefault(name, []).append(row); new_players.append((site, no, name))
