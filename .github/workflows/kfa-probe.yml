@@ -40,10 +40,11 @@ jobs:
           PY
       - name: push raw html to kfa-raw branch
         run: |
+          git init -q
           git config user.name "Kang-Hoon"
           git config user.email "khlee3179@gmail.com"
-          git checkout --orphan kfa-raw
-          git rm -rf . -q || true
+          git checkout -q -b kfa-raw
           git add raw
           git commit -q -m "KFA 원본 HTML 보관 (K3 2026, 182경기)"
+          git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
           git push -f origin kfa-raw
