@@ -1,0 +1,763 @@
+
+<link rel="stylesheet" href="/css/layer_popup.css?ver=2025122404" />
+
+
+<script>
+// BackSpace 키 방지 이벤트
+    $(document).keydown(function(e){
+        if(e.target.nodeName != "INPUT" && e.target.nodeName != "TEXTAREA"){
+            if(e.keyCode === 8){
+            return false;
+            }
+        }
+    });
+
+    //window.history.forward(0);
+
+</script>
+
+<!-- 팝업 창 페이지 추가 -->
+<div class="popup_wrap">
+    <div class="history_popup">
+        <p class="top_menu">국내대회<span>K3 League</span><button type="button" onclick="layer_close();">Close</button></p>
+
+
+        <div class="history_contents">
+
+            <table class="vs_score_history" style="border-top:1px solid #cfcece;">
+                <tbody>
+
+                    <tr>
+                        <td colspan="7" class="vs_result" id="view_contents">
+
+                            <div class="play_result">
+                                <div class="player_left" style="height: 200px;">
+                                <p style="background-image:url('https://img.kfa.or.kr/League_K3/BASIC/K3_BASIC/양평FC 앰블럼.jpg');background-size: 70%;">양평FC</p>
+                                    <p>양평FC</p>
+                                    <p >2</p>
+                                </div>
+                                <ul class="result_score">
+                                    <li><p><span >0</span>전반전<span class="win">2</span></p></li>
+                                    <li><p><span >2</span>후반전<span class="win">2</span></p></li>
+                                    <li><p><span >0</span>연장전반<span class="win">0</span></p></li>
+                                    <li><p><span >0</span>연장후반<span class="win">0</span></p></li>
+                                    <li style="border-bottom: unset;"><p><span >0</span>승부차기<span class="win">0</span></p></li>
+                                </ul>
+                                <div class="player_right" style="height: 200px;">
+                                <p style="background-image:url('https://img.kfa.or.kr/League_K3/BASIC/K3_BASIC/당진시민축구단.png');background-size: 70%;">당진시민축구단</p>
+                                    <p>당진시민축구단</p>
+                                    <!-- <p class="win">4</p> -->
+                                    <p class="win">4</p>
+                                </div>
+                            </div>
+
+                            <div class="score_table">
+                                <div class="left_table">
+                                    <table>
+                                        <caption>선발출전선수</caption>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">선수명</th>
+                                                <!-- <th scope="col">시간</th> -->
+                                                <th scope="col">득점</th>
+                                                <!-- <th scope="col">도움</th> -->
+                                                <th scope="col">경고</th>
+                                                <th scope="col">퇴장</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1. 심민[GK]</td>
+                                                <!-- <td>95</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>77. 조영진[DF]</td>
+                                                <!-- <td>95</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>79. 김민서[DF]</td>
+                                                <!-- <td>46</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>20. 차인석[DF]</td>
+                                                <!-- <td>95</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td>28</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>6. 이태형[DF]</td>
+                                                <!-- <td>67</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>10. 김동욱[MF]</td>
+                                                <!-- <td>95</td> -->
+                                                <td></td>
+                                                <!-- <td>60</td> -->
+                                                <td>41</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>28. 천세윤[MF]</td>
+                                                <!-- <td>83</td> -->
+                                                <td>60</td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>48. 남궁환[MF]</td>
+                                                <!-- <td>73</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>91. 김유종[MF]</td>
+                                                <!-- <td>46</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td>17</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>73. 이동희[MF]</td>
+                                                <!-- <td>95</td> -->
+                                                <td></td>
+                                                <!-- <td>61</td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>9. 덴젤[FW]</td>
+                                                <!-- <td>59</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table>
+                                        <caption>후보선수</caption>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">선수명</th>
+                                                <!-- <th scope="col">시간</th> -->
+                                                <th scope="col">득점</th>
+                                                <!-- <th scope="col">도움</th> -->
+                                                <th scope="col">경고</th>
+                                                <th scope="col">퇴장</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>41. 신재민[GK]</td>
+                                                <!-- <td>0</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>23. 곽래승[DF]</td>
+                                                <!-- <td>36</td> -->
+                                                <td>61</td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>45. 김성수[DF]</td>
+                                                <!-- <td>0</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>14. 김대협[MF]</td>
+                                                <!-- <td>0</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>18. 장동혁[MF]</td>
+                                                <!-- <td>12</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>7. 윤병우[MF]</td>
+                                                <!-- <td>22</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>21. 이도영[FW]</td>
+                                                <!-- <td>49</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>30. 이민혁[FW]</td>
+                                                <!-- <td>28</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>17. 김형겸[FW]</td>
+                                                <!-- <td>49</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td style="width:40% !important;">상대자책골</td>
+                                                <td colspan="4" style="width:48% !important;"></td>
+                                                <td style="width:12% !important;"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div class="change_list">
+                                        <table>
+                                            <tbody>
+                                                <tr style="vertical-align:top;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece; color:#009944;text-align:left;">▲ IN</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">17. 김형겸</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">46 </td>
+                                                </tr>
+                                                <tr style="vertical-align:bottom;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece;color:#df0013;text-align:left;">▼ OUT</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">79. 김민서</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">46 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="change_list">
+                                        <table>
+                                            <tbody>
+                                                <tr style="vertical-align:top;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece; color:#009944;text-align:left;">▲ IN</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">21. 이도영</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">46 </td>
+                                                </tr>
+                                                <tr style="vertical-align:bottom;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece;color:#df0013;text-align:left;">▼ OUT</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">91. 김유종</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">46 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="change_list">
+                                        <table>
+                                            <tbody>
+                                                <tr style="vertical-align:top;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece; color:#009944;text-align:left;">▲ IN</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">23. 곽래승</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">59 </td>
+                                                </tr>
+                                                <tr style="vertical-align:bottom;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece;color:#df0013;text-align:left;">▼ OUT</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">9. 덴젤</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">59 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="change_list">
+                                        <table>
+                                            <tbody>
+                                                <tr style="vertical-align:top;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece; color:#009944;text-align:left;">▲ IN</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">30. 이민혁</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">67 </td>
+                                                </tr>
+                                                <tr style="vertical-align:bottom;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece;color:#df0013;text-align:left;">▼ OUT</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">6. 이태형</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">67 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="change_list">
+                                        <table>
+                                            <tbody>
+                                                <tr style="vertical-align:top;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece; color:#009944;text-align:left;">▲ IN</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">7. 윤병우</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">73 </td>
+                                                </tr>
+                                                <tr style="vertical-align:bottom;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece;color:#df0013;text-align:left;">▼ OUT</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">48. 남궁환</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">73 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="change_list">
+                                        <table>
+                                            <tbody>
+                                                <tr style="vertical-align:top;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece; color:#009944;text-align:left;">▲ IN</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">18. 장동혁</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">83 </td>
+                                                </tr>
+                                                <tr style="vertical-align:bottom;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece;color:#df0013;text-align:left;">▼ OUT</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">28. 천세윤</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">83 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="right_table">
+                                    <table>
+                                        <caption>선발출전선수</caption>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">선수명</th>
+                                                <!-- <th scope="col">시간</th> -->
+                                                <th scope="col">득점</th>
+                                                <!-- <th scope="col">도움</th> -->
+                                                <th scope="col">경고</th>
+                                                <th scope="col">퇴장</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1. 최영은[GK]</td>
+                                                <!-- <td>95</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td>90(+2)</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>32. 이병욱[DF]</td>
+                                                <!-- <td>95</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3. 이한빈[DF]</td>
+                                                <!-- <td>90</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td>29</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>20. 김주형[DF]</td>
+                                                <!-- <td>95</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>62. 김영선[DF]</td>
+                                                <!-- <td>86</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>8. 이은재[MF]</td>
+                                                <!-- <td>95</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>7. 류연준[MF]</td>
+                                                <!-- <td>71</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4. 최시온[MF]</td>
+                                                <!-- <td>95</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>72. 김동률[FW]</td>
+                                                <!-- <td>86</td> -->
+                                                <td>11, 64, 38</td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>22. 한창구[FW]</td>
+                                                <!-- <td>61</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td>16</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>9. 강현종[FW]</td>
+                                                <!-- <td>46</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table>
+                                        <caption>후보선수</caption>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">선수명</th>
+                                                <!-- <th scope="col">시간</th> -->
+                                                <th scope="col">득점</th>
+                                                <!-- <th scope="col">도움</th> -->
+                                                <th scope="col">경고</th>
+                                                <th scope="col">퇴장</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>66. 이선호[DF]</td>
+                                                <!-- <td>34</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>14. 여준영1[DF]</td>
+                                                <!-- <td>0</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>35. 민승기[DF]</td>
+                                                <!-- <td>9</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>42. 이현조[DF]</td>
+                                                <!-- <td>5</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>77. 이시명[MF]</td>
+                                                <!-- <td>0</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>99. 김형진[FW]</td>
+                                                <!-- <td>24</td> -->
+                                                <td></td>
+                                                <!-- <td>90</td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>15. 지상욱[FW]</td>
+                                                <!-- <td>49</td> -->
+                                                <td>90</td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>11. 곽승조[FW]</td>
+                                                <!-- <td>9</td> -->
+                                                <td></td>
+                                                <!-- <td></td> -->
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td style="width:40% !important;">상대자책골</td>
+                                                <td colspan="4" style="width:48% !important;"></td>
+                                                <td style="width:12% !important;"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div class="change_list">
+                                        <table>
+                                            <tbody>
+                                                <tr style="vertical-align:top;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece; color:#009944;text-align:left;">▲ IN</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">15. 지상욱</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">46 </td>
+                                                </tr>
+                                                <tr style="vertical-align:bottom;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece;color:#df0013;text-align:left;">▼ OUT</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">9. 강현종</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">46 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="change_list">
+                                        <table>
+                                            <tbody>
+                                                <tr style="vertical-align:top;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece; color:#009944;text-align:left;">▲ IN</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">66. 이선호</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">61 </td>
+                                                </tr>
+                                                <tr style="vertical-align:bottom;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece;color:#df0013;text-align:left;">▼ OUT</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">22. 한창구</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">61 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="change_list">
+                                        <table>
+                                            <tbody>
+                                                <tr style="vertical-align:top;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece; color:#009944;text-align:left;">▲ IN</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">99. 김형진</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">71 </td>
+                                                </tr>
+                                                <tr style="vertical-align:bottom;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece;color:#df0013;text-align:left;">▼ OUT</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">7. 류연준</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">71 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="change_list">
+                                        <table>
+                                            <tbody>
+                                                <tr style="vertical-align:top;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece; color:#009944;text-align:left;">▲ IN</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">11. 곽승조</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">86 </td>
+                                                </tr>
+                                                <tr style="vertical-align:bottom;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece;color:#df0013;text-align:left;">▼ OUT</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">72. 김동률</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">86 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="change_list">
+                                        <table>
+                                            <tbody>
+                                                <tr style="vertical-align:top;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece; color:#009944;text-align:left;">▲ IN</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">35. 민승기</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">86 </td>
+                                                </tr>
+                                                <tr style="vertical-align:bottom;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece;color:#df0013;text-align:left;">▼ OUT</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">62. 김영선</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">86 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="change_list">
+                                        <table>
+                                            <tbody>
+                                                <tr style="vertical-align:top;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece; color:#009944;text-align:left;">▲ IN</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">42. 이현조</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">90 </td>
+                                                </tr>
+                                                <tr style="vertical-align:bottom;">
+                                                    <th style="width:17%;border-right:1px solid #cfcece;color:#df0013;text-align:left;">▼ OUT</th>
+                                                    <td style="width:68%;border-right:1px solid #cfcece; text-indent:20px;">3. 이한빈</td>
+                                                    <td style="width:15%;border-right:0px;text-align:right;">90 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <ul class="cup_info">
+                                    <li><p><span>대회</span>2026 K3리그</p></li>
+                                    <li><p><span>관중</span>535</p></li>
+                                    <li><p><span>경기명</span>양평FC vs 당진시민축구단</p></li>
+                                    <li><p><span>주심</span>이지형</p></li>
+                                    <li><p><span>일시</span>2026-11-07-토-14-00</p></li>
+                                    <li><p><span>부심</span>김동민, 김학만</p></li>
+                                    <li><p><span>장소</span>물맑은양평종합운동장</p></li>
+                                    <li><p><span>대기심</span>김형진</p></li>
+                                </ul>
+                            </div>
+                        </td>
+                       </tr>
+
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    history.pushState(null, null, location.href);
+    window.onpopstate = function () {
+            //history.go(1);
+        layer_close();
+    };
+
+    function layer_close() {
+        $('#layer_popup').css('display','none');
+        $('#header').css('display','block');
+        $('#contents').css('display','block');
+        $('#view_contents').remove();
+        $('html').css('overflow-y','auto');
+        $('#location_view_').focus();
+        $('#location_view_').blur();
+        //$(window).scrollTop(window.oriScroll);
+        return false;
+    }
+
+    $(document).ready(function () {
+/*
+        $(window).resize(function (){
+            $maxHeight = $(window).height();
+            $('.history_popup').css('max-height',$maxHeight-40);
+        });
+*/
+        //$maxHeight = $(window).height();
+        $maxHeight = window.innerHeight;
+        $('.history_popup').css('max-height',$maxHeight-40);
+    });
+</script>
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+/*
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25180453-1']);
+  _gaq.push(['_setDomainName', '.kfa.or.kr']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '/common/.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+*/
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Admin ADD 2020.01.08 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156013082-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-156013082-1');
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Team Manager -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89367924-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-89367924-3');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<!-- Team Manager 2023.07.05 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-25180453-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-25180453-2');
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Dev ADD 2020.01.11 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156048922-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-156048922-2');
+</script>
