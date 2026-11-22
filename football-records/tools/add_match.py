@@ -63,6 +63,7 @@ def parse(text):
     blk, bench, pend = -1, False, {}
     for l in lines[ai + 1:]:
         s = l.strip()
+        if s.startswith('대회2026') or re.match(r'^대회\d{4}', s): break  # 맨 아래 경기 정보 줄에서 끝 (그 뒤 메뉴 글자는 무시)
         if s.startswith('선발출전선수'): blk += 1; bench = False; continue
         if s.startswith('후보선수'): bench = True; continue
         if not s or s.startswith('선수명') or s.startswith('대회') or blk < 0: continue
