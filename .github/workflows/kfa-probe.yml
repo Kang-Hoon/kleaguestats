@@ -1,0 +1,14 @@
+name: kfa-probe
+on:
+  push:
+    branches: [collector-test]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: fetch round page
+        run: |
+          curl -sS -m 30 -A "Mozilla/5.0" -o r.html -w "round http=%{http_code} size=%{size_download}\n" "https://www.kfa.or.kr/competition/k3_2026.php?act=k3_round&chk_round=now&act_sub=k3&round=25" || echo "round fetch failed"
+          curl -sS -m 30 -A "Mozilla/5.0" -o d.html -w "detail http=%{http_code} size=%{size_download}\n" "https://www.kfa.or.kr/layer_popup/domestic.php?act=domestic_detail&idx=57431&s_idx=509828&div=k3" || echo "detail fetch failed"
+          grep -c "domestic_detail\|509828" r.html || true
+          grep -c "<tr" d.html || true
