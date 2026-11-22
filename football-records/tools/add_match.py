@@ -20,8 +20,14 @@ TEAMS = {
     '포천시민축구단': ('포천시민축구단', 'PC'),
     '시흥시민축구단': ('시흥시민축구단', 'SH'),
     '양평FC': ('양평FC', 'YP'),
+    '창원FC': ('창원FC', 'CW'),
+    '울산시민축구단': ('울산시민축구단', 'US'),
+    'FC강릉': ('FC강릉', 'GN'),
+    '당진시민축구단': ('당진시민축구단', 'DJ'),
+    'FC목포': ('FC목포', 'MP'),
+    '여주FC': ('여주FC', 'YJ'),
 }
-MIN = re.compile(r'(\d+)(?:\s*\(\+(\d+)\))?')
+MIN = re.compile(r'(\d+)(?:\s*\(\+(\d+)\))?(\(P\))?')  # 45(+5) 추가시간, (P) 페널티킥
 PLAYER = re.compile(r'^(\d+)\.\s*(.+?)\[(GK|DF|MF|FW)\]$')
 SUB = re.compile(r'^[▲▼]\s*(IN|OUT)$')
 
@@ -31,7 +37,7 @@ def die(msg):
 
 
 def minutes(cell):
-    return [(int(a), int(b) if b else 0) for a, b in MIN.findall(cell or '')]
+    return [(int(a), int(b) if b else 0, bool(c)) for a, b, c in MIN.findall(cell or '')]
 
 
 def parse(text):
@@ -96,7 +102,7 @@ def check(p):
             if no not in s['players']: errs.append(f"{s['name']}: 교체 등번호 {no} 선수가 명단에 없어요")
         if len([x for x in s['subs'] if x[0] == 'IN']) != len([x for x in s['subs'] if x[0] == 'OUT']): errs.append(f"{s['name']}: IN/OUT 수가 달라요")
         if len(s['goals']) != p['total'][k]: errs.append(f"{s['name']}: 득점 {len(s['goals'])}골인데 점수는 {p['total'][k]}")
-        h1 = sum(1 for _, (m, x) in s['goals'] if m <= 45)
+        h1 = sum(1 for _, (m, x, _p) in s['goals'] if m <= 45)
         if 'half' in p and '전반전' in p['half'] and p['half']['전반전'][k] != h1:
             errs.append(f"{s['name']}: 전반 득점 {h1}골인데 페이지는 {p['half']['전반전'][k]}")
     return errs
@@ -119,32 +125,51 @@ def main():
         with open(os.path.join(a.data, n + '.csv'), encoding='utf-8', newline='') as f:
             r = csv.DictReader(f); return r.fieldnames, list(r)
     mh, mrows = rd('matches'); rh, rrows = rd('roster'); eh, erows = rd('events')
+    if 'note' not in eh: eh = eh + ['note']  # 선택 컬럼: 페널티킥 등 메모
     (hn, hc), (an, ac) = TEAMS[p['home']], TEAMS[p['away']]
     mid = f"K3-{a.season}-{p['date'][5:7]}{p['date'][8:10]}-{hc}-{ac}"
-    if any(r['match_id'] == mid for r in mrows): die(f'이미 있는 경기예요: {mid}')
+    old = [r for r in mrows if r['match_id'] == mid]
+    if old:
+        if any(e['match_id'] == mid for e in erows): die(f'이미 이벤트까지 있는 경기예요: {mid}')
+        o = old[0]  # 스코어만 먼저 넣어 둔 경기 → 상세 기록으로 교체
+        if (o['home_score'], o['away_score']) != (str(p['total'][0]), str(p['total'][1])):
+            die(f"먼저 넣어 둔 스코어({o['home_score']}-{o['away_score']})와 붙여 넣은 스코어({p['total'][0]}-{p['total'][1]})가 달라요")
+        mrows = [r for r in mrows if r['match_id'] != mid]
 
     pid, new_players = {}, []
     for (site, code), s in zip((TEAMS[p['home']], TEAMS[p['away']]), p['sides']):
-        known = {r['name']: r['player_id'] for r in rrows if r['team'] == site}
+        byname = {}
+        for r in rrows:
+            if r['team'] == site: byname.setdefault(r['name'], []).append(r)
         used = {r['player_id'] for r in rrows}
+        taken = set()  # 이 경기에서 이미 배정된 player_id (동명이인 구분용)
         for no in s['order']:
             name, pos = s['players'][no]
-            if name in known: pid[(s['name'], no)] = known[name]; continue
+            cands = [r for r in byname.get(name, []) if r['player_id'] not in taken]
+            hit = None
+            if len(cands) == 1 and len(byname.get(name, [])) == 1: hit = cands[0]
+            elif cands:  # 같은 이름이 여러 명 → 등번호가 같은 사람
+                same = [r for r in cands if r['shirt_no'] == str(no)]
+                hit = same[0] if same else None
+                if not hit and len(cands) == 1: hit = cands[0]
+            if hit:
+                pid[(s['name'], no)] = hit['player_id']; taken.add(hit['player_id']); continue
             i = f"{code}{str(a.season)[2:]}-{no:02d}"
             while i in used: i += 'x'
-            used.add(i); known[name] = i; pid[(s['name'], no)] = i
+            used.add(i); taken.add(i); pid[(s['name'], no)] = i
             row = dict(player_id=i, name=name, birth_date='', position=pos, team=site, shirt_no=str(no), source=a.source)
-            rrows.append(row); new_players.append((site, no, name))
+            rrows.append(row); byname.setdefault(name, []).append(row); new_players.append((site, no, name))
+            if len(byname[name]) > 1: print(f"  ※ 동명이인: {site} {name} — 등번호 {', '.join(r['shirt_no'] for r in byname[name])}")
 
     n0 = max([int(re.sub(r'\D', '', r['event_id']) or 0) for r in erows] + [0])
     ev = []
     def add(m, t, side, no, rel=None):
-        mn, ex = m
+        mn, ex, pk = m[0], m[1], len(m) > 2 and m[2]
         ev.append(dict(minute=mn, extra_minute=ex or '', type=t, player_id=pid[(side['name'], no)], team=TEAMS[side['name']][0],
-                       related_player_id=pid[(side['name'], rel)] if rel else ''))
+                       related_player_id=pid[(side['name'], rel)] if rel else '', note='PK' if pk and t == 'GOAL' else ''))
     for s in p['sides']:
         for no in s['order']:
-            if no not in s['bench']: add((0, 0), 'START', s, no)
+            if no not in s['bench']: add((0, 0, False), 'START', s, no)
         for no, mn in s['goals']: add(mn, 'GOAL', s, no)
         for t, no, mn in s['cards']: add(mn, t, s, no)
         ins = {}
