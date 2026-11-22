@@ -1,14 +1,49 @@
-name: kfa-probe
+name: kfa-fetch-raw
 on:
   push:
     branches: [collector-test]
+  workflow_dispatch:
+permissions:
+  contents: write
 jobs:
-  probe:
+  fetch:
     runs-on: ubuntu-latest
     steps:
-      - name: fetch round page
+      - name: fetch all rounds and match pages
         run: |
-          curl -sS -m 30 -A "Mozilla/5.0" -o r.html -w "round http=%{http_code} size=%{size_download}\n" "https://www.kfa.or.kr/competition/k3_2026.php?act=k3_round&chk_round=now&act_sub=k3&round=25" || echo "round fetch failed"
-          curl -sS -m 30 -A "Mozilla/5.0" -o d.html -w "detail http=%{http_code} size=%{size_download}\n" "https://www.kfa.or.kr/layer_popup/domestic.php?act=domestic_detail&idx=57431&s_idx=509828&div=k3" || echo "detail fetch failed"
-          grep -c "domestic_detail\|509828" r.html || true
-          grep -c "<tr" d.html || true
+          mkdir -p raw
+          python3 - <<'PY'
+          import re, time, urllib.request, json
+          UA = {"User-Agent": "Mozilla/5.0"}
+          def get(u):
+              for i in range(3):
+                  try:
+                      return urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=30).read().decode("utf-8", "replace")
+                  except Exception as e:
+                      err = e; time.sleep(2)
+              raise err
+          B = "https://www.kfa.or.kr"
+          index = []
+          for rd in range(1, 27):
+              t = get(f"{B}/competition/k3_2026.php?act=k3_round&chk_round=now&act_sub=k3&round={rd}")
+              open(f"raw/round_{rd:02d}.html", "w", encoding="utf-8").write(t)
+              pairs = []
+              for a, b in re.findall(r"(\d{5,6})[^\d]{1,8}(\d{6})", t):
+                  if (a, b) not in pairs: pairs.append((a, b))
+              for order, (idx, sidx) in enumerate(pairs):
+                  index.append({"round": rd, "order": order, "idx": idx, "s_idx": sidx})
+                  d = get(f"{B}/layer_popup/domestic.php?act=domestic_detail&idx={idx}&s_idx={sidx}&div=k3")
+                  open(f"raw/m_{sidx}.html", "w", encoding="utf-8").write(d)
+                  time.sleep(0.3)
+              print("round", rd, len(pairs), flush=True)
+          json.dump(index, open("raw/index.json", "w"), ensure_ascii=False, indent=0)
+          PY
+      - name: push raw html to kfa-raw branch
+        run: |
+          git config user.name "Kang-Hoon"
+          git config user.email "khlee3179@gmail.com"
+          git checkout --orphan kfa-raw
+          git rm -rf . -q || true
+          git add raw
+          git commit -q -m "KFA 원본 HTML 보관 (K3 2026, 182경기)"
+          git push -f origin kfa-raw
