@@ -1,1 +1,8 @@
-match_id,season,league,round,date,venue,home_team,away_team,home_score,away_score,attendance,source
+match_id,season,league,round,date,venue,home_team,away_team,home_score,away_score,attendance,source,first_half_extra,second_half_extra
+K3-2026-0315-JB-DK,2026,K3리그,2,2026-03-15,완주군공설운동장,전북현대모터스,대전 코레일 FC,3,3,361,https://www.kfa.or.kr/competition/k3_2026.php,,
+K3-2026-0308-DK-CC,2026,K3리그,1,2026-03-08,대전월드컵 보조경기장,대전 코레일 FC,춘천시민축구단,3,1,548,https://www.kfa.or.kr/competition/k3_2026.php,,
+K3-2026-0321-BT-DK,2026,K3리그,3,2026-03-21,부산구덕운동장,부산교통공사축구단,대전 코레일 FC,0,0,417,https://www.kfa.or.kr/competition/k3_2026.php,,
+K3-2026-0328-GJ-DK,2026,K3리그,4,2026-03-28,경주축구공원3구장,경주한수원FC,대전 코레일 FC,1,1,225,https://www.kfa.or.kr/competition/k3_2026.php,,
+K3-2026-0404-DK-PC,2026,K3리그,5,2026-04-04,대전월드컵 보조경기장,대전 코레일 FC,포천시민축구단,0,1,278,https://www.kfa.or.kr/competition/k3_2026.php,,
+K3-2026-0411-DK-SH,2026,K3리그,6,2026-04-11,대전월드컵 보조경기장,대전 코레일 FC,시흥시민축구단,0,1,309,https://www.kfa.or.kr/competition/k3_2026.php,,
+K3-2026-0419-YP-DK,2026,K3리그,7,2026-04-19,물맑은양평종합운동장,양평FC,대전 코레일 FC,0,3,652,https://www.kfa.or.kr/competition/k3_2026.php,,

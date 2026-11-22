@@ -1,1 +1,170 @@
 player_id,name,birth_date,position,team,shirt_no,source
+DK26-01,백경인,2001-05-09,GK,대전 코레일 FC,1,https://namu.wiki/w/대전 코레일 FC
+DK26-02,김영인,2002-02-16,DF,대전 코레일 FC,2,https://namu.wiki/w/대전 코레일 FC
+DK26-03,황준석,1996-03-19,DF,대전 코레일 FC,3,https://namu.wiki/w/대전 코레일 FC
+DK26-04,김윤진,1995-03-30,DF,대전 코레일 FC,4,https://namu.wiki/w/대전 코레일 FC
+DK26-05,전인규,1993-11-14,DF,대전 코레일 FC,5,https://namu.wiki/w/대전 코레일 FC
+DK26-06,박승렬,1994-01-07,MF,대전 코레일 FC,6,https://namu.wiki/w/대전 코레일 FC
+DK26-07,김정주,1991-09-26,FW,대전 코레일 FC,7,https://namu.wiki/w/대전 코레일 FC
+DK26-08,강효온,2004-01-15,DF,대전 코레일 FC,8,https://namu.wiki/w/대전 코레일 FC
+DK26-09,홍진민,2005-01-22,FW,대전 코레일 FC,9,https://namu.wiki/w/대전 코레일 FC
+DK26-10,이인규,1992-09-16,DF,대전 코레일 FC,10,https://namu.wiki/w/대전 코레일 FC
+DK26-11,김희성,1995-12-18,FW,대전 코레일 FC,11,https://namu.wiki/w/대전 코레일 FC
+DK26-13,손경환,1993-04-02,DF,대전 코레일 FC,13,https://namu.wiki/w/대전 코레일 FC
+DK26-14,김동욱,1990-04-04,MF,대전 코레일 FC,14,https://namu.wiki/w/대전 코레일 FC
+DK26-15,남윤재,2001-04-14,DF,대전 코레일 FC,15,https://namu.wiki/w/대전 코레일 FC
+DK26-16,송민종,2001-03-21,FW,대전 코레일 FC,16,https://namu.wiki/w/대전 코레일 FC
+DK26-17,박찬빈,2002-01-21,FW,대전 코레일 FC,17,https://namu.wiki/w/대전 코레일 FC
+DK26-18,김철호,1995-10-25,GK,대전 코레일 FC,18,https://namu.wiki/w/대전 코레일 FC
+DK26-20,김동섭,2003-10-27,MF,대전 코레일 FC,20,https://namu.wiki/w/대전 코레일 FC | https://info.korail.com/info/contents.do?key=906
+DK26-21,배서준,2002-11-10,GK,대전 코레일 FC,21,https://namu.wiki/w/대전 코레일 FC
+DK26-22,김광희,2001-07-26,MF,대전 코레일 FC,22,https://namu.wiki/w/대전 코레일 FC
+DK26-26,이관표,1994-09-07,MF,대전 코레일 FC,26,https://namu.wiki/w/대전 코레일 FC
+DK26-33,최선우,2003-01-08,DF,대전 코레일 FC,33,https://namu.wiki/w/대전 코레일 FC
+DK26-34,진지강,2004-05-20,MF,대전 코레일 FC,34,https://namu.wiki/w/대전 코레일 FC
+DK26-38,조한진,2004-12-13,MF,대전 코레일 FC,38,https://namu.wiki/w/대전 코레일 FC
+DK26-44,전우람,2000-05-16,DF,대전 코레일 FC,44,https://namu.wiki/w/대전 코레일 FC
+DK26-66,김현우,2002-10-26,DF,대전 코레일 FC,66,https://namu.wiki/w/대전 코레일 FC
+DK26-77,유지민,1993-08-27,MF,대전 코레일 FC,77,https://namu.wiki/w/대전 코레일 FC
+DK26-88,박예찬,2001-01-16,FW,대전 코레일 FC,88,https://namu.wiki/w/대전 코레일 FC
+DK26-91,양창훈,1999-01-14,FW,대전 코레일 FC,91,https://namu.wiki/w/대전 코레일 FC | https://info.korail.com/info/contents.do?key=906
+JB26-51,이한결,,GK,전북현대모터스,51,https://www.kfa.or.kr/competition/k3_2026.php
+JB26-55,최진웅,,DF,전북현대모터스,55,https://www.kfa.or.kr/competition/k3_2026.php
+JB26-22,김준영,,DF,전북현대모터스,22,https://www.kfa.or.kr/competition/k3_2026.php
+JB26-44,김주형,,DF,전북현대모터스,44,https://www.kfa.or.kr/competition/k3_2026.php
+JB26-39,서정혁,,DF,전북현대모터스,39,https://www.kfa.or.kr/competition/k3_2026.php
+JB26-42,우현수,,MF,전북현대모터스,42,https://www.kfa.or.kr/competition/k3_2026.php
+JB26-88,윤현석,,MF,전북현대모터스,88,https://www.kfa.or.kr/competition/k3_2026.php
+JB26-30,김영환,,MF,전북현대모터스,30,https://www.kfa.or.kr/competition/k3_2026.php
+JB26-90,정상운,,FW,전북현대모터스,90,https://www.kfa.or.kr/competition/k3_2026.php
+JB26-34,엄승민,,FW,전북현대모터스,34,https://www.kfa.or.kr/competition/k3_2026.php
+JB26-33,한석진,,FW,전북현대모터스,33,https://www.kfa.or.kr/competition/k3_2026.php
+JB26-91,정대영,,GK,전북현대모터스,91,https://www.kfa.or.kr/competition/k3_2026.php
+JB26-80,곽희벽,,DF,전북현대모터스,80,https://www.kfa.or.kr/competition/k3_2026.php
+JB26-70,박현민,,MF,전북현대모터스,70,https://www.kfa.or.kr/competition/k3_2026.php
+JB26-36,장남웅,,MF,전북현대모터스,36,https://www.kfa.or.kr/competition/k3_2026.php
+JB26-26,문준혁,,MF,전북현대모터스,26,https://www.kfa.or.kr/competition/k3_2026.php
+JB26-47,이건희,,MF,전북현대모터스,47,https://www.kfa.or.kr/competition/k3_2026.php
+JB26-79,김창훈,,FW,전북현대모터스,79,https://www.kfa.or.kr/competition/k3_2026.php
+JB26-40,안태훈,,FW,전북현대모터스,40,https://www.kfa.or.kr/competition/k3_2026.php
+JB26-92,김두현,,FW,전북현대모터스,92,https://www.kfa.or.kr/competition/k3_2026.php
+CC26-01,박민선,,GK,춘천시민축구단,1,https://www.kfa.or.kr/competition/k3_2026.php
+CC26-08,윤성한,,DF,춘천시민축구단,8,https://www.kfa.or.kr/competition/k3_2026.php
+CC26-04,한용수,,DF,춘천시민축구단,4,https://www.kfa.or.kr/competition/k3_2026.php
+CC26-05,박현우,,DF,춘천시민축구단,5,https://www.kfa.or.kr/competition/k3_2026.php
+CC26-23,마지강,,DF,춘천시민축구단,23,https://www.kfa.or.kr/competition/k3_2026.php
+CC26-32,이준원,,MF,춘천시민축구단,32,https://www.kfa.or.kr/competition/k3_2026.php
+CC26-10,신상휘,,MF,춘천시민축구단,10,https://www.kfa.or.kr/competition/k3_2026.php
+CC26-61,허동호,,MF,춘천시민축구단,61,https://www.kfa.or.kr/competition/k3_2026.php
+CC26-88,이성민,,MF,춘천시민축구단,88,https://www.kfa.or.kr/competition/k3_2026.php
+CC26-09,김민우,,FW,춘천시민축구단,9,https://www.kfa.or.kr/competition/k3_2026.php
+CC26-33,Oliveira Parente lucas,,FW,춘천시민축구단,33,https://www.kfa.or.kr/competition/k3_2026.php
+CC26-19,김도현,,GK,춘천시민축구단,19,https://www.kfa.or.kr/competition/k3_2026.php
+CC26-20,권진영,,DF,춘천시민축구단,20,https://www.kfa.or.kr/competition/k3_2026.php
+CC26-07,박선용,,DF,춘천시민축구단,7,https://www.kfa.or.kr/competition/k3_2026.php
+CC26-03,이재용,,DF,춘천시민축구단,3,https://www.kfa.or.kr/competition/k3_2026.php
+CC26-02,신기환,,DF,춘천시민축구단,2,https://www.kfa.or.kr/competition/k3_2026.php
+CC26-97,이명동,,DF,춘천시민축구단,97,https://www.kfa.or.kr/competition/k3_2026.php
+CC26-17,김민수,,MF,춘천시민축구단,17,https://www.kfa.or.kr/competition/k3_2026.php
+CC26-14,오형택,,MF,춘천시민축구단,14,https://www.kfa.or.kr/competition/k3_2026.php
+CC26-18,Devellard Ferreira F Goncalves matheus,,FW,춘천시민축구단,18,https://www.kfa.or.kr/competition/k3_2026.php
+BT26-01,최진백,,GK,부산교통공사축구단,1,https://www.kfa.or.kr/competition/k3_2026.php
+BT26-15,조우현,,DF,부산교통공사축구단,15,https://www.kfa.or.kr/competition/k3_2026.php
+BT26-13,지의수,,DF,부산교통공사축구단,13,https://www.kfa.or.kr/competition/k3_2026.php
+BT26-03,오현교,,DF,부산교통공사축구단,3,https://www.kfa.or.kr/competition/k3_2026.php
+BT26-05,홍종민,,DF,부산교통공사축구단,5,https://www.kfa.or.kr/competition/k3_2026.php
+BT26-06,하용주,,MF,부산교통공사축구단,6,https://www.kfa.or.kr/competition/k3_2026.php
+BT26-08,안치우,,MF,부산교통공사축구단,8,https://www.kfa.or.kr/competition/k3_2026.php
+BT26-10,김양우,,FW,부산교통공사축구단,10,https://www.kfa.or.kr/competition/k3_2026.php
+BT26-07,이윤재,,FW,부산교통공사축구단,7,https://www.kfa.or.kr/competition/k3_2026.php
+BT26-09,rabens jan,,FW,부산교통공사축구단,9,https://www.kfa.or.kr/competition/k3_2026.php
+BT26-11,박희수,,FW,부산교통공사축구단,11,https://www.kfa.or.kr/competition/k3_2026.php
+BT26-31,이민수,,GK,부산교통공사축구단,31,https://www.kfa.or.kr/competition/k3_2026.php
+BT26-27,김준섭,,DF,부산교통공사축구단,27,https://www.kfa.or.kr/competition/k3_2026.php
+BT26-19,윤철현,,DF,부산교통공사축구단,19,https://www.kfa.or.kr/competition/k3_2026.php
+BT26-04,김민수,,DF,부산교통공사축구단,4,https://www.kfa.or.kr/competition/k3_2026.php
+BT26-66,배수민,,MF,부산교통공사축구단,66,https://www.kfa.or.kr/competition/k3_2026.php
+BT26-14,김도훈,,MF,부산교통공사축구단,14,https://www.kfa.or.kr/competition/k3_2026.php
+BT26-22,조용준,,MF,부산교통공사축구단,22,https://www.kfa.or.kr/competition/k3_2026.php
+BT26-29,양우진,,FW,부산교통공사축구단,29,https://www.kfa.or.kr/competition/k3_2026.php
+BT26-90,양정운,,FW,부산교통공사축구단,90,https://www.kfa.or.kr/competition/k3_2026.php
+GJ26-81,최철원,,GK,경주한수원FC,81,https://www.kfa.or.kr/competition/k3_2026.php
+GJ26-03,장효강,,DF,경주한수원FC,3,https://www.kfa.or.kr/competition/k3_2026.php
+GJ26-62,장유섭,,DF,경주한수원FC,62,https://www.kfa.or.kr/competition/k3_2026.php
+GJ26-16,장지성,,DF,경주한수원FC,16,https://www.kfa.or.kr/competition/k3_2026.php
+GJ26-14,류승범,,DF,경주한수원FC,14,https://www.kfa.or.kr/competition/k3_2026.php
+GJ26-07,정상규,,MF,경주한수원FC,7,https://www.kfa.or.kr/competition/k3_2026.php
+GJ26-08,안수민,,MF,경주한수원FC,8,https://www.kfa.or.kr/competition/k3_2026.php
+GJ26-77,국관우,,MF,경주한수원FC,77,https://www.kfa.or.kr/competition/k3_2026.php
+GJ26-26,서승우,,MF,경주한수원FC,26,https://www.kfa.or.kr/competition/k3_2026.php
+GJ26-17,황대영,,FW,경주한수원FC,17,https://www.kfa.or.kr/competition/k3_2026.php
+GJ26-19,정성호,,FW,경주한수원FC,19,https://www.kfa.or.kr/competition/k3_2026.php
+GJ26-12,이성주,,GK,경주한수원FC,12,https://www.kfa.or.kr/competition/k3_2026.php
+GJ26-06,임대준,,MF,경주한수원FC,6,https://www.kfa.or.kr/competition/k3_2026.php
+GJ26-05,하재진,,MF,경주한수원FC,5,https://www.kfa.or.kr/competition/k3_2026.php
+GJ26-22,전정호,,MF,경주한수원FC,22,https://www.kfa.or.kr/competition/k3_2026.php
+GJ26-10,주한성,,MF,경주한수원FC,10,https://www.kfa.or.kr/competition/k3_2026.php
+GJ26-18,문승원,,FW,경주한수원FC,18,https://www.kfa.or.kr/competition/k3_2026.php
+GJ26-11,빅토르,,FW,경주한수원FC,11,https://www.kfa.or.kr/competition/k3_2026.php
+GJ26-09,이형경,,FW,경주한수원FC,9,https://www.kfa.or.kr/competition/k3_2026.php
+GJ26-45,이예찬,,FW,경주한수원FC,45,https://www.kfa.or.kr/competition/k3_2026.php
+PC26-25,김종혁,,GK,포천시민축구단,25,https://www.kfa.or.kr/competition/k3_2026.php
+PC26-29,김수안,,DF,포천시민축구단,29,https://www.kfa.or.kr/competition/k3_2026.php
+PC26-20,심현민,,DF,포천시민축구단,20,https://www.kfa.or.kr/competition/k3_2026.php
+PC26-23,최승호,,MF,포천시민축구단,23,https://www.kfa.or.kr/competition/k3_2026.php
+PC26-14,김현중,,MF,포천시민축구단,14,https://www.kfa.or.kr/competition/k3_2026.php
+PC26-24,이철희,,MF,포천시민축구단,24,https://www.kfa.or.kr/competition/k3_2026.php
+PC26-07,김정현,,FW,포천시민축구단,7,https://www.kfa.or.kr/competition/k3_2026.php
+PC26-10,이재건,,FW,포천시민축구단,10,https://www.kfa.or.kr/competition/k3_2026.php
+PC26-19,홍석환,,FW,포천시민축구단,19,https://www.kfa.or.kr/competition/k3_2026.php
+PC26-18,유선우,,FW,포천시민축구단,18,https://www.kfa.or.kr/competition/k3_2026.php
+PC26-09,이석규,,FW,포천시민축구단,9,https://www.kfa.or.kr/competition/k3_2026.php
+PC26-01,김준성,,GK,포천시민축구단,1,https://www.kfa.or.kr/competition/k3_2026.php
+PC26-05,서찬욱,,DF,포천시민축구단,5,https://www.kfa.or.kr/competition/k3_2026.php
+PC26-33,이영규,,DF,포천시민축구단,33,https://www.kfa.or.kr/competition/k3_2026.php
+PC26-13,유용현,,MF,포천시민축구단,13,https://www.kfa.or.kr/competition/k3_2026.php
+PC26-06,전산해,,MF,포천시민축구단,6,https://www.kfa.or.kr/competition/k3_2026.php
+PC26-17,황제,,MF,포천시민축구단,17,https://www.kfa.or.kr/competition/k3_2026.php
+PC26-21,박주경,,FW,포천시민축구단,21,https://www.kfa.or.kr/competition/k3_2026.php
+PC26-27,박준범,,FW,포천시민축구단,27,https://www.kfa.or.kr/competition/k3_2026.php
+PC26-11,이태민,,FW,포천시민축구단,11,https://www.kfa.or.kr/competition/k3_2026.php
+SH26-01,주현성,,GK,시흥시민축구단,1,https://www.kfa.or.kr/competition/k3_2026.php
+SH26-29,전진,,DF,시흥시민축구단,29,https://www.kfa.or.kr/competition/k3_2026.php
+SH26-24,김민성,,DF,시흥시민축구단,24,https://www.kfa.or.kr/competition/k3_2026.php
+SH26-20,오창권,,DF,시흥시민축구단,20,https://www.kfa.or.kr/competition/k3_2026.php
+SH26-07,박형진,,DF,시흥시민축구단,7,https://www.kfa.or.kr/competition/k3_2026.php
+SH26-04,김효찬,,MF,시흥시민축구단,4,https://www.kfa.or.kr/competition/k3_2026.php
+SH26-08,황신중,,MF,시흥시민축구단,8,https://www.kfa.or.kr/competition/k3_2026.php
+SH26-17,정현우,,FW,시흥시민축구단,17,https://www.kfa.or.kr/competition/k3_2026.php
+SH26-09,공민현,,FW,시흥시민축구단,9,https://www.kfa.or.kr/competition/k3_2026.php
+SH26-10,김다원,,FW,시흥시민축구단,10,https://www.kfa.or.kr/competition/k3_2026.php
+SH26-77,김홍,,FW,시흥시민축구단,77,https://www.kfa.or.kr/competition/k3_2026.php
+SH26-21,김동건,,GK,시흥시민축구단,21,https://www.kfa.or.kr/competition/k3_2026.php
+SH26-13,김남성,,DF,시흥시민축구단,13,https://www.kfa.or.kr/competition/k3_2026.php
+SH26-02,이남규,,DF,시흥시민축구단,2,https://www.kfa.or.kr/competition/k3_2026.php
+SH26-37,권완규,,DF,시흥시민축구단,37,https://www.kfa.or.kr/competition/k3_2026.php
+SH26-34,박성결,,MF,시흥시민축구단,34,https://www.kfa.or.kr/competition/k3_2026.php
+SH26-32,서유민,,MF,시흥시민축구단,32,https://www.kfa.or.kr/competition/k3_2026.php
+SH26-12,박한결,,MF,시흥시민축구단,12,https://www.kfa.or.kr/competition/k3_2026.php
+SH26-23,이석현,,MF,시흥시민축구단,23,https://www.kfa.or.kr/competition/k3_2026.php
+SH26-30,정철웅,,FW,시흥시민축구단,30,https://www.kfa.or.kr/competition/k3_2026.php
+YP26-41,신재민,,GK,양평FC,41,https://www.kfa.or.kr/competition/k3_2026.php
+YP26-03,윤상은,,DF,양평FC,3,https://www.kfa.or.kr/competition/k3_2026.php
+YP26-75,강성화,,DF,양평FC,75,https://www.kfa.or.kr/competition/k3_2026.php
+YP26-44,정수환,,DF,양평FC,44,https://www.kfa.or.kr/competition/k3_2026.php
+YP26-23,곽래승,,DF,양평FC,23,https://www.kfa.or.kr/competition/k3_2026.php
+YP26-34,김예성,,MF,양평FC,34,https://www.kfa.or.kr/competition/k3_2026.php
+YP26-05,이용수,,MF,양평FC,5,https://www.kfa.or.kr/competition/k3_2026.php
+YP26-07,윤병우,,MF,양평FC,7,https://www.kfa.or.kr/competition/k3_2026.php
+YP26-11,유이쿠,,FW,양평FC,11,https://www.kfa.or.kr/competition/k3_2026.php
+YP26-17,김형겸,,FW,양평FC,17,https://www.kfa.or.kr/competition/k3_2026.php
+YP26-21,이도영,,FW,양평FC,21,https://www.kfa.or.kr/competition/k3_2026.php
+YP26-31,박다니엘,,GK,양평FC,31,https://www.kfa.or.kr/competition/k3_2026.php
+YP26-47,권구민,,DF,양평FC,47,https://www.kfa.or.kr/competition/k3_2026.php
+YP26-06,이태형,,DF,양평FC,6,https://www.kfa.or.kr/competition/k3_2026.php
+YP26-02,김병수,,DF,양평FC,2,https://www.kfa.or.kr/competition/k3_2026.php
+YP26-73,이동희,,MF,양평FC,73,https://www.kfa.or.kr/competition/k3_2026.php
+YP26-18,장동혁,,MF,양평FC,18,https://www.kfa.or.kr/competition/k3_2026.php
+YP26-14,김대협,,MF,양평FC,14,https://www.kfa.or.kr/competition/k3_2026.php
+YP26-08,유청인,,MF,양평FC,8,https://www.kfa.or.kr/competition/k3_2026.php
+YP26-92,서정우,,MF,양평FC,92,https://www.kfa.or.kr/competition/k3_2026.php

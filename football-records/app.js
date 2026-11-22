@@ -54,6 +54,7 @@
     const { path, params } = parseHash();
     let nav = 'home', html;
     if (path === '/records') { nav = 'records'; html = viewRecords(params); }
+    else if (path === '/players') { nav = 'players'; html = viewPlayers(params); }
     else if (path === '/teams') { nav = 'teams'; html = viewTeams(); }
     else if (path.indexOf('/team/') === 0) { nav = 'teams'; html = viewTeam(decodeURIComponent(path.slice(6)), params); }
     else if (path === '/data') { nav = 'data'; html = viewData(); }
@@ -190,6 +191,33 @@
       seasonSelect(season) + tabs('/records', base, tab) +
       q.lists.filter(l => l.group === tab).map(listHTML).join('');
   }
+  const COLS = [['apps', '경기'], ['starts', '선발'], ['minutes', '분'], ['goals', '골'], ['assists', '도움'], ['yellow', '경고'], ['red', '퇴장'], ['cleanSheets', '무실점']];
+  function viewPlayers(p) {
+    const league = p.get('league') || 'all';
+    const season = seasonOf(p);
+    const team = p.get('team') || '';
+    const sort = COLS.some(c => c[0] === p.get('sort')) ? p.get('sort') : 'goals';
+    const q = R.query(model, { league, season, team: team || null });
+    const base = { league, season: season === 'all' ? '' : String(season), team };
+    const rows = q.table.slice().sort((a, b) => b[sort] - a[sort] || b.goals - a.goals || b.apps - a.apps || a.name.localeCompare(b.name, 'ko'));
+    const teams = league === 'all'
+      ? Array.prototype.concat.apply([], model.meta.leagues.map(l => model.meta.teamsByLeague[l]))
+      : (model.meta.teamsByLeague[league] || []);
+    const teamSel = '<label class="sel">구단 <select data-param="team"><option value="all">전체</option>' +
+      teams.map(t => '<option value="' + esc(t) + '"' + (t === team ? ' selected' : '') + '>' + esc(t) + '</option>').join('') + '</select></label>';
+    let h = '<h1>선수 기록</h1><p class="lead">' + q.summary.matches + '경기 기준 · 머리글을 누르면 그 기록순으로 정렬돼요</p>' +
+      leagueChips('/players', league, { season: base.season, team, sort }) +
+      '<div class="filters">' + teamSel + seasonSelect(season).replace('<div class="filters">', '').replace(/<\/div>$/, '') + '</div>';
+    if (!rows.length) return h + '<p class="empty">아직 선수 기록이 없어요 (events.csv에 START / SUB_IN 등을 입력)</p>';
+    h += '<div class="scroll"><table class="ptable"><thead><tr><th class="nm">선수</th>' + COLS.map(c =>
+      '<th' + (c[0] === sort ? ' class="on" aria-sort="descending"' : '') + '><a href="' + href('/players', Object.assign({}, base, { sort: c[0] })) + '">' + c[1] + '</a></th>').join('') +
+      '</tr></thead><tbody>' + rows.map(r =>
+      '<tr><td class="nm"><b>' + esc(r.name) + '</b><small>' + esc(r.team || '') + '</small></td>' +
+      COLS.map(c => '<td' + (c[0] === sort ? ' class="on"' : '') + '>' + (r[c[0]] || '·') + '</td>').join('') + '</tr>').join('') +
+      '</tbody></table></div>' +
+      '<p class="note">출전 시간은 교체·퇴장 시각과 추가시간으로 계산해요. 경기 시간은 <a href="#/data">데이터 현황</a>에서 확인할 수 있어요</p>';
+    return h;
+  }
   function viewTeams() {
     let h = '<h1>구단</h1><p class="lead">구단을 누르면 그 팀의 기록실이 열려요.</p>';
     if (!model.meta.leagues.length) return h + '<p class="empty">경기 데이터가 아직 없어요</p>';
@@ -237,7 +265,7 @@
       '<li><code>roster.csv</code> 선수 한 명당 한 줄. 생년월일을 모르면 비워두세요. 추정해서 넣지 않아요.</li>' +
       '<li><code>events.csv</code> 선발(START)·교체(SUB_IN/SUB_OUT)·득점(GOAL)·자책(OWN_GOAL)·경고(YELLOW)·퇴장(RED). 도움은 GOAL 행의 <code>related_player_id</code>에 넣어요.</li>' +
       '<li>모든 행의 <code>source</code>에 공식 출처(주소)를 적어요. 비어 있으면 위 점검 결과에 표시돼요.</li>' +
-      '<li>경기 시간은 90분 기준이에요. 연장·추가시간은 반영하지 않아요.</li></ul>' +
+      '<li>추가시간: 90+5분 골은 <code>minute</code>=90, <code>extra_minute</code>=5. 실제 추가시간은 <code>matches.csv</code>의 <code>first_half_extra</code>·<code>second_half_extra</code>에 적으면 출전 시간이 정확해져요. 비워 두면 이벤트에 적힌 값으로 계산해요.</li></ul>' +
       '<div class="dl"><a href="data/matches.csv" download>matches.csv 빈 양식</a><a href="data/roster.csv" download>roster.csv 빈 양식</a><a href="data/events.csv" download>events.csv 빈 양식</a></div>';
     return h;
   }
