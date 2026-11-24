@@ -13,6 +13,8 @@ T, M, P, E, IDM = rd('teams'), rd('matches'), rd('roster'), rd('events'), rd('id
 errs = []
 codes = [t['team_code'] for t in T]
 errs += [f'teams.csv 코드 중복: {c}' for c, n in Counter(codes).items() if n > 1]
+for t in T:
+    if t.get('emblem') and not os.path.exists(os.path.join(D, '..', 'emblems', t['emblem'])): errs.append(f"엠블럼 파일 없음: {t['emblem']}")
 byname = {t['name']: t['team_code'] for t in T if t['league'] == 'K3리그'}
 pids = {p['player_id']: p for p in P}
 if len(pids) != len(P): errs.append('player_id 중복')

@@ -137,6 +137,30 @@ li.first .val{color:var(--chalk);font-weight:700}
 .teamrow small{color:var(--muted);font-size:12.5px;display:block}
 .teamrow .wdl{font-family:'Oswald',sans-serif;font-size:16px;color:var(--chalk);white-space:nowrap}
 
+.tgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px}
+@media(min-width:560px){.tgrid{grid-template-columns:repeat(3,1fr)}}
+.tbtn{
+  display:flex;flex-direction:column;align-items:flex-start;gap:3px;min-height:68px;
+  padding:13px 14px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:inherit;
+}
+a.tbtn:hover,a.tbtn:focus-visible{border-color:var(--chalk)}
+.tbtn b{font-weight:600;font-size:14.5px;line-height:1.3}
+.tbtn small{color:var(--muted);font-size:12px}
+.tbtn.off{opacity:.45}
+.tbtn .emb{width:36px;height:36px;display:flex;align-items:center;justify-content:center;margin-bottom:4px}
+.tbtn .emb img{max-width:100%;max-height:100%;object-fit:contain}
+
+.cover{font-size:12.5px;color:var(--muted);margin:10px 0 0}
+.cover.warn{color:#E0B354}
+.sumgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:12px}
+@media(min-width:560px){.sumgrid{grid-template-columns:repeat(3,1fr)}}
+.sumcard{border:1px solid var(--line);border-radius:12px;padding:11px 13px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.sumcard p{margin:0;font-size:11.5px;color:var(--muted)}
+.sumcard b{font-weight:600;font-size:14.5px;overflow-wrap:anywhere}
+.sumcard b em{font-style:normal;font-weight:400;font-size:12px;color:var(--muted)}
+.sumcard b.none{color:var(--muted);font-weight:400}
+.sumcard .v{font-family:'Oswald',sans-serif;font-size:15px;color:var(--chalk)}
+
 .crumb{font-size:13px;color:var(--muted);text-decoration:none;display:inline-block;margin:12px 0 0}
 
 /* 데이터 현황 */
