@@ -1,30 +1,30 @@
 player_id,name,birth_date,position,team,shirt_no,source
-DK26-01,백경인,2001-05-09,GK,대전 코레일 FC,1,https://namu.wiki/w/대전 코레일 FC
-DK26-02,김영인,2002-02-16,DF,대전 코레일 FC,2,https://namu.wiki/w/대전 코레일 FC
-DK26-03,황준석,1996-03-19,DF,대전 코레일 FC,3,https://namu.wiki/w/대전 코레일 FC
-DK26-04,김윤진,1995-03-30,DF,대전 코레일 FC,4,https://namu.wiki/w/대전 코레일 FC
-DK26-05,전인규,1993-11-14,DF,대전 코레일 FC,5,https://namu.wiki/w/대전 코레일 FC
-DK26-06,박승렬,1994-01-07,MF,대전 코레일 FC,6,https://namu.wiki/w/대전 코레일 FC
-DK26-07,김정주,1991-09-26,FW,대전 코레일 FC,7,https://namu.wiki/w/대전 코레일 FC
-DK26-08,강효온,2004-01-15,DF,대전 코레일 FC,8,https://namu.wiki/w/대전 코레일 FC
-DK26-09,홍진민,2005-01-22,FW,대전 코레일 FC,9,https://namu.wiki/w/대전 코레일 FC
-DK26-10,이인규,1992-09-16,DF,대전 코레일 FC,10,https://namu.wiki/w/대전 코레일 FC
-DK26-11,김희성,1995-12-18,FW,대전 코레일 FC,11,https://namu.wiki/w/대전 코레일 FC
-DK26-13,손경환,1993-04-02,DF,대전 코레일 FC,13,https://namu.wiki/w/대전 코레일 FC
-DK26-14,김동욱,1990-04-04,MF,대전 코레일 FC,14,https://namu.wiki/w/대전 코레일 FC
-DK26-15,남윤재,2001-04-14,DF,대전 코레일 FC,15,https://namu.wiki/w/대전 코레일 FC
-DK26-16,송민종,2001-03-21,FW,대전 코레일 FC,16,https://namu.wiki/w/대전 코레일 FC
-DK26-17,박찬빈,2002-01-21,FW,대전 코레일 FC,17,https://namu.wiki/w/대전 코레일 FC
-DK26-18,김철호,1995-10-25,GK,대전 코레일 FC,18,https://namu.wiki/w/대전 코레일 FC
-DK26-20,김동섭,2003-10-27,MF,대전 코레일 FC,20,https://namu.wiki/w/대전 코레일 FC | https://info.korail.com/info/contents.do?key=906
-DK26-21,배서준,2002-11-10,GK,대전 코레일 FC,21,https://namu.wiki/w/대전 코레일 FC
-DK26-22,김광희,2001-07-26,MF,대전 코레일 FC,22,https://namu.wiki/w/대전 코레일 FC
-DK26-26,이관표,1994-09-07,MF,대전 코레일 FC,26,https://namu.wiki/w/대전 코레일 FC
-DK26-33,최선우,2003-01-08,DF,대전 코레일 FC,33,https://namu.wiki/w/대전 코레일 FC
-DK26-34,진지강,2004-05-20,MF,대전 코레일 FC,34,https://namu.wiki/w/대전 코레일 FC
-DK26-38,조한진,2004-12-13,MF,대전 코레일 FC,38,https://namu.wiki/w/대전 코레일 FC
-DK26-44,전우람,2000-05-16,DF,대전 코레일 FC,44,https://namu.wiki/w/대전 코레일 FC
-DK26-66,김현우,2002-10-26,DF,대전 코레일 FC,66,https://namu.wiki/w/대전 코레일 FC
-DK26-77,유지민,1993-08-27,MF,대전 코레일 FC,77,https://namu.wiki/w/대전 코레일 FC
-DK26-88,박예찬,2001-01-16,FW,대전 코레일 FC,88,https://namu.wiki/w/대전 코레일 FC
-DK26-91,양창훈,1999-01-14,FW,대전 코레일 FC,91,https://namu.wiki/w/대전 코레일 FC | https://info.korail.com/info/contents.do?key=906
+DKR-26-01,백경인,2001-05-09,GK,대전 코레일 FC,1,https://namu.wiki/w/대전 코레일 FC
+DKR-26-02,김영인,2002-02-16,DF,대전 코레일 FC,2,https://namu.wiki/w/대전 코레일 FC
+DKR-26-03,황준석,1996-03-19,DF,대전 코레일 FC,3,https://namu.wiki/w/대전 코레일 FC
+DKR-26-04,김윤진,1995-03-30,DF,대전 코레일 FC,4,https://namu.wiki/w/대전 코레일 FC
+DKR-26-05,전인규,1993-11-14,DF,대전 코레일 FC,5,https://namu.wiki/w/대전 코레일 FC
+DKR-26-06,박승렬,1994-01-07,MF,대전 코레일 FC,6,https://namu.wiki/w/대전 코레일 FC
+DKR-26-07,김정주,1991-09-26,FW,대전 코레일 FC,7,https://namu.wiki/w/대전 코레일 FC
+DKR-26-08,강효온,2004-01-15,DF,대전 코레일 FC,8,https://namu.wiki/w/대전 코레일 FC
+DKR-26-09,홍진민,2005-01-22,FW,대전 코레일 FC,9,https://namu.wiki/w/대전 코레일 FC
+DKR-26-10,이인규,1992-09-16,DF,대전 코레일 FC,10,https://namu.wiki/w/대전 코레일 FC
+DKR-26-11,김희성,1995-12-18,FW,대전 코레일 FC,11,https://namu.wiki/w/대전 코레일 FC
+DKR-26-13,손경환,1993-04-02,DF,대전 코레일 FC,13,https://namu.wiki/w/대전 코레일 FC
+DKR-26-14,김동욱,1990-04-04,MF,대전 코레일 FC,14,https://namu.wiki/w/대전 코레일 FC
+DKR-26-15,남윤재,2001-04-14,DF,대전 코레일 FC,15,https://namu.wiki/w/대전 코레일 FC
+DKR-26-16,송민종,2001-03-21,FW,대전 코레일 FC,16,https://namu.wiki/w/대전 코레일 FC
+DKR-26-17,박찬빈,2002-01-21,FW,대전 코레일 FC,17,https://namu.wiki/w/대전 코레일 FC
+DKR-26-18,김철호,1995-10-25,GK,대전 코레일 FC,18,https://namu.wiki/w/대전 코레일 FC
+DKR-26-20,김동섭,2003-10-27,MF,대전 코레일 FC,20,https://namu.wiki/w/대전 코레일 FC | https://info.korail.com/info/contents.do?key=906
+DKR-26-21,배서준,2002-11-10,GK,대전 코레일 FC,21,https://namu.wiki/w/대전 코레일 FC
+DKR-26-22,김광희,2001-07-26,MF,대전 코레일 FC,22,https://namu.wiki/w/대전 코레일 FC
+DKR-26-26,이관표,1994-09-07,MF,대전 코레일 FC,26,https://namu.wiki/w/대전 코레일 FC
+DKR-26-33,최선우,2003-01-08,DF,대전 코레일 FC,33,https://namu.wiki/w/대전 코레일 FC
+DKR-26-34,진지강,2004-05-20,MF,대전 코레일 FC,34,https://namu.wiki/w/대전 코레일 FC
+DKR-26-38,조한진,2004-12-13,MF,대전 코레일 FC,38,https://namu.wiki/w/대전 코레일 FC
+DKR-26-44,전우람,2000-05-16,DF,대전 코레일 FC,44,https://namu.wiki/w/대전 코레일 FC
+DKR-26-66,김현우,2002-10-26,DF,대전 코레일 FC,66,https://namu.wiki/w/대전 코레일 FC
+DKR-26-77,유지민,1993-08-27,MF,대전 코레일 FC,77,https://namu.wiki/w/대전 코레일 FC
+DKR-26-88,박예찬,2001-01-16,FW,대전 코레일 FC,88,https://namu.wiki/w/대전 코레일 FC
+DKR-26-91,양창훈,1999-01-14,FW,대전 코레일 FC,91,https://namu.wiki/w/대전 코레일 FC | https://info.korail.com/info/contents.do?key=906

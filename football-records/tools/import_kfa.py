@@ -44,7 +44,7 @@ def build(p, rrows, rnd, log):
                 same = [r for r in cands if r['shirt_no'] == str(no)]
                 hit = same[0] if same else (cands[0] if len(cands) == 1 else None)
             if hit: pid[(s['name'], no)] = hit['player_id']; taken.add(hit['player_id']); continue
-            i = f"{code}26-{no:02d}"; base, suf = i, iter('bcdefghij')
+            i = f"{code}-26-{no:02d}"; base, suf = i, iter('bcdefghij')
             while i in used: i = base + next(suf)
             used.add(i); taken.add(i); pid[(s['name'], no)] = i
             row = dict(player_id=i, name=name, birth_date='', position=pos, team=site, shirt_no=str(no), source=SRC)

@@ -12,20 +12,20 @@ DATA = os.path.join(HERE, '..', 'data')
 SRC_DEFAULT = 'https://www.kfa.or.kr/competition/k3_2026.php'
 # 페이지 표기 → (사이트에서 쓰는 이름, match_id/player_id용 코드)
 TEAMS = {
-    '대전코레일FC': ('대전 코레일 FC', 'DK'),
-    '전북현대모터스': ('전북현대모터스', 'JB'),
-    '춘천시민축구단': ('춘천시민축구단', 'CC'),
-    '부산교통공사축구단': ('부산교통공사축구단', 'BT'),
-    '경주한수원FC': ('경주한수원FC', 'GJ'),
-    '포천시민축구단': ('포천시민축구단', 'PC'),
-    '시흥시민축구단': ('시흥시민축구단', 'SH'),
-    '양평FC': ('양평FC', 'YP'),
-    '창원FC': ('창원FC', 'CW'),
-    '울산시민축구단': ('울산시민축구단', 'US'),
-    'FC강릉': ('FC강릉', 'GN'),
-    '당진시민축구단': ('당진시민축구단', 'DJ'),
-    'FC목포': ('FC목포', 'MP'),
-    '여주FC': ('여주FC', 'YJ'),
+    '대전코레일FC': ('대전 코레일 FC', 'DKR'),
+    '전북현대모터스': ('전북현대모터스', 'JBN'),
+    '춘천시민축구단': ('춘천시민축구단', 'CCN'),
+    '부산교통공사축구단': ('부산교통공사축구단', 'BTC'),
+    '경주한수원FC': ('경주한수원FC', 'GYJ'),
+    '포천시민축구단': ('포천시민축구단', 'PCN'),
+    '시흥시민축구단': ('시흥시민축구단', 'SHG'),
+    '양평FC': ('양평FC', 'YPG'),
+    '창원FC': ('창원FC', 'CWN'),
+    '울산시민축구단': ('울산시민축구단', 'ULC'),
+    'FC강릉': ('FC강릉', 'GNG'),
+    '당진시민축구단': ('당진시민축구단', 'DJN'),
+    'FC목포': ('FC목포', 'MKP'),
+    '여주FC': ('여주FC', 'YJU'),
 }
 MIN = re.compile(r'(\d+)(?:\s*\(\+(\d+)\))?(\(P\))?')  # 45(+5) 추가시간, (P) 페널티킥
 PLAYER = re.compile(r'^(\d+)\.\s*(.+?)\[(GK|DF|MF|FW)\]$')
@@ -155,7 +155,7 @@ def main():
                 if not hit and len(cands) == 1: hit = cands[0]
             if hit:
                 pid[(s['name'], no)] = hit['player_id']; taken.add(hit['player_id']); continue
-            i = f"{code}{str(a.season)[2:]}-{no:02d}"
+            i = f"{code}-{str(a.season)[2:]}-{no:02d}"
             base, suf = i, iter('bcdefghij')
             while i in used: i = base + next(suf)
             used.add(i); taken.add(i); pid[(s['name'], no)] = i

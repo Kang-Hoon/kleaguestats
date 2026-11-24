@@ -1,479 +1,479 @@
 player_id,name,birth_date,position,team,shirt_no,source
-DK26-01,백경인,2001-05-09,GK,대전 코레일 FC,1,https://namu.wiki/w/대전 코레일 FC
-DK26-02,김영인,2002-02-16,DF,대전 코레일 FC,2,https://namu.wiki/w/대전 코레일 FC
-DK26-03,황준석,1996-03-19,DF,대전 코레일 FC,3,https://namu.wiki/w/대전 코레일 FC
-DK26-04,김윤진,1995-03-30,DF,대전 코레일 FC,4,https://namu.wiki/w/대전 코레일 FC
-DK26-05,전인규,1993-11-14,DF,대전 코레일 FC,5,https://namu.wiki/w/대전 코레일 FC
-DK26-06,박승렬,1994-01-07,MF,대전 코레일 FC,6,https://namu.wiki/w/대전 코레일 FC
-DK26-07,김정주,1991-09-26,FW,대전 코레일 FC,7,https://namu.wiki/w/대전 코레일 FC
-DK26-08,강효온,2004-01-15,DF,대전 코레일 FC,8,https://namu.wiki/w/대전 코레일 FC
-DK26-09,홍진민,2005-01-22,FW,대전 코레일 FC,9,https://namu.wiki/w/대전 코레일 FC
-DK26-10,이인규,1992-09-16,DF,대전 코레일 FC,10,https://namu.wiki/w/대전 코레일 FC
-DK26-11,김희성,1995-12-18,FW,대전 코레일 FC,11,https://namu.wiki/w/대전 코레일 FC
-DK26-13,손경환,1993-04-02,DF,대전 코레일 FC,13,https://namu.wiki/w/대전 코레일 FC
-DK26-14,김동욱,1990-04-04,MF,대전 코레일 FC,14,https://namu.wiki/w/대전 코레일 FC
-DK26-15,남윤재,2001-04-14,DF,대전 코레일 FC,15,https://namu.wiki/w/대전 코레일 FC
-DK26-16,송민종,2001-03-21,FW,대전 코레일 FC,16,https://namu.wiki/w/대전 코레일 FC
-DK26-17,박찬빈,2002-01-21,FW,대전 코레일 FC,17,https://namu.wiki/w/대전 코레일 FC
-DK26-18,김철호,1995-10-25,GK,대전 코레일 FC,18,https://namu.wiki/w/대전 코레일 FC
-DK26-20,김동섭,2003-10-27,MF,대전 코레일 FC,20,https://namu.wiki/w/대전 코레일 FC | https://info.korail.com/info/contents.do?key=906
-DK26-21,배서준,2002-11-10,GK,대전 코레일 FC,21,https://namu.wiki/w/대전 코레일 FC
-DK26-22,김광희,2001-07-26,MF,대전 코레일 FC,22,https://namu.wiki/w/대전 코레일 FC
-DK26-26,이관표,1994-09-07,MF,대전 코레일 FC,26,https://namu.wiki/w/대전 코레일 FC
-DK26-33,최선우,2003-01-08,DF,대전 코레일 FC,33,https://namu.wiki/w/대전 코레일 FC
-DK26-34,진지강,2004-05-20,MF,대전 코레일 FC,34,https://namu.wiki/w/대전 코레일 FC
-DK26-38,조한진,2004-12-13,MF,대전 코레일 FC,38,https://namu.wiki/w/대전 코레일 FC
-DK26-44,전우람,2000-05-16,DF,대전 코레일 FC,44,https://namu.wiki/w/대전 코레일 FC
-DK26-66,김현우,2002-10-26,DF,대전 코레일 FC,66,https://namu.wiki/w/대전 코레일 FC
-DK26-77,유지민,1993-08-27,MF,대전 코레일 FC,77,https://namu.wiki/w/대전 코레일 FC
-DK26-88,박예찬,2001-01-16,FW,대전 코레일 FC,88,https://namu.wiki/w/대전 코레일 FC
-DK26-91,양창훈,1999-01-14,FW,대전 코레일 FC,91,https://namu.wiki/w/대전 코레일 FC | https://info.korail.com/info/contents.do?key=906
-JB26-51,이한결,2007-07-19,GK,전북현대모터스,51,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
-JB26-55,최진웅,2004-12-23,DF,전북현대모터스,55,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
-JB26-22,김준영,2004-05-31,DF,전북현대모터스,22,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
-JB26-44,김주형,2007-08-20,DF,전북현대모터스,44,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
-JB26-39,서정혁,2006-03-09,DF,전북현대모터스,39,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
-JB26-42,우현수,2003-04-17,DF,전북현대모터스,42,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
-JB26-88,윤현석,2003-11-08,MF,전북현대모터스,88,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
-JB26-30,김영환,2002-03-23,MF,전북현대모터스,30,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
-JB26-90,정상운,2003-04-03,FW,전북현대모터스,90,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
-JB26-34,엄승민,2003-05-02,FW,전북현대모터스,34,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
-JB26-33,한석진,2007-12-19,MF,전북현대모터스,33,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
-JB26-91,정대영,2006-09-11,GK,전북현대모터스,91,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
-JB26-80,곽희벽,2005-03-15,DF,전북현대모터스,80,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
-JB26-70,박현민,2007-04-02,MF,전북현대모터스,70,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
-JB26-36,장남웅,2004-02-09,MF,전북현대모터스,36,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
-JB26-26,문준혁,2005-05-21,MF,전북현대모터스,26,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
-JB26-47,이건희,2007-08-13,MF,전북현대모터스,47,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
-JB26-79,김창훈,2004-10-23,FW,전북현대모터스,79,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
-JB26-40,안태훈,2007-06-08,MF,전북현대모터스,40,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
-JB26-92,김두현,2007-03-02,FW,전북현대모터스,92,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
-CC26-01,박민선,1991-04-04,GK,춘천시민축구단,1,https://namu.wiki/w/춘천시민축구단
-CC26-08,윤성한,1998-01-17,MF,춘천시민축구단,8,https://namu.wiki/w/춘천시민축구단
-CC26-04,한용수,1990-05-05,DF,춘천시민축구단,4,https://namu.wiki/w/춘천시민축구단
-CC26-05,박현우,1997-02-21,DF,춘천시민축구단,5,https://namu.wiki/w/춘천시민축구단
-CC26-23,마지강,2003-02-10,DF,춘천시민축구단,23,https://namu.wiki/w/춘천시민축구단
-CC26-32,이준원,1995-10-16,MF,춘천시민축구단,32,https://namu.wiki/w/춘천시민축구단
-CC26-10,신상휘,2000-07-14,FW,춘천시민축구단,10,https://namu.wiki/w/춘천시민축구단
-CC26-61,허동호,2000-06-24,MF,춘천시민축구단,61,https://namu.wiki/w/춘천시민축구단
-CC26-88,이성민,,MF,춘천시민축구단,88,https://www.kfa.or.kr/competition/k3_2026.php
-CC26-09,김민우,1997-06-03,FW,춘천시민축구단,9,https://namu.wiki/w/춘천시민축구단
-CC26-33,Oliveira Parente lucas,2000-08-22,FW,춘천시민축구단,33,https://namu.wiki/w/춘천시민축구단
-CC26-19,김도현,2003-05-30,GK,춘천시민축구단,19,https://namu.wiki/w/춘천시민축구단
-CC26-20,권진영,1991-10-23,DF,춘천시민축구단,20,https://namu.wiki/w/춘천시민축구단
-CC26-07,박선용,1989-03-12,DF,춘천시민축구단,7,https://namu.wiki/w/춘천시민축구단
-CC26-03,이재용,,DF,춘천시민축구단,3,https://www.kfa.or.kr/competition/k3_2026.php
-CC26-02,신기환,2002-10-21,DF,춘천시민축구단,2,https://namu.wiki/w/춘천시민축구단
-CC26-97,이명동,2003-03-09,MF,춘천시민축구단,97,https://namu.wiki/w/춘천시민축구단
-CC26-17,김민수,2000-01-10,MF,춘천시민축구단,17,https://namu.wiki/w/춘천시민축구단
-CC26-14,오형택,2000-10-12,MF,춘천시민축구단,14,https://namu.wiki/w/춘천시민축구단
-CC26-18,Devellard Ferreira F Goncalves matheus,2000-09-15,FW,춘천시민축구단,18,https://namu.wiki/w/춘천시민축구단
-BT26-01,최진백,1994-05-27,GK,부산교통공사축구단,1,https://namu.wiki/w/부산교통공사 축구단
-BT26-15,조우현,2000-05-01,DF,부산교통공사축구단,15,https://namu.wiki/w/부산교통공사 축구단
-BT26-13,지의수,2000-03-25,DF,부산교통공사축구단,13,https://namu.wiki/w/부산교통공사 축구단
-BT26-03,오현교,1999-07-24,DF,부산교통공사축구단,3,https://namu.wiki/w/부산교통공사 축구단
-BT26-05,홍종민,2003-06-20,DF,부산교통공사축구단,5,https://namu.wiki/w/부산교통공사 축구단
-BT26-06,하용주,1997-12-05,MF,부산교통공사축구단,6,https://namu.wiki/w/부산교통공사 축구단
-BT26-08,안치우,2005-10-23,MF,부산교통공사축구단,8,https://namu.wiki/w/부산교통공사 축구단
-BT26-10,김양우,1994-12-30,FW,부산교통공사축구단,10,https://namu.wiki/w/부산교통공사 축구단
-BT26-07,이윤재,2002-02-02,FW,부산교통공사축구단,7,https://namu.wiki/w/부산교통공사 축구단
-BT26-09,얀 라벤스,2004-08-11,FW,부산교통공사축구단,9,https://namu.wiki/w/부산교통공사 축구단
-BT26-11,박희수,2003-02-04,FW,부산교통공사축구단,11,https://namu.wiki/w/부산교통공사 축구단
-BT26-31,이민수,2003-04-22,GK,부산교통공사축구단,31,https://namu.wiki/w/부산교통공사 축구단
-BT26-27,김준섭,1999-10-01,DF,부산교통공사축구단,27,https://namu.wiki/w/부산교통공사 축구단
-BT26-19,윤철현,1997-01-14,DF,부산교통공사축구단,19,https://namu.wiki/w/부산교통공사 축구단
-BT26-04,김민수,2004-03-18,DF,부산교통공사축구단,4,https://namu.wiki/w/부산교통공사 축구단
-BT26-66,배수민,,MF,부산교통공사축구단,66,https://www.kfa.or.kr/competition/k3_2026.php
-BT26-14,김도훈,2001-10-15,FW,부산교통공사축구단,14,https://namu.wiki/w/부산교통공사 축구단
-BT26-22,조용준,2002-04-21,MF,부산교통공사축구단,22,https://namu.wiki/w/부산교통공사 축구단
-BT26-29,양우진,2006-11-29,FW,부산교통공사축구단,29,https://namu.wiki/w/부산교통공사 축구단
-BT26-90,양정운,2001-05-14,FW,부산교통공사축구단,90,https://namu.wiki/w/부산교통공사 축구단
-GJ26-81,최철원,1994-07-23,GK,경주한수원FC,81,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-03,장효강,2002-03-19,DF,경주한수원FC,3,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-62,장유섭,1996-06-24,DF,경주한수원FC,62,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-16,장지성,1994-03-05,DF,경주한수원FC,16,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-14,류승범,1999-08-22,DF,경주한수원FC,14,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-07,정상규,1998-09-08,MF,경주한수원FC,7,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-08,안수민,1994-05-26,MF,경주한수원FC,8,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-77,국관우,2002-10-04,MF,경주한수원FC,77,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-26,서승우,2002-11-18,DF,경주한수원FC,26,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-17,황대영,2003-05-30,FW,경주한수원FC,17,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-19,정성호,2001-07-06,FW,경주한수원FC,19,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-12,이성주,2003-02-11,GK,경주한수원FC,12,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-06,임대준,1994-04-05,MF,경주한수원FC,6,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-05,하재진,2003-12-20,MF,경주한수원FC,5,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-22,전정호,1999-01-06,FW,경주한수원FC,22,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-10,주한성,1995-06-07,MF,경주한수원FC,10,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-18,문승원,2001-09-29,DF,경주한수원FC,18,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-11,빅토르,1999-03-18,FW,경주한수원FC,11,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-09,이형경,1998-05-11,FW,경주한수원FC,9,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-45,이예찬,1996-05-01,MF,경주한수원FC,45,https://namu.wiki/w/경주 한국수력원자력 축구단
-PC26-25,김종혁,2002-06-14,GK,포천시민축구단,25,https://namu.wiki/w/포천시민축구단
-PC26-29,김수안,1993-06-10,DF,포천시민축구단,29,https://namu.wiki/w/포천시민축구단
-PC26-20,심현민,2004-06-24,DF,포천시민축구단,20,https://namu.wiki/w/포천시민축구단
-PC26-23,최승호,2002-11-07,DF,포천시민축구단,23,https://namu.wiki/w/포천시민축구단
-PC26-14,김현중,1996-05-03,MF,포천시민축구단,14,https://namu.wiki/w/포천시민축구단
-PC26-24,이철희,2004-01-30,MF,포천시민축구단,24,https://namu.wiki/w/포천시민축구단
-PC26-07,김정현,2001-07-05,FW,포천시민축구단,7,https://namu.wiki/w/포천시민축구단
-PC26-10,이재건,1997-02-22,FW,포천시민축구단,10,https://namu.wiki/w/포천시민축구단
-PC26-19,홍석환,2003-06-05,FW,포천시민축구단,19,https://namu.wiki/w/포천시민축구단
-PC26-18,유선우,2004-06-18,FW,포천시민축구단,18,https://namu.wiki/w/포천시민축구단
-PC26-09,이석규,1999-12-14,FW,포천시민축구단,9,https://namu.wiki/w/포천시민축구단
-PC26-01,김준성,2002-07-05,GK,포천시민축구단,1,https://namu.wiki/w/포천시민축구단
-PC26-05,서찬욱,2003-04-25,DF,포천시민축구단,5,https://namu.wiki/w/포천시민축구단
-PC26-33,이영규,2005-09-22,DF,포천시민축구단,33,https://namu.wiki/w/포천시민축구단
-PC26-13,유용현,2000-02-27,DF,포천시민축구단,13,https://namu.wiki/w/포천시민축구단
-PC26-06,전산해,1999-05-24,MF,포천시민축구단,6,https://namu.wiki/w/포천시민축구단
-PC26-17,황제,2004-09-08,MF,포천시민축구단,17,https://namu.wiki/w/포천시민축구단
-PC26-21,박주경,2007-08-09,FW,포천시민축구단,21,https://namu.wiki/w/포천시민축구단
-PC26-27,박준범,2001-04-05,FW,포천시민축구단,27,https://namu.wiki/w/포천시민축구단
-PC26-11,이태민,2003-05-09,FW,포천시민축구단,11,https://namu.wiki/w/포천시민축구단
-SH26-01,주현성,1999-03-31,GK,시흥시민축구단,1,https://namu.wiki/w/시흥시민축구단
-SH26-29,전진,2001-10-29,DF,시흥시민축구단,29,https://namu.wiki/w/시흥시민축구단
-SH26-24,김민성,2004-06-19,DF,시흥시민축구단,24,https://namu.wiki/w/시흥시민축구단
-SH26-20,오창권,2001-06-08,DF,시흥시민축구단,20,https://namu.wiki/w/시흥시민축구단
-SH26-07,박형진,1990-06-24,DF,시흥시민축구단,7,https://namu.wiki/w/시흥시민축구단
-SH26-04,김효찬,1998-01-21,MF,시흥시민축구단,4,https://namu.wiki/w/시흥시민축구단
-SH26-08,황신중,2000-12-22,MF,시흥시민축구단,8,https://namu.wiki/w/시흥시민축구단
-SH26-17,정현우,2004-02-09,FW,시흥시민축구단,17,https://www.kfa.or.kr/competition/k3_2026.php
-SH26-09,공민현,1990-01-19,FW,시흥시민축구단,9,https://namu.wiki/w/시흥시민축구단
-SH26-10,김다원,2000-10-25,FW,시흥시민축구단,10,https://namu.wiki/w/시흥시민축구단
-SH26-77,김홍,2001-10-26,FW,시흥시민축구단,77,https://namu.wiki/w/시흥시민축구단
-SH26-21,김동건,2004-01-18,GK,시흥시민축구단,21,https://namu.wiki/w/시흥시민축구단
-SH26-13,김남성,1994-09-25,DF,시흥시민축구단,13,https://namu.wiki/w/시흥시민축구단
-SH26-02,이남규,1993-03-18,DF,시흥시민축구단,2,https://namu.wiki/w/시흥시민축구단
-SH26-37,권완규,1991-11-20,DF,시흥시민축구단,37,https://namu.wiki/w/시흥시민축구단
-SH26-34,박성결,2001-04-03,DF,시흥시민축구단,34,https://namu.wiki/w/시흥시민축구단
-SH26-32,서유민,2002-03-08,MF,시흥시민축구단,32,https://namu.wiki/w/시흥시민축구단
-SH26-12,박한결,2001-04-03,MF,시흥시민축구단,12,https://namu.wiki/w/시흥시민축구단
-SH26-23,이석현,1990-06-13,MF,시흥시민축구단,23,https://namu.wiki/w/시흥시민축구단
-SH26-30,정철웅,2002-05-03,FW,시흥시민축구단,30,https://namu.wiki/w/시흥시민축구단
-YP26-41,신재민,2003-07-21,GK,양평FC,41,https://namu.wiki/w/양평FC
-YP26-03,윤상은,2003-03-01,DF,양평FC,3,https://namu.wiki/w/양평FC
-YP26-75,강성화,2002-08-10,DF,양평FC,75,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-44,정수환,2001-10-26,DF,양평FC,44,https://namu.wiki/w/양평FC
-YP26-23,곽래승,1990-09-11,FW,양평FC,23,https://namu.wiki/w/양평FC
-YP26-34,김예성,2001-03-19,MF,양평FC,34,https://namu.wiki/w/양평FC
-YP26-05,이용수,2001-08-04,MF,양평FC,5,https://namu.wiki/w/양평FC
-YP26-07,윤병우,2000-03-12,MF,양평FC,7,https://namu.wiki/w/양평FC
-YP26-11,유이쿠,,FW,양평FC,11,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-17,김형겸,2001-03-20,DF,양평FC,17,https://namu.wiki/w/양평FC
-YP26-21,이도영,,FW,양평FC,21,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-31,박다니엘,,GK,양평FC,31,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-47,권구민,,DF,양평FC,47,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-06,이태형,1999-01-06,MF,양평FC,6,https://namu.wiki/w/양평FC
-YP26-02,김병수,,DF,양평FC,2,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-73,이동희,,MF,양평FC,73,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-18,장동혁,2003-11-03,MF,양평FC,18,https://namu.wiki/w/양평FC
-YP26-14,김대협,1992-10-27,MF,양평FC,14,https://namu.wiki/w/양평FC
-YP26-08,유청인,1996-08-06,MF,양평FC,8,https://namu.wiki/w/양평FC
-YP26-92,서정우,,MF,양평FC,92,https://www.kfa.or.kr/competition/k3_2026.php
-CW26-13,임채훈,2000-05-08,GK,창원FC,13,https://namu.wiki/w/창원FC
-CW26-77,이현성,1993-05-20,MF,창원FC,77,https://namu.wiki/w/창원FC
-CW26-66,이승현,1995-04-04,DF,창원FC,66,https://namu.wiki/w/창원FC
-CW26-40,김원균,1992-05-01,DF,창원FC,40,https://namu.wiki/w/창원FC
-CW26-16,김원준,2004-07-04,DF,창원FC,16,https://namu.wiki/w/창원FC
-CW26-05,박진홍,2004-10-17,MF,창원FC,5,https://namu.wiki/w/창원FC
-CW26-15,장영기,2003-03-04,FW,창원FC,15,https://namu.wiki/w/창원FC
-CW26-07,예병원,1998-03-25,MF,창원FC,7,https://namu.wiki/w/창원FC
-CW26-70,이종열,1998-06-01,FW,창원FC,70,https://namu.wiki/w/창원FC
-CW26-14,홍정훈,2003-04-22,FW,창원FC,14,https://namu.wiki/w/창원FC
-CW26-08,이종훈,2002-03-21,MF,창원FC,8,https://namu.wiki/w/창원FC
-CW26-23,손재혁,1997-09-03,GK,창원FC,23,https://namu.wiki/w/창원FC
-CW26-18,신승민,2003-05-26,DF,창원FC,18,https://namu.wiki/w/창원FC
-CW26-19,한재훈,2004-01-25,DF,창원FC,19,https://namu.wiki/w/창원FC
-CW26-11,김우홍,1995-01-11,DF,창원FC,11,https://namu.wiki/w/창원FC
-CW26-22,구재승,2001-07-02,DF,창원FC,22,https://namu.wiki/w/창원FC
-CW26-24,노건우,,MF,창원FC,24,https://www.kfa.or.kr/competition/k3_2026.php
-CW26-06,곽성욱,,MF,창원FC,6,https://www.kfa.or.kr/competition/k3_2026.php
-CW26-10,태현찬,1990-09-14,MF,창원FC,10,https://namu.wiki/w/창원FC
-CW26-99,이동현,2005-10-05,FW,창원FC,99,https://namu.wiki/w/창원FC
-US26-31,유영서,2004-06-10,GK,울산시민축구단,31,https://namu.wiki/w/울산시민축구단
-US26-03,김재현,1997-04-21,DF,울산시민축구단,3,https://namu.wiki/w/울산시민축구단
-US26-24,신성학,2004-02-13,DF,울산시민축구단,24,https://namu.wiki/w/울산시민축구단
-US26-13,김기영,1996-08-14,DF,울산시민축구단,13,https://namu.wiki/w/울산시민축구단
-US26-04,김기수,1995-04-29,DF,울산시민축구단,4,https://namu.wiki/w/울산시민축구단
-US26-22,이한새,2004-04-05,MF,울산시민축구단,22,https://namu.wiki/w/울산시민축구단
-US26-10,윤대원,1997-04-28,MF,울산시민축구단,10,https://namu.wiki/w/울산시민축구단
-US26-25,이준영,2003-02-10,MF,울산시민축구단,25,https://namu.wiki/w/울산시민축구단
-US26-11,이기준,2001-01-13,FW,울산시민축구단,11,https://namu.wiki/w/울산시민축구단
-US26-12,김용민,2004-04-06,FW,울산시민축구단,12,https://namu.wiki/w/울산시민축구단
-US26-07,손민영,2002-06-04,FW,울산시민축구단,7,https://namu.wiki/w/울산시민축구단
-US26-01,노우석,2004-11-17,GK,울산시민축구단,1,https://namu.wiki/w/울산시민축구단
-US26-16,김유성,2003-04-12,DF,울산시민축구단,16,https://namu.wiki/w/울산시민축구단
-US26-08,박동혁,1992-03-11,DF,울산시민축구단,8,https://namu.wiki/w/울산시민축구단
-US26-05,김민기,,DF,울산시민축구단,5,https://www.kfa.or.kr/competition/k3_2026.php
-US26-77,한빈,2003-04-01,MF,울산시민축구단,77,https://namu.wiki/w/울산시민축구단
-US26-26,강민재,2003-08-11,MF,울산시민축구단,26,https://namu.wiki/w/울산시민축구단
-US26-96,김재철,1996-02-19,FW,울산시민축구단,96,https://namu.wiki/w/울산시민축구단
-US26-17,김세응,2004-05-04,FW,울산시민축구단,17,https://namu.wiki/w/울산시민축구단
-US26-19,박상현,2003-03-31,FW,울산시민축구단,19,https://namu.wiki/w/울산시민축구단
-GN26-01,황한준,1992-03-22,GK,FC강릉,1,https://namu.wiki/w/강릉시민축구단
-GN26-91,김훈민,2001-03-01,DF,FC강릉,91,https://namu.wiki/w/강릉시민축구단
-GN26-37,황정욱,2000-03-17,DF,FC강릉,37,https://namu.wiki/w/강릉시민축구단
-GN26-36,손민범,2004-07-09,FW,FC강릉,36,https://namu.wiki/w/강릉시민축구단
-GN26-24,이성윤,2000-10-31,DF,FC강릉,24,https://namu.wiki/w/강릉시민축구단
-GN26-20,이주영,2004-04-25,DF,FC강릉,20,https://namu.wiki/w/강릉시민축구단
-GN26-31,김성순,1995-12-31,MF,FC강릉,31,https://namu.wiki/w/강릉시민축구단
-GN26-10,박하빈,1997-04-23,MF,FC강릉,10,https://namu.wiki/w/강릉시민축구단
-GN26-14,구승훈,2004-04-13,MF,FC강릉,14,https://namu.wiki/w/강릉시민축구단
-GN26-77,송태성,2000-09-18,MF,FC강릉,77,https://namu.wiki/w/강릉시민축구단
-GN26-06,송영민,1997-08-17,MF,FC강릉,6,https://namu.wiki/w/강릉시민축구단
-GN26-30,한지율,2003-08-21,GK,FC강릉,30,https://namu.wiki/w/강릉시민축구단
-GN26-19,심정용,2001-07-03,DF,FC강릉,19,https://namu.wiki/w/강릉시민축구단
-GN26-03,김믿음,2003-04-09,DF,FC강릉,3,https://namu.wiki/w/강릉시민축구단
-GN26-21,김길훈,2001-07-12,DF,FC강릉,21,https://namu.wiki/w/강릉시민축구단
-GN26-17,손정민,2002-04-22,MF,FC강릉,17,https://namu.wiki/w/강릉시민축구단
-GN26-40,권순호,2003-03-13,DF,FC강릉,40,https://namu.wiki/w/강릉시민축구단
-GN26-08,장동혁,1999-08-28,MF,FC강릉,8,https://namu.wiki/w/강릉시민축구단
-GN26-11,김원준,2000-09-25,FW,FC강릉,11,https://namu.wiki/w/강릉시민축구단
-GN26-99,김성현,2004-11-17,FW,FC강릉,99,https://namu.wiki/w/강릉시민축구단
-DJ26-01,최영은,1995-09-26,GK,당진시민축구단,1,https://namu.wiki/w/당진시민축구단
-DJ26-71,신일연,2005-07-17,DF,당진시민축구단,71,https://namu.wiki/w/당진시민축구단
-DJ26-03,이한빈,2003-02-07,DF,당진시민축구단,3,https://namu.wiki/w/당진시민축구단
-DJ26-66,이선호,2003-12-16,DF,당진시민축구단,66,https://namu.wiki/w/당진시민축구단
-DJ26-05,강성윤,,DF,당진시민축구단,5,https://www.kfa.or.kr/competition/k3_2026.php
-DJ26-10,서도협,2001-06-25,FW,당진시민축구단,10,https://namu.wiki/w/당진시민축구단
-DJ26-08,이은재,2003-03-13,MF,당진시민축구단,8,https://namu.wiki/w/당진시민축구단
-DJ26-07,류연준,2000-04-10,MF,당진시민축구단,7,https://namu.wiki/w/당진시민축구단
-DJ26-04,최시온,1999-11-10,MF,당진시민축구단,4,https://namu.wiki/w/당진시민축구단
-DJ26-99,김형진,2006-11-19,FW,당진시민축구단,99,https://namu.wiki/w/당진시민축구단
-DJ26-72,김동률,1999-07-25,FW,당진시민축구단,72,https://namu.wiki/w/당진시민축구단
-DJ26-21,김세형,2007-01-24,GK,당진시민축구단,21,https://namu.wiki/w/당진시민축구단
-DJ26-14,여준영1,1999-06-22,DF,당진시민축구단,14,https://namu.wiki/w/당진시민축구단
-DJ26-02,이건,,DF,당진시민축구단,2,https://www.kfa.or.kr/competition/k3_2026.php
-DJ26-42,이현조,1999-01-12,DF,당진시민축구단,42,https://namu.wiki/w/당진시민축구단
-DJ26-33,정영웅,1997-04-23,MF,당진시민축구단,33,https://namu.wiki/w/당진시민축구단
-DJ26-16,김세웅,2003-01-29,MF,당진시민축구단,16,https://namu.wiki/w/당진시민축구단
-DJ26-30,신동민,2003-05-04,MF,당진시민축구단,30,https://namu.wiki/w/당진시민축구단
-DJ26-09,강현종,2004-01-13,FW,당진시민축구단,9,https://namu.wiki/w/당진시민축구단
-DJ26-47,김수성,2002-06-15,FW,당진시민축구단,47,https://namu.wiki/w/당진시민축구단
-MP26-01,최성겸,1995-12-19,GK,FC목포,1,https://namu.wiki/w/FC목포
-MP26-04,이규석,2001-04-23,DF,FC목포,4,https://namu.wiki/w/FC목포
-MP26-02,이제승,1991-11-29,DF,FC목포,2,https://namu.wiki/w/FC목포
-MP26-07,김규민,2000-01-20,DF,FC목포,7,https://namu.wiki/w/FC목포
-MP26-06,심원성,1999-04-29,DF,FC목포,6,https://namu.wiki/w/FC목포
-MP26-05,이건웅,2003-01-14,DF,FC목포,5,https://namu.wiki/w/FC목포
-MP26-27,이현탁,2000-10-24,MF,FC목포,27,https://namu.wiki/w/FC목포
-MP26-14,안성주,2002-04-08,MF,FC목포,14,https://namu.wiki/w/FC목포
-MP26-19,정기운,1992-07-05,FW,FC목포,19,https://namu.wiki/w/FC목포
-MP26-11,안경찬,1998-06-22,FW,FC목포,11,https://namu.wiki/w/FC목포
-MP26-70,성힘찬,2006-09-09,FW,FC목포,70,https://namu.wiki/w/FC목포
-MP26-31,박종건,2003-01-27,GK,FC목포,31,https://namu.wiki/w/FC목포
-MP26-22,이중호,1998-05-16,DF,FC목포,22,https://namu.wiki/w/FC목포
-MP26-03,이태윤,2000-08-21,DF,FC목포,3,https://namu.wiki/w/FC목포
-MP26-23,공용훈,1995-05-10,MF,FC목포,23,https://namu.wiki/w/FC목포
-MP26-20,이찬울,2002-11-07,FW,FC목포,20,https://namu.wiki/w/FC목포
-MP26-13,오승진,2003-02-16,DF,FC목포,13,https://namu.wiki/w/FC목포
-MP26-18,이태응,2003-05-10,FW,FC목포,18,https://namu.wiki/w/FC목포
-YJ26-31,김상재,1998-05-18,GK,여주FC,31,https://namu.wiki/w/여주FC
-YJ26-02,정기현,2004-03-13,DF,여주FC,2,https://namu.wiki/w/여주FC
-YJ26-40,최현조,,DF,여주FC,40,https://www.kfa.or.kr/competition/k3_2026.php
-YJ26-19,최정훈,1999-03-09,DF,여주FC,19,https://namu.wiki/w/여주FC
-YJ26-15,장재원,2003-01-07,DF,여주FC,15,https://namu.wiki/w/여주FC
-YJ26-07,이승민,2001-09-08,MF,여주FC,7,https://namu.wiki/w/여주FC
-YJ26-03,오상준,2001-02-02,MF,여주FC,3,https://namu.wiki/w/여주FC
-YJ26-08,최형우,2001-03-31,MF,여주FC,8,https://namu.wiki/w/여주FC
-YJ26-18,임규현,2003-08-15,MF,여주FC,18,https://namu.wiki/w/여주FC
-YJ26-30,강민재,2003-05-14,FW,여주FC,30,https://namu.wiki/w/여주FC
-YJ26-34,김주형,,FW,여주FC,34,https://www.kfa.or.kr/competition/k3_2026.php
-YJ26-12,서원,2000-04-16,GK,여주FC,12,https://namu.wiki/w/여주FC
-YJ26-26,김진혁,2002-05-22,DF,여주FC,26,https://namu.wiki/w/여주FC
-YJ26-20,김진성,1997-06-16,DF,여주FC,20,https://namu.wiki/w/여주FC
-YJ26-05,이해담,2005-03-22,DF,여주FC,5,https://namu.wiki/w/여주FC
-YJ26-22,조성우,2003-02-22,MF,여주FC,22,https://namu.wiki/w/여주FC
-YJ26-27,황지상,2003-05-24,MF,여주FC,27,https://namu.wiki/w/여주FC
-YJ26-37,정은우,2003-04-22,FW,여주FC,37,https://namu.wiki/w/여주FC
-YJ26-71,장유민,2002-09-21,FW,여주FC,71,https://namu.wiki/w/여주FC
-YJ26-72,류지민,2004-04-07,FW,여주FC,72,https://namu.wiki/w/여주FC
-CC26-06,김승찬,1999-01-02,DF,춘천시민축구단,6,https://namu.wiki/w/춘천시민축구단
-CC26-39,KOBAYASHI KAN,1999-04-27,MF,춘천시민축구단,39,https://namu.wiki/w/춘천시민축구단
-CC26-21,김성민,2003-02-25,GK,춘천시민축구단,21,https://namu.wiki/w/춘천시민축구단
-CC26-25,김태현,2000-01-18,MF,춘천시민축구단,25,https://namu.wiki/w/춘천시민축구단
-JB26-74,김수형,2007-06-25,DF,전북현대모터스,74,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
-JB26-73,김예건,2008-08-07,MF,전북현대모터스,73,사용자 제공 선수 정보 페이지(출처 URL 미확인)
-JB26-71,전지완,2004-05-14,GK,전북현대모터스,71,"사용자 제공 검색 요약(namu.wiki/w/전지완, 전북 현대 모터스 선수단 페이지 인용, 미검증)"
-JB26-17,진태호,2006-01-20,MF,전북현대모터스,17,"사용자 제공 선수 정보 페이지(소속 용인으로 표시, 출처 URL 미확인)"
-BT26-02,박재우,1998-03-06,DF,부산교통공사축구단,2,https://namu.wiki/w/부산교통공사 축구단
-BT26-21,최원우,2003-11-22,GK,부산교통공사축구단,21,https://namu.wiki/w/부산교통공사 축구단
-BT26-17,김승준,2000-09-24,FW,부산교통공사축구단,17,https://namu.wiki/w/부산교통공사 축구단
-BT26-77,공다휘,1994-01-08,FW,부산교통공사축구단,77,https://namu.wiki/w/부산교통공사 축구단
-GJ26-80,진성욱,1993-12-16,FW,경주한수원FC,80,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-29,최기석,2003-12-17,FW,경주한수원FC,29,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-25,김정호,1998-04-07,GK,경주한수원FC,25,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-13,박성원,2003-10-25,MF,경주한수원FC,13,https://namu.wiki/w/경주 한국수력원자력 축구단
-GJ26-44,김정호,,DF,경주한수원FC,44,https://www.kfa.or.kr/competition/k3_2026.php
-PC26-02,김태은,1989-09-21,DF,포천시민축구단,2,https://namu.wiki/w/포천시민축구단
-PC26-16,한규진,2001-11-10,MF,포천시민축구단,16,https://namu.wiki/w/포천시민축구단
-PC26-12,이서준,2004-11-18,DF,포천시민축구단,12,https://namu.wiki/w/포천시민축구단
-PC26-08,정현식,1990-11-22,MF,포천시민축구단,8,https://namu.wiki/w/포천시민축구단
-PC26-28,김현민,2001-01-10,FW,포천시민축구단,28,https://namu.wiki/w/포천시민축구단
-SH26-17b,이민영,2005-09-16,MF,시흥시민축구단,17,https://www.kfa.or.kr/competition/k3_2026.php
-SH26-36,조민호,2004-04-10,MF,시흥시민축구단,36,https://www.kfa.or.kr/competition/k3_2026.php
-SH26-15,여재욱,2001-04-01,DF,시흥시민축구단,15,https://namu.wiki/w/시흥시민축구단
-SH26-19,안은산,1996-10-04,MF,시흥시민축구단,19,https://namu.wiki/w/시흥시민축구단
-SH26-42,양준영,2002-10-24,MF,시흥시민축구단,42,https://namu.wiki/w/시흥시민축구단
-SH26-14,김태헌,2004-10-17,FW,시흥시민축구단,14,https://namu.wiki/w/시흥시민축구단
-YP26-20,차인석,1996-03-01,DF,양평FC,20,https://namu.wiki/w/양평FC
-YP26-28,천세윤,2002-11-06,MF,양평FC,28,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-91,김유종,,MF,양평FC,91,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-90,브레노,2001-04-10,FW,양평FC,90,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-77,조영진,1996-05-09,MF,양평FC,77,https://namu.wiki/w/양평FC
-YP26-45,김성수,,DF,양평FC,45,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-10,김동욱,1998-12-24,MF,양평FC,10,https://namu.wiki/w/양평FC
-YP26-09,덴젤,2003-01-20,FW,양평FC,9,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-11b,조형인,,FW,양평FC,11,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-16,박준이,,FW,양평FC,16,https://www.kfa.or.kr/competition/k3_2026.php
-CW26-88,정성우,2003-12-08,DF,창원FC,88,https://namu.wiki/w/창원FC
-CW26-09,고병범,2001-03-19,MF,창원FC,9,https://namu.wiki/w/창원FC
-CW26-04,한상규,2005-08-05,DF,창원FC,4,https://namu.wiki/w/창원FC
-CW26-06b,전승민,,MF,창원FC,6,https://www.kfa.or.kr/competition/k3_2026.php
-CW26-20,박세민,2002-05-30,FW,창원FC,20,https://namu.wiki/w/창원FC
-US26-18,이선일,1996-02-11,GK,울산시민축구단,18,https://namu.wiki/w/울산시민축구단
-US26-14,김동윤,1997-07-14,DF,울산시민축구단,14,https://namu.wiki/w/울산시민축구단
-US26-06,부성혁,1994-03-25,MF,울산시민축구단,6,https://namu.wiki/w/울산시민축구단
-US26-09,이기운,1997-02-15,FW,울산시민축구단,9,https://namu.wiki/w/울산시민축구단
-GN26-18,최성진,,DF,FC강릉,18,https://www.kfa.or.kr/competition/k3_2026.php
-GN26-44,지병우,,DF,FC강릉,44,https://www.kfa.or.kr/competition/k3_2026.php
-GN26-15,김경수,,MF,FC강릉,15,https://www.kfa.or.kr/competition/k3_2026.php
-GN26-07,우병철,2000-11-05,FW,FC강릉,7,https://namu.wiki/w/강릉시민축구단
-GN26-34,김재봉,1996-09-06,DF,FC강릉,34,https://namu.wiki/w/강릉시민축구단
-GN26-23,이현규,2002-10-09,FW,FC강릉,23,https://namu.wiki/w/강릉시민축구단
-GN26-33,김진현,,FW,FC강릉,33,https://www.kfa.or.kr/competition/k3_2026.php
-DJ26-06,신재욱,2000-05-21,DF,당진시민축구단,6,https://namu.wiki/w/당진시민축구단
-DJ26-20,김주형,1999-12-26,DF,당진시민축구단,20,https://namu.wiki/w/당진시민축구단
-DJ26-62,김영선,,DF,당진시민축구단,62,https://www.kfa.or.kr/competition/k3_2026.php
-DJ26-11,곽승조,,FW,당진시민축구단,11,https://www.kfa.or.kr/competition/k3_2026.php
-DJ26-32,이병욱,,DF,당진시민축구단,32,https://www.kfa.or.kr/competition/k3_2026.php
-DJ26-35,민승기,1998-02-23,DF,당진시민축구단,35,https://namu.wiki/w/당진시민축구단
-DJ26-77,이시명,2006-06-21,MF,당진시민축구단,77,https://namu.wiki/w/당진시민축구단
-DJ26-15,지상욱,2003-01-13,FW,당진시민축구단,15,https://namu.wiki/w/당진시민축구단
-DJ26-22,한창구,1998-01-20,FW,당진시민축구단,22,https://namu.wiki/w/당진시민축구단
-MP26-33,박정우,2006-05-04,FW,FC목포,33,https://namu.wiki/w/FC목포
-MP26-21,한승협,2001-08-10,GK,FC목포,21,https://namu.wiki/w/FC목포
-MP26-32,김정우,2000-11-16,DF,FC목포,32,https://namu.wiki/w/FC목포
-MP26-16,김민재,2003-01-24,DF,FC목포,16,https://namu.wiki/w/FC목포
-MP26-88,차승규,2002-01-11,FW,FC목포,88,https://namu.wiki/w/FC목포
-MP26-17,전보민,2000-05-10,DF,FC목포,17,https://namu.wiki/w/FC목포
-MP26-72,서명식,2006-06-02,FW,FC목포,72,https://namu.wiki/w/FC목포
-DK26-28,유승범,,DF,대전 코레일 FC,28,https://www.kfa.or.kr/competition/k3_2026.php
-YJ26-06,이동건,1999-02-07,DF,여주FC,6,https://namu.wiki/w/여주FC
-YJ26-26b,이현왕,2001-06-09,MF,여주FC,26,https://namu.wiki/w/여주FC
-YJ26-10,이시이,2000-04-02,MF,여주FC,10,https://namu.wiki/w/여주FC
-YJ26-94,임찬울,1994-07-14,FW,여주FC,94,https://www.kfa.or.kr/competition/k3_2026.php
-YJ26-01,김형수,2003-06-10,GK,여주FC,1,https://namu.wiki/w/여주FC
-YJ26-33,여현준,,MF,여주FC,33,https://www.kfa.or.kr/competition/k3_2026.php
-YJ26-25,서동은,,MF,여주FC,25,https://www.kfa.or.kr/competition/k3_2026.php
-YJ26-23,장혁재,2004-04-05,MF,여주FC,23,https://namu.wiki/w/여주FC
-YJ26-70,정인증,2004-07-06,FW,여주FC,70,https://namu.wiki/w/여주FC
-YJ26-17,홍동관,1999-07-10,FW,여주FC,17,https://www.kfa.or.kr/competition/k3_2026.php
-YJ26-11,김도형,,FW,여주FC,11,https://www.kfa.or.kr/competition/k3_2026.php
-BT26-18,윤경원,,FW,부산교통공사축구단,18,https://www.kfa.or.kr/competition/k3_2026.php
-PC26-36,온예카오비존,2005-06-30,FW,포천시민축구단,36,https://www.kfa.or.kr/competition/k3_2026.php
-GN26-09,조건규,1998-10-15,FW,FC강릉,9,https://www.kfa.or.kr/competition/k3_2026.php
-GN26-27,권태영,2002-06-05,FW,FC강릉,27,https://www.kfa.or.kr/competition/k3_2026.php
-GN26-39,최성민,2003-06-12,FW,FC강릉,39,https://www.kfa.or.kr/competition/k3_2026.php
-US26-21,김성진,2000-02-01,DF,울산시민축구단,21,https://www.kfa.or.kr/competition/k3_2026.php
-US26-47,권혁찬,2004-04-30,MF,울산시민축구단,47,https://www.kfa.or.kr/competition/k3_2026.php
-US26-29,김태환,2002-08-14,DF,울산시민축구단,29,https://www.kfa.or.kr/competition/k3_2026.php
-GJ26-20,정호근,1999-03-17,DF,경주한수원FC,20,https://www.kfa.or.kr/competition/k3_2026.php
-JB26-15,김하준,2002-07-17,DF,전북현대모터스,15,https://www.kfa.or.kr/competition/k3_2026.php
-JB26-27,황승준,2005-08-03,DF,전북현대모터스,27,https://www.kfa.or.kr/competition/k3_2026.php
-CW26-17,홍지민,,FW,창원FC,17,https://www.kfa.or.kr/competition/k3_2026.php
-DJ26-13,임준석,2003-02-19,GK,당진시민축구단,13,https://www.kfa.or.kr/competition/k3_2026.php
-DJ26-18,이현우,2003-07-19,MF,당진시민축구단,18,https://www.kfa.or.kr/competition/k3_2026.php
-MP26-26,강영종,1996-11-02,DF,FC목포,26,https://www.kfa.or.kr/competition/k3_2026.php
-MP26-08,양준모,1989-04-25,MF,FC목포,8,https://www.kfa.or.kr/competition/k3_2026.php
-MP26-09,장한영,1999-12-20,FW,FC목포,9,https://www.kfa.or.kr/competition/k3_2026.php
-MP26-10,이정,2001-03-02,FW,FC목포,10,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-01,심민,1998-02-15,GK,양평FC,1,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-13,윤양균,2002-07-17,MF,양평FC,13,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-30,이민혁,,FW,양평FC,30,https://www.kfa.or.kr/competition/k3_2026.php
-SH26-05,신일수,1994-09-04,DF,시흥시민축구단,5,https://www.kfa.or.kr/competition/k3_2026.php
-SH26-18,tanaka haruto,,FW,시흥시민축구단,18,https://www.kfa.or.kr/competition/k3_2026.php
-YJ26-66,강태욱,1992-05-28,MF,여주FC,66,https://www.kfa.or.kr/competition/k3_2026.php
-YJ26-14,서선웅,2000-02-18,FW,여주FC,14,https://www.kfa.or.kr/competition/k3_2026.php
-YJ26-17b,김준서,2002-09-07,DF,여주FC,17,https://www.kfa.or.kr/competition/k3_2026.php
-YJ26-77,최상헌,2001-07-16,MF,여주FC,77,https://www.kfa.or.kr/competition/k3_2026.php
-YJ26-09,문경민,2000-04-02,FW,여주FC,9,https://www.kfa.or.kr/competition/k3_2026.php
-YJ26-11b,정종근,2001-05-24,FW,여주FC,11,https://www.kfa.or.kr/competition/k3_2026.php
-YJ26-16,강민성,2005-03-22,FW,여주FC,16,https://www.kfa.or.kr/competition/k3_2026.php
-PC26-26,서도현,2005-03-26,DF,포천시민축구단,26,https://www.kfa.or.kr/competition/k3_2026.php
-YJ26-29,안성준,2003-05-20,DF,여주FC,29,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-62,황건,,DF,양평FC,62,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-15,이정근,1994-04-22,MF,양평FC,15,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-74,김재영,,DF,양평FC,74,https://www.kfa.or.kr/competition/k3_2026.php
-GN26-18b,송준민,2002-10-22,FW,FC강릉,18,https://www.kfa.or.kr/competition/k3_2026.php
-DJ26-17,한준영,2002-10-06,FW,당진시민축구단,17,https://www.kfa.or.kr/competition/k3_2026.php
-SH26-98,나준영,1998-12-15,DF,시흥시민축구단,98,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-66,원우진,,DF,양평FC,66,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-48,남궁환,,MF,양평FC,48,https://www.kfa.or.kr/competition/k3_2026.php
-CC26-77,정승현,2004-09-30,MF,춘천시민축구단,77,https://www.kfa.or.kr/competition/k3_2026.php
-GJ26-33,현상엽,2005-01-31,MF,경주한수원FC,33,https://www.kfa.or.kr/competition/k3_2026.php
-SH26-31,강성혁,2005-08-24,GK,시흥시민축구단,31,https://www.kfa.or.kr/competition/k3_2026.php
-YJ26-01b,김형수,,GK,여주FC,1,https://www.kfa.or.kr/competition/k3_2026.php
-YJ26-28,송지완,2003-11-10,FW,여주FC,28,https://www.kfa.or.kr/competition/k3_2026.php
-JB26-24,이상명,,DF,전북현대모터스,24,https://www.kfa.or.kr/competition/k3_2026.php
-JB26-16,감보아,,MF,전북현대모터스,16,https://www.kfa.or.kr/competition/k3_2026.php
-JB26-98,임준휘,2005-02-14,FW,전북현대모터스,98,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-88,최민혁,,MF,양평FC,88,https://www.kfa.or.kr/competition/k3_2026.php
-CC26-16,석린,2007-09-08,MF,춘천시민축구단,16,https://www.kfa.or.kr/competition/k3_2026.php
-CC26-26,브레노,,FW,춘천시민축구단,26,https://www.kfa.or.kr/competition/k3_2026.php
-YJ26-04,김형수,,MF,여주FC,4,https://www.kfa.or.kr/competition/k3_2026.php
-SH26-06,안지호,1987-04-24,DF,시흥시민축구단,6,https://www.kfa.or.kr/competition/k3_2026.php
-GJ26-02,이종현,1997-01-24,DF,경주한수원FC,2,https://www.kfa.or.kr/competition/k3_2026.php
-GJ26-27,유신,2000-05-05,FW,경주한수원FC,27,https://www.kfa.or.kr/competition/k3_2026.php
-DJ26-25,임동주,2004-06-17,DF,당진시민축구단,25,https://www.kfa.or.kr/competition/k3_2026.php
-DJ26-88,백세현,2001-09-07,MF,당진시민축구단,88,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-22,이찬솔,,DF,양평FC,22,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-19,이정찬,,MF,양평FC,19,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-12,이상오,2000-01-26,MF,양평FC,12,https://www.kfa.or.kr/competition/k3_2026.php
-PC26-30,류상우,2006-06-17,MF,포천시민축구단,30,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-55,성민준,,DF,양평FC,55,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-38,장한들,,FW,양평FC,38,https://www.kfa.or.kr/competition/k3_2026.php
-CC26-11,이광재,1998-06-10,FW,춘천시민축구단,11,https://www.kfa.or.kr/competition/k3_2026.php
-CC26-90,김형준,2007-09-03,FW,춘천시민축구단,90,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-27,조현준,,FW,양평FC,27,https://www.kfa.or.kr/competition/k3_2026.php
-GN26-13,김연수,1998-04-07,GK,FC강릉,13,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-26,이규서,,DF,양평FC,26,https://www.kfa.or.kr/competition/k3_2026.php
-GN26-16,김장우,2003-04-21,FW,FC강릉,16,https://www.kfa.or.kr/competition/k3_2026.php
-JB26-19,박주영,,FW,전북현대모터스,19,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-42,장재혁,,MF,양평FC,42,https://www.kfa.or.kr/competition/k3_2026.php
-PC26-32,김승섭,2005-02-20,FW,포천시민축구단,32,https://www.kfa.or.kr/competition/k3_2026.php
-JB26-01,이주현,,GK,전북현대모터스,1,https://www.kfa.or.kr/competition/k3_2026.php
-DJ26-27,현상진,2005-01-31,MF,당진시민축구단,27,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-37,김용환,,DF,양평FC,37,https://www.kfa.or.kr/competition/k3_2026.php
-PC26-37,박관우,,DF,포천시민축구단,37,https://www.kfa.or.kr/competition/k3_2026.php
-CW26-03,이지형,,DF,창원FC,3,https://www.kfa.or.kr/competition/k3_2026.php
-CW26-39,김정현,,MF,창원FC,39,https://www.kfa.or.kr/competition/k3_2026.php
-YJ26-47,김윤겸,2004-02-17,MF,여주FC,47,https://www.kfa.or.kr/competition/k3_2026.php
-GN26-22,이형욱,2004-07-22,MF,FC강릉,22,https://www.kfa.or.kr/competition/k3_2026.php
-SH26-27,이선유,,FW,시흥시민축구단,27,https://www.kfa.or.kr/competition/k3_2026.php
-GN26-47,이희재,2005-09-22,FW,FC강릉,47,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-79,김민서,,DF,양평FC,79,https://www.kfa.or.kr/competition/k3_2026.php
-CW26-47,이재민,2004-07-14,MF,창원FC,47,https://www.kfa.or.kr/competition/k3_2026.php
-GJ26-95,정충근,,FW,경주한수원FC,95,https://www.kfa.or.kr/competition/k3_2026.php
-SH26-28,오창환,,FW,시흥시민축구단,28,https://www.kfa.or.kr/competition/k3_2026.php
-PC26-35,김민구,,FW,포천시민축구단,35,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-19b,김태훈,,MF,양평FC,19,https://www.kfa.or.kr/competition/k3_2026.php
-GJ26-04,황명현,,DF,경주한수원FC,4,https://www.kfa.or.kr/competition/k3_2026.php
-JB26-37,한재빈,2006-11-04,DF,전북현대모터스,37,https://www.kfa.or.kr/competition/k3_2026.php
-JB26-61,구교빈,2008-10-06,MF,전북현대모터스,61,https://www.kfa.or.kr/competition/k3_2026.php
-JB26-62,김태영,2008-10-17,DF,전북현대모터스,62,https://www.kfa.or.kr/competition/k3_2026.php
-JB26-63,한승민,2009-11-09,MF,전북현대모터스,63,https://www.kfa.or.kr/competition/k3_2026.php
-CC26-70,손영윤,2002-09-04,FW,춘천시민축구단,70,https://www.kfa.or.kr/competition/k3_2026.php
-CC26-28,김호경,2000-05-01,DF,춘천시민축구단,28,https://www.kfa.or.kr/competition/k3_2026.php
-CC26-29,김채웅,2002-01-14,FW,춘천시민축구단,29,https://www.kfa.or.kr/competition/k3_2026.php
-CC26-30,이상민,2006-05-12,FW,춘천시민축구단,30,https://www.kfa.or.kr/competition/k3_2026.php
-YJ26-74,유정찬,,FW,여주FC,74,https://www.kfa.or.kr/competition/k3_2026.php
-GJ26-23,최지호,2003-09-19,DF,경주한수원FC,23,https://www.kfa.or.kr/competition/k3_2026.php
-CC26-72,배민준,2008-06-07,FW,춘천시민축구단,72,https://www.kfa.or.kr/competition/k3_2026.php
-JB26-21,츄마시,,FW,전북현대모터스,21,https://www.kfa.or.kr/competition/k3_2026.php
-SH26-03,박현준,2001-05-03,DF,시흥시민축구단,3,https://www.kfa.or.kr/competition/k3_2026.php
-YP26-72,안성재,,MF,양평FC,72,https://www.kfa.or.kr/competition/k3_2026.php
-JB26-17b,이수빈,,MF,전북현대모터스,17,https://www.kfa.or.kr/competition/k3_2026.php
-BT26-42,김민성,,DF,부산교통공사축구단,42,https://www.kfa.or.kr/competition/k3_2026.php
-JB26-14,전병관,,FW,전북현대모터스,14,https://www.kfa.or.kr/competition/k3_2026.php
-BT26-23,최우담,2004-06-11,MF,부산교통공사축구단,23,https://www.kfa.or.kr/competition/k3_2026.php
-SH26-25,김태현,2002-10-02,MF,시흥시민축구단,25,https://www.kfa.or.kr/competition/k3_2026.php
-SH26-47,이정재,2007-01-14,FW,시흥시민축구단,47,https://www.kfa.or.kr/competition/k3_2026.php
+DKR-26-01,백경인,2001-05-09,GK,대전 코레일 FC,1,https://namu.wiki/w/대전 코레일 FC
+DKR-26-02,김영인,2002-02-16,DF,대전 코레일 FC,2,https://namu.wiki/w/대전 코레일 FC
+DKR-26-03,황준석,1996-03-19,DF,대전 코레일 FC,3,https://namu.wiki/w/대전 코레일 FC
+DKR-26-04,김윤진,1995-03-30,DF,대전 코레일 FC,4,https://namu.wiki/w/대전 코레일 FC
+DKR-26-05,전인규,1993-11-14,DF,대전 코레일 FC,5,https://namu.wiki/w/대전 코레일 FC
+DKR-26-06,박승렬,1994-01-07,MF,대전 코레일 FC,6,https://namu.wiki/w/대전 코레일 FC
+DKR-26-07,김정주,1991-09-26,FW,대전 코레일 FC,7,https://namu.wiki/w/대전 코레일 FC
+DKR-26-08,강효온,2004-01-15,DF,대전 코레일 FC,8,https://namu.wiki/w/대전 코레일 FC
+DKR-26-09,홍진민,2005-01-22,FW,대전 코레일 FC,9,https://namu.wiki/w/대전 코레일 FC
+DKR-26-10,이인규,1992-09-16,DF,대전 코레일 FC,10,https://namu.wiki/w/대전 코레일 FC
+DKR-26-11,김희성,1995-12-18,FW,대전 코레일 FC,11,https://namu.wiki/w/대전 코레일 FC
+DKR-26-13,손경환,1993-04-02,DF,대전 코레일 FC,13,https://namu.wiki/w/대전 코레일 FC
+DKR-26-14,김동욱,1990-04-04,MF,대전 코레일 FC,14,https://namu.wiki/w/대전 코레일 FC
+DKR-26-15,남윤재,2001-04-14,DF,대전 코레일 FC,15,https://namu.wiki/w/대전 코레일 FC
+DKR-26-16,송민종,2001-03-21,FW,대전 코레일 FC,16,https://namu.wiki/w/대전 코레일 FC
+DKR-26-17,박찬빈,2002-01-21,FW,대전 코레일 FC,17,https://namu.wiki/w/대전 코레일 FC
+DKR-26-18,김철호,1995-10-25,GK,대전 코레일 FC,18,https://namu.wiki/w/대전 코레일 FC
+DKR-26-20,김동섭,2003-10-27,MF,대전 코레일 FC,20,https://namu.wiki/w/대전 코레일 FC | https://info.korail.com/info/contents.do?key=906
+DKR-26-21,배서준,2002-11-10,GK,대전 코레일 FC,21,https://namu.wiki/w/대전 코레일 FC
+DKR-26-22,김광희,2001-07-26,MF,대전 코레일 FC,22,https://namu.wiki/w/대전 코레일 FC
+DKR-26-26,이관표,1994-09-07,MF,대전 코레일 FC,26,https://namu.wiki/w/대전 코레일 FC
+DKR-26-33,최선우,2003-01-08,DF,대전 코레일 FC,33,https://namu.wiki/w/대전 코레일 FC
+DKR-26-34,진지강,2004-05-20,MF,대전 코레일 FC,34,https://namu.wiki/w/대전 코레일 FC
+DKR-26-38,조한진,2004-12-13,MF,대전 코레일 FC,38,https://namu.wiki/w/대전 코레일 FC
+DKR-26-44,전우람,2000-05-16,DF,대전 코레일 FC,44,https://namu.wiki/w/대전 코레일 FC
+DKR-26-66,김현우,2002-10-26,DF,대전 코레일 FC,66,https://namu.wiki/w/대전 코레일 FC
+DKR-26-77,유지민,1993-08-27,MF,대전 코레일 FC,77,https://namu.wiki/w/대전 코레일 FC
+DKR-26-88,박예찬,2001-01-16,FW,대전 코레일 FC,88,https://namu.wiki/w/대전 코레일 FC
+DKR-26-91,양창훈,1999-01-14,FW,대전 코레일 FC,91,https://namu.wiki/w/대전 코레일 FC | https://info.korail.com/info/contents.do?key=906
+JBN-26-51,이한결,2007-07-19,GK,전북현대모터스,51,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
+JBN-26-55,최진웅,2004-12-23,DF,전북현대모터스,55,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
+JBN-26-22,김준영,2004-05-31,DF,전북현대모터스,22,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
+JBN-26-44,김주형,2007-08-20,DF,전북현대모터스,44,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
+JBN-26-39,서정혁,2006-03-09,DF,전북현대모터스,39,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
+JBN-26-42,우현수,2003-04-17,DF,전북현대모터스,42,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
+JBN-26-88,윤현석,2003-11-08,MF,전북현대모터스,88,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
+JBN-26-30,김영환,2002-03-23,MF,전북현대모터스,30,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
+JBN-26-90,정상운,2003-04-03,FW,전북현대모터스,90,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
+JBN-26-34,엄승민,2003-05-02,FW,전북현대모터스,34,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
+JBN-26-33,한석진,2007-12-19,MF,전북현대모터스,33,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
+JBN-26-91,정대영,2006-09-11,GK,전북현대모터스,91,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
+JBN-26-80,곽희벽,2005-03-15,DF,전북현대모터스,80,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
+JBN-26-70,박현민,2007-04-02,MF,전북현대모터스,70,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
+JBN-26-36,장남웅,2004-02-09,MF,전북현대모터스,36,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
+JBN-26-26,문준혁,2005-05-21,MF,전북현대모터스,26,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
+JBN-26-47,이건희,2007-08-13,MF,전북현대모터스,47,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
+JBN-26-79,김창훈,2004-10-23,FW,전북현대모터스,79,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
+JBN-26-40,안태훈,2007-06-08,MF,전북현대모터스,40,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
+JBN-26-92,김두현,2007-03-02,FW,전북현대모터스,92,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
+CCN-26-01,박민선,1991-04-04,GK,춘천시민축구단,1,https://namu.wiki/w/춘천시민축구단
+CCN-26-08,윤성한,1998-01-17,MF,춘천시민축구단,8,https://namu.wiki/w/춘천시민축구단
+CCN-26-04,한용수,1990-05-05,DF,춘천시민축구단,4,https://namu.wiki/w/춘천시민축구단
+CCN-26-05,박현우,1997-02-21,DF,춘천시민축구단,5,https://namu.wiki/w/춘천시민축구단
+CCN-26-23,마지강,2003-02-10,DF,춘천시민축구단,23,https://namu.wiki/w/춘천시민축구단
+CCN-26-32,이준원,1995-10-16,MF,춘천시민축구단,32,https://namu.wiki/w/춘천시민축구단
+CCN-26-10,신상휘,2000-07-14,FW,춘천시민축구단,10,https://namu.wiki/w/춘천시민축구단
+CCN-26-61,허동호,2000-06-24,MF,춘천시민축구단,61,https://namu.wiki/w/춘천시민축구단
+CCN-26-88,이성민,,MF,춘천시민축구단,88,https://www.kfa.or.kr/competition/k3_2026.php
+CCN-26-09,김민우,1997-06-03,FW,춘천시민축구단,9,https://namu.wiki/w/춘천시민축구단
+CCN-26-33,Oliveira Parente lucas,2000-08-22,FW,춘천시민축구단,33,https://namu.wiki/w/춘천시민축구단
+CCN-26-19,김도현,2003-05-30,GK,춘천시민축구단,19,https://namu.wiki/w/춘천시민축구단
+CCN-26-20,권진영,1991-10-23,DF,춘천시민축구단,20,https://namu.wiki/w/춘천시민축구단
+CCN-26-07,박선용,1989-03-12,DF,춘천시민축구단,7,https://namu.wiki/w/춘천시민축구단
+CCN-26-03,이재용,,DF,춘천시민축구단,3,https://www.kfa.or.kr/competition/k3_2026.php
+CCN-26-02,신기환,2002-10-21,DF,춘천시민축구단,2,https://namu.wiki/w/춘천시민축구단
+CCN-26-97,이명동,2003-03-09,MF,춘천시민축구단,97,https://namu.wiki/w/춘천시민축구단
+CCN-26-17,김민수,2000-01-10,MF,춘천시민축구단,17,https://namu.wiki/w/춘천시민축구단
+CCN-26-14,오형택,2000-10-12,MF,춘천시민축구단,14,https://namu.wiki/w/춘천시민축구단
+CCN-26-18,Devellard Ferreira F Goncalves matheus,2000-09-15,FW,춘천시민축구단,18,https://namu.wiki/w/춘천시민축구단
+BTC-26-01,최진백,1994-05-27,GK,부산교통공사축구단,1,https://namu.wiki/w/부산교통공사 축구단
+BTC-26-15,조우현,2000-05-01,DF,부산교통공사축구단,15,https://namu.wiki/w/부산교통공사 축구단
+BTC-26-13,지의수,2000-03-25,DF,부산교통공사축구단,13,https://namu.wiki/w/부산교통공사 축구단
+BTC-26-03,오현교,1999-07-24,DF,부산교통공사축구단,3,https://namu.wiki/w/부산교통공사 축구단
+BTC-26-05,홍종민,2003-06-20,DF,부산교통공사축구단,5,https://namu.wiki/w/부산교통공사 축구단
+BTC-26-06,하용주,1997-12-05,MF,부산교통공사축구단,6,https://namu.wiki/w/부산교통공사 축구단
+BTC-26-08,안치우,2005-10-23,MF,부산교통공사축구단,8,https://namu.wiki/w/부산교통공사 축구단
+BTC-26-10,김양우,1994-12-30,FW,부산교통공사축구단,10,https://namu.wiki/w/부산교통공사 축구단
+BTC-26-07,이윤재,2002-02-02,FW,부산교통공사축구단,7,https://namu.wiki/w/부산교통공사 축구단
+BTC-26-09,얀 라벤스,2004-08-11,FW,부산교통공사축구단,9,https://namu.wiki/w/부산교통공사 축구단
+BTC-26-11,박희수,2003-02-04,FW,부산교통공사축구단,11,https://namu.wiki/w/부산교통공사 축구단
+BTC-26-31,이민수,2003-04-22,GK,부산교통공사축구단,31,https://namu.wiki/w/부산교통공사 축구단
+BTC-26-27,김준섭,1999-10-01,DF,부산교통공사축구단,27,https://namu.wiki/w/부산교통공사 축구단
+BTC-26-19,윤철현,1997-01-14,DF,부산교통공사축구단,19,https://namu.wiki/w/부산교통공사 축구단
+BTC-26-04,김민수,2004-03-18,DF,부산교통공사축구단,4,https://namu.wiki/w/부산교통공사 축구단
+BTC-26-66,배수민,,MF,부산교통공사축구단,66,https://www.kfa.or.kr/competition/k3_2026.php
+BTC-26-14,김도훈,2001-10-15,FW,부산교통공사축구단,14,https://namu.wiki/w/부산교통공사 축구단
+BTC-26-22,조용준,2002-04-21,MF,부산교통공사축구단,22,https://namu.wiki/w/부산교통공사 축구단
+BTC-26-29,양우진,2006-11-29,FW,부산교통공사축구단,29,https://namu.wiki/w/부산교통공사 축구단
+BTC-26-90,양정운,2001-05-14,FW,부산교통공사축구단,90,https://namu.wiki/w/부산교통공사 축구단
+GYJ-26-81,최철원,1994-07-23,GK,경주한수원FC,81,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-03,장효강,2002-03-19,DF,경주한수원FC,3,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-62,장유섭,1996-06-24,DF,경주한수원FC,62,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-16,장지성,1994-03-05,DF,경주한수원FC,16,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-14,류승범,1999-08-22,DF,경주한수원FC,14,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-07,정상규,1998-09-08,MF,경주한수원FC,7,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-08,안수민,1994-05-26,MF,경주한수원FC,8,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-77,국관우,2002-10-04,MF,경주한수원FC,77,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-26,서승우,2002-11-18,DF,경주한수원FC,26,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-17,황대영,2003-05-30,FW,경주한수원FC,17,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-19,정성호,2001-07-06,FW,경주한수원FC,19,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-12,이성주,2003-02-11,GK,경주한수원FC,12,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-06,임대준,1994-04-05,MF,경주한수원FC,6,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-05,하재진,2003-12-20,MF,경주한수원FC,5,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-22,전정호,1999-01-06,FW,경주한수원FC,22,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-10,주한성,1995-06-07,MF,경주한수원FC,10,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-18,문승원,2001-09-29,DF,경주한수원FC,18,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-11,빅토르,1999-03-18,FW,경주한수원FC,11,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-09,이형경,1998-05-11,FW,경주한수원FC,9,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-45,이예찬,1996-05-01,MF,경주한수원FC,45,https://namu.wiki/w/경주 한국수력원자력 축구단
+PCN-26-25,김종혁,2002-06-14,GK,포천시민축구단,25,https://namu.wiki/w/포천시민축구단
+PCN-26-29,김수안,1993-06-10,DF,포천시민축구단,29,https://namu.wiki/w/포천시민축구단
+PCN-26-20,심현민,2004-06-24,DF,포천시민축구단,20,https://namu.wiki/w/포천시민축구단
+PCN-26-23,최승호,2002-11-07,DF,포천시민축구단,23,https://namu.wiki/w/포천시민축구단
+PCN-26-14,김현중,1996-05-03,MF,포천시민축구단,14,https://namu.wiki/w/포천시민축구단
+PCN-26-24,이철희,2004-01-30,MF,포천시민축구단,24,https://namu.wiki/w/포천시민축구단
+PCN-26-07,김정현,2001-07-05,FW,포천시민축구단,7,https://namu.wiki/w/포천시민축구단
+PCN-26-10,이재건,1997-02-22,FW,포천시민축구단,10,https://namu.wiki/w/포천시민축구단
+PCN-26-19,홍석환,2003-06-05,FW,포천시민축구단,19,https://namu.wiki/w/포천시민축구단
+PCN-26-18,유선우,2004-06-18,FW,포천시민축구단,18,https://namu.wiki/w/포천시민축구단
+PCN-26-09,이석규,1999-12-14,FW,포천시민축구단,9,https://namu.wiki/w/포천시민축구단
+PCN-26-01,김준성,2002-07-05,GK,포천시민축구단,1,https://namu.wiki/w/포천시민축구단
+PCN-26-05,서찬욱,2003-04-25,DF,포천시민축구단,5,https://namu.wiki/w/포천시민축구단
+PCN-26-33,이영규,2005-09-22,DF,포천시민축구단,33,https://namu.wiki/w/포천시민축구단
+PCN-26-13,유용현,2000-02-27,DF,포천시민축구단,13,https://namu.wiki/w/포천시민축구단
+PCN-26-06,전산해,1999-05-24,MF,포천시민축구단,6,https://namu.wiki/w/포천시민축구단
+PCN-26-17,황제,2004-09-08,MF,포천시민축구단,17,https://namu.wiki/w/포천시민축구단
+PCN-26-21,박주경,2007-08-09,FW,포천시민축구단,21,https://namu.wiki/w/포천시민축구단
+PCN-26-27,박준범,2001-04-05,FW,포천시민축구단,27,https://namu.wiki/w/포천시민축구단
+PCN-26-11,이태민,2003-05-09,FW,포천시민축구단,11,https://namu.wiki/w/포천시민축구단
+SHG-26-01,주현성,1999-03-31,GK,시흥시민축구단,1,https://namu.wiki/w/시흥시민축구단
+SHG-26-29,전진,2001-10-29,DF,시흥시민축구단,29,https://namu.wiki/w/시흥시민축구단
+SHG-26-24,김민성,2004-06-19,DF,시흥시민축구단,24,https://namu.wiki/w/시흥시민축구단
+SHG-26-20,오창권,2001-06-08,DF,시흥시민축구단,20,https://namu.wiki/w/시흥시민축구단
+SHG-26-07,박형진,1990-06-24,DF,시흥시민축구단,7,https://namu.wiki/w/시흥시민축구단
+SHG-26-04,김효찬,1998-01-21,MF,시흥시민축구단,4,https://namu.wiki/w/시흥시민축구단
+SHG-26-08,황신중,2000-12-22,MF,시흥시민축구단,8,https://namu.wiki/w/시흥시민축구단
+SHG-26-17,정현우,2004-02-09,FW,시흥시민축구단,17,https://www.kfa.or.kr/competition/k3_2026.php
+SHG-26-09,공민현,1990-01-19,FW,시흥시민축구단,9,https://namu.wiki/w/시흥시민축구단
+SHG-26-10,김다원,2000-10-25,FW,시흥시민축구단,10,https://namu.wiki/w/시흥시민축구단
+SHG-26-77,김홍,2001-10-26,FW,시흥시민축구단,77,https://namu.wiki/w/시흥시민축구단
+SHG-26-21,김동건,2004-01-18,GK,시흥시민축구단,21,https://namu.wiki/w/시흥시민축구단
+SHG-26-13,김남성,1994-09-25,DF,시흥시민축구단,13,https://namu.wiki/w/시흥시민축구단
+SHG-26-02,이남규,1993-03-18,DF,시흥시민축구단,2,https://namu.wiki/w/시흥시민축구단
+SHG-26-37,권완규,1991-11-20,DF,시흥시민축구단,37,https://namu.wiki/w/시흥시민축구단
+SHG-26-34,박성결,2001-04-03,DF,시흥시민축구단,34,https://namu.wiki/w/시흥시민축구단
+SHG-26-32,서유민,2002-03-08,MF,시흥시민축구단,32,https://namu.wiki/w/시흥시민축구단
+SHG-26-12,박한결,2001-04-03,MF,시흥시민축구단,12,https://namu.wiki/w/시흥시민축구단
+SHG-26-23,이석현,1990-06-13,MF,시흥시민축구단,23,https://namu.wiki/w/시흥시민축구단
+SHG-26-30,정철웅,2002-05-03,FW,시흥시민축구단,30,https://namu.wiki/w/시흥시민축구단
+YPG-26-41,신재민,2003-07-21,GK,양평FC,41,https://namu.wiki/w/양평FC
+YPG-26-03,윤상은,2003-03-01,DF,양평FC,3,https://namu.wiki/w/양평FC
+YPG-26-75,강성화,2002-08-10,DF,양평FC,75,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-44,정수환,2001-10-26,DF,양평FC,44,https://namu.wiki/w/양평FC
+YPG-26-23,곽래승,1990-09-11,FW,양평FC,23,https://namu.wiki/w/양평FC
+YPG-26-34,김예성,2001-03-19,MF,양평FC,34,https://namu.wiki/w/양평FC
+YPG-26-05,이용수,2001-08-04,MF,양평FC,5,https://namu.wiki/w/양평FC
+YPG-26-07,윤병우,2000-03-12,MF,양평FC,7,https://namu.wiki/w/양평FC
+YPG-26-11,유이쿠,,FW,양평FC,11,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-17,김형겸,2001-03-20,DF,양평FC,17,https://namu.wiki/w/양평FC
+YPG-26-21,이도영,,FW,양평FC,21,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-31,박다니엘,,GK,양평FC,31,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-47,권구민,,DF,양평FC,47,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-06,이태형,1999-01-06,MF,양평FC,6,https://namu.wiki/w/양평FC
+YPG-26-02,김병수,,DF,양평FC,2,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-73,이동희,,MF,양평FC,73,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-18,장동혁,2003-11-03,MF,양평FC,18,https://namu.wiki/w/양평FC
+YPG-26-14,김대협,1992-10-27,MF,양평FC,14,https://namu.wiki/w/양평FC
+YPG-26-08,유청인,1996-08-06,MF,양평FC,8,https://namu.wiki/w/양평FC
+YPG-26-92,서정우,,MF,양평FC,92,https://www.kfa.or.kr/competition/k3_2026.php
+CWN-26-13,임채훈,2000-05-08,GK,창원FC,13,https://namu.wiki/w/창원FC
+CWN-26-77,이현성,1993-05-20,MF,창원FC,77,https://namu.wiki/w/창원FC
+CWN-26-66,이승현,1995-04-04,DF,창원FC,66,https://namu.wiki/w/창원FC
+CWN-26-40,김원균,1992-05-01,DF,창원FC,40,https://namu.wiki/w/창원FC
+CWN-26-16,김원준,2004-07-04,DF,창원FC,16,https://namu.wiki/w/창원FC
+CWN-26-05,박진홍,2004-10-17,MF,창원FC,5,https://namu.wiki/w/창원FC
+CWN-26-15,장영기,2003-03-04,FW,창원FC,15,https://namu.wiki/w/창원FC
+CWN-26-07,예병원,1998-03-25,MF,창원FC,7,https://namu.wiki/w/창원FC
+CWN-26-70,이종열,1998-06-01,FW,창원FC,70,https://namu.wiki/w/창원FC
+CWN-26-14,홍정훈,2003-04-22,FW,창원FC,14,https://namu.wiki/w/창원FC
+CWN-26-08,이종훈,2002-03-21,MF,창원FC,8,https://namu.wiki/w/창원FC
+CWN-26-23,손재혁,1997-09-03,GK,창원FC,23,https://namu.wiki/w/창원FC
+CWN-26-18,신승민,2003-05-26,DF,창원FC,18,https://namu.wiki/w/창원FC
+CWN-26-19,한재훈,2004-01-25,DF,창원FC,19,https://namu.wiki/w/창원FC
+CWN-26-11,김우홍,1995-01-11,DF,창원FC,11,https://namu.wiki/w/창원FC
+CWN-26-22,구재승,2001-07-02,DF,창원FC,22,https://namu.wiki/w/창원FC
+CWN-26-24,노건우,,MF,창원FC,24,https://www.kfa.or.kr/competition/k3_2026.php
+CWN-26-06,곽성욱,,MF,창원FC,6,https://www.kfa.or.kr/competition/k3_2026.php
+CWN-26-10,태현찬,1990-09-14,MF,창원FC,10,https://namu.wiki/w/창원FC
+CWN-26-99,이동현,2005-10-05,FW,창원FC,99,https://namu.wiki/w/창원FC
+ULC-26-31,유영서,2004-06-10,GK,울산시민축구단,31,https://namu.wiki/w/울산시민축구단
+ULC-26-03,김재현,1997-04-21,DF,울산시민축구단,3,https://namu.wiki/w/울산시민축구단
+ULC-26-24,신성학,2004-02-13,DF,울산시민축구단,24,https://namu.wiki/w/울산시민축구단
+ULC-26-13,김기영,1996-08-14,DF,울산시민축구단,13,https://namu.wiki/w/울산시민축구단
+ULC-26-04,김기수,1995-04-29,DF,울산시민축구단,4,https://namu.wiki/w/울산시민축구단
+ULC-26-22,이한새,2004-04-05,MF,울산시민축구단,22,https://namu.wiki/w/울산시민축구단
+ULC-26-10,윤대원,1997-04-28,MF,울산시민축구단,10,https://namu.wiki/w/울산시민축구단
+ULC-26-25,이준영,2003-02-10,MF,울산시민축구단,25,https://namu.wiki/w/울산시민축구단
+ULC-26-11,이기준,2001-01-13,FW,울산시민축구단,11,https://namu.wiki/w/울산시민축구단
+ULC-26-12,김용민,2004-04-06,FW,울산시민축구단,12,https://namu.wiki/w/울산시민축구단
+ULC-26-07,손민영,2002-06-04,FW,울산시민축구단,7,https://namu.wiki/w/울산시민축구단
+ULC-26-01,노우석,2004-11-17,GK,울산시민축구단,1,https://namu.wiki/w/울산시민축구단
+ULC-26-16,김유성,2003-04-12,DF,울산시민축구단,16,https://namu.wiki/w/울산시민축구단
+ULC-26-08,박동혁,1992-03-11,DF,울산시민축구단,8,https://namu.wiki/w/울산시민축구단
+ULC-26-05,김민기,,DF,울산시민축구단,5,https://www.kfa.or.kr/competition/k3_2026.php
+ULC-26-77,한빈,2003-04-01,MF,울산시민축구단,77,https://namu.wiki/w/울산시민축구단
+ULC-26-26,강민재,2003-08-11,MF,울산시민축구단,26,https://namu.wiki/w/울산시민축구단
+ULC-26-96,김재철,1996-02-19,FW,울산시민축구단,96,https://namu.wiki/w/울산시민축구단
+ULC-26-17,김세응,2004-05-04,FW,울산시민축구단,17,https://namu.wiki/w/울산시민축구단
+ULC-26-19,박상현,2003-03-31,FW,울산시민축구단,19,https://namu.wiki/w/울산시민축구단
+GNG-26-01,황한준,1992-03-22,GK,FC강릉,1,https://namu.wiki/w/강릉시민축구단
+GNG-26-91,김훈민,2001-03-01,DF,FC강릉,91,https://namu.wiki/w/강릉시민축구단
+GNG-26-37,황정욱,2000-03-17,DF,FC강릉,37,https://namu.wiki/w/강릉시민축구단
+GNG-26-36,손민범,2004-07-09,FW,FC강릉,36,https://namu.wiki/w/강릉시민축구단
+GNG-26-24,이성윤,2000-10-31,DF,FC강릉,24,https://namu.wiki/w/강릉시민축구단
+GNG-26-20,이주영,2004-04-25,DF,FC강릉,20,https://namu.wiki/w/강릉시민축구단
+GNG-26-31,김성순,1995-12-31,MF,FC강릉,31,https://namu.wiki/w/강릉시민축구단
+GNG-26-10,박하빈,1997-04-23,MF,FC강릉,10,https://namu.wiki/w/강릉시민축구단
+GNG-26-14,구승훈,2004-04-13,MF,FC강릉,14,https://namu.wiki/w/강릉시민축구단
+GNG-26-77,송태성,2000-09-18,MF,FC강릉,77,https://namu.wiki/w/강릉시민축구단
+GNG-26-06,송영민,1997-08-17,MF,FC강릉,6,https://namu.wiki/w/강릉시민축구단
+GNG-26-30,한지율,2003-08-21,GK,FC강릉,30,https://namu.wiki/w/강릉시민축구단
+GNG-26-19,심정용,2001-07-03,DF,FC강릉,19,https://namu.wiki/w/강릉시민축구단
+GNG-26-03,김믿음,2003-04-09,DF,FC강릉,3,https://namu.wiki/w/강릉시민축구단
+GNG-26-21,김길훈,2001-07-12,DF,FC강릉,21,https://namu.wiki/w/강릉시민축구단
+GNG-26-17,손정민,2002-04-22,MF,FC강릉,17,https://namu.wiki/w/강릉시민축구단
+GNG-26-40,권순호,2003-03-13,DF,FC강릉,40,https://namu.wiki/w/강릉시민축구단
+GNG-26-08,장동혁,1999-08-28,MF,FC강릉,8,https://namu.wiki/w/강릉시민축구단
+GNG-26-11,김원준,2000-09-25,FW,FC강릉,11,https://namu.wiki/w/강릉시민축구단
+GNG-26-99,김성현,2004-11-17,FW,FC강릉,99,https://namu.wiki/w/강릉시민축구단
+DJN-26-01,최영은,1995-09-26,GK,당진시민축구단,1,https://namu.wiki/w/당진시민축구단
+DJN-26-71,신일연,2005-07-17,DF,당진시민축구단,71,https://namu.wiki/w/당진시민축구단
+DJN-26-03,이한빈,2003-02-07,DF,당진시민축구단,3,https://namu.wiki/w/당진시민축구단
+DJN-26-66,이선호,2003-12-16,DF,당진시민축구단,66,https://namu.wiki/w/당진시민축구단
+DJN-26-05,강성윤,,DF,당진시민축구단,5,https://www.kfa.or.kr/competition/k3_2026.php
+DJN-26-10,서도협,2001-06-25,FW,당진시민축구단,10,https://namu.wiki/w/당진시민축구단
+DJN-26-08,이은재,2003-03-13,MF,당진시민축구단,8,https://namu.wiki/w/당진시민축구단
+DJN-26-07,류연준,2000-04-10,MF,당진시민축구단,7,https://namu.wiki/w/당진시민축구단
+DJN-26-04,최시온,1999-11-10,MF,당진시민축구단,4,https://namu.wiki/w/당진시민축구단
+DJN-26-99,김형진,2006-11-19,FW,당진시민축구단,99,https://namu.wiki/w/당진시민축구단
+DJN-26-72,김동률,1999-07-25,FW,당진시민축구단,72,https://namu.wiki/w/당진시민축구단
+DJN-26-21,김세형,2007-01-24,GK,당진시민축구단,21,https://namu.wiki/w/당진시민축구단
+DJN-26-14,여준영1,1999-06-22,DF,당진시민축구단,14,https://namu.wiki/w/당진시민축구단
+DJN-26-02,이건,,DF,당진시민축구단,2,https://www.kfa.or.kr/competition/k3_2026.php
+DJN-26-42,이현조,1999-01-12,DF,당진시민축구단,42,https://namu.wiki/w/당진시민축구단
+DJN-26-33,정영웅,1997-04-23,MF,당진시민축구단,33,https://namu.wiki/w/당진시민축구단
+DJN-26-16,김세웅,2003-01-29,MF,당진시민축구단,16,https://namu.wiki/w/당진시민축구단
+DJN-26-30,신동민,2003-05-04,MF,당진시민축구단,30,https://namu.wiki/w/당진시민축구단
+DJN-26-09,강현종,2004-01-13,FW,당진시민축구단,9,https://namu.wiki/w/당진시민축구단
+DJN-26-47,김수성,2002-06-15,FW,당진시민축구단,47,https://namu.wiki/w/당진시민축구단
+MKP-26-01,최성겸,1995-12-19,GK,FC목포,1,https://namu.wiki/w/FC목포
+MKP-26-04,이규석,2001-04-23,DF,FC목포,4,https://namu.wiki/w/FC목포
+MKP-26-02,이제승,1991-11-29,DF,FC목포,2,https://namu.wiki/w/FC목포
+MKP-26-07,김규민,2000-01-20,DF,FC목포,7,https://namu.wiki/w/FC목포
+MKP-26-06,심원성,1999-04-29,DF,FC목포,6,https://namu.wiki/w/FC목포
+MKP-26-05,이건웅,2003-01-14,DF,FC목포,5,https://namu.wiki/w/FC목포
+MKP-26-27,이현탁,2000-10-24,MF,FC목포,27,https://namu.wiki/w/FC목포
+MKP-26-14,안성주,2002-04-08,MF,FC목포,14,https://namu.wiki/w/FC목포
+MKP-26-19,정기운,1992-07-05,FW,FC목포,19,https://namu.wiki/w/FC목포
+MKP-26-11,안경찬,1998-06-22,FW,FC목포,11,https://namu.wiki/w/FC목포
+MKP-26-70,성힘찬,2006-09-09,FW,FC목포,70,https://namu.wiki/w/FC목포
+MKP-26-31,박종건,2003-01-27,GK,FC목포,31,https://namu.wiki/w/FC목포
+MKP-26-22,이중호,1998-05-16,DF,FC목포,22,https://namu.wiki/w/FC목포
+MKP-26-03,이태윤,2000-08-21,DF,FC목포,3,https://namu.wiki/w/FC목포
+MKP-26-23,공용훈,1995-05-10,MF,FC목포,23,https://namu.wiki/w/FC목포
+MKP-26-20,이찬울,2002-11-07,FW,FC목포,20,https://namu.wiki/w/FC목포
+MKP-26-13,오승진,2003-02-16,DF,FC목포,13,https://namu.wiki/w/FC목포
+MKP-26-18,이태응,2003-05-10,FW,FC목포,18,https://namu.wiki/w/FC목포
+YJU-26-31,김상재,1998-05-18,GK,여주FC,31,https://namu.wiki/w/여주FC
+YJU-26-02,정기현,2004-03-13,DF,여주FC,2,https://namu.wiki/w/여주FC
+YJU-26-40,최현조,,DF,여주FC,40,https://www.kfa.or.kr/competition/k3_2026.php
+YJU-26-19,최정훈,1999-03-09,DF,여주FC,19,https://namu.wiki/w/여주FC
+YJU-26-15,장재원,2003-01-07,DF,여주FC,15,https://namu.wiki/w/여주FC
+YJU-26-07,이승민,2001-09-08,MF,여주FC,7,https://namu.wiki/w/여주FC
+YJU-26-03,오상준,2001-02-02,MF,여주FC,3,https://namu.wiki/w/여주FC
+YJU-26-08,최형우,2001-03-31,MF,여주FC,8,https://namu.wiki/w/여주FC
+YJU-26-18,임규현,2003-08-15,MF,여주FC,18,https://namu.wiki/w/여주FC
+YJU-26-30,강민재,2003-05-14,FW,여주FC,30,https://namu.wiki/w/여주FC
+YJU-26-34,김주형,,FW,여주FC,34,https://www.kfa.or.kr/competition/k3_2026.php
+YJU-26-12,서원,2000-04-16,GK,여주FC,12,https://namu.wiki/w/여주FC
+YJU-26-26,김진혁,2002-05-22,DF,여주FC,26,https://namu.wiki/w/여주FC
+YJU-26-20,김진성,1997-06-16,DF,여주FC,20,https://namu.wiki/w/여주FC
+YJU-26-05,이해담,2005-03-22,DF,여주FC,5,https://namu.wiki/w/여주FC
+YJU-26-22,조성우,2003-02-22,MF,여주FC,22,https://namu.wiki/w/여주FC
+YJU-26-27,황지상,2003-05-24,MF,여주FC,27,https://namu.wiki/w/여주FC
+YJU-26-37,정은우,2003-04-22,FW,여주FC,37,https://namu.wiki/w/여주FC
+YJU-26-71,장유민,2002-09-21,FW,여주FC,71,https://namu.wiki/w/여주FC
+YJU-26-72,류지민,2004-04-07,FW,여주FC,72,https://namu.wiki/w/여주FC
+CCN-26-06,김승찬,1999-01-02,DF,춘천시민축구단,6,https://namu.wiki/w/춘천시민축구단
+CCN-26-39,KOBAYASHI KAN,1999-04-27,MF,춘천시민축구단,39,https://namu.wiki/w/춘천시민축구단
+CCN-26-21,김성민,2003-02-25,GK,춘천시민축구단,21,https://namu.wiki/w/춘천시민축구단
+CCN-26-25,김태현,2000-01-18,MF,춘천시민축구단,25,https://namu.wiki/w/춘천시민축구단
+JBN-26-74,김수형,2007-06-25,DF,전북현대모터스,74,"전북현대모터스N 2026 시즌 스쿼드(사용자 제공, 미검증)"
+JBN-26-73,김예건,2008-08-07,MF,전북현대모터스,73,사용자 제공 선수 정보 페이지(출처 URL 미확인)
+JBN-26-71,전지완,2004-05-14,GK,전북현대모터스,71,"사용자 제공 검색 요약(namu.wiki/w/전지완, 전북 현대 모터스 선수단 페이지 인용, 미검증)"
+JBN-26-17,진태호,2006-01-20,MF,전북현대모터스,17,"사용자 제공 선수 정보 페이지(소속 용인으로 표시, 출처 URL 미확인)"
+BTC-26-02,박재우,1998-03-06,DF,부산교통공사축구단,2,https://namu.wiki/w/부산교통공사 축구단
+BTC-26-21,최원우,2003-11-22,GK,부산교통공사축구단,21,https://namu.wiki/w/부산교통공사 축구단
+BTC-26-17,김승준,2000-09-24,FW,부산교통공사축구단,17,https://namu.wiki/w/부산교통공사 축구단
+BTC-26-77,공다휘,1994-01-08,FW,부산교통공사축구단,77,https://namu.wiki/w/부산교통공사 축구단
+GYJ-26-80,진성욱,1993-12-16,FW,경주한수원FC,80,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-29,최기석,2003-12-17,FW,경주한수원FC,29,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-25,김정호,1998-04-07,GK,경주한수원FC,25,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-13,박성원,2003-10-25,MF,경주한수원FC,13,https://namu.wiki/w/경주 한국수력원자력 축구단
+GYJ-26-44,김정호,,DF,경주한수원FC,44,https://www.kfa.or.kr/competition/k3_2026.php
+PCN-26-02,김태은,1989-09-21,DF,포천시민축구단,2,https://namu.wiki/w/포천시민축구단
+PCN-26-16,한규진,2001-11-10,MF,포천시민축구단,16,https://namu.wiki/w/포천시민축구단
+PCN-26-12,이서준,2004-11-18,DF,포천시민축구단,12,https://namu.wiki/w/포천시민축구단
+PCN-26-08,정현식,1990-11-22,MF,포천시민축구단,8,https://namu.wiki/w/포천시민축구단
+PCN-26-28,김현민,2001-01-10,FW,포천시민축구단,28,https://namu.wiki/w/포천시민축구단
+SHG-26-17b,이민영,2005-09-16,MF,시흥시민축구단,17,https://www.kfa.or.kr/competition/k3_2026.php
+SHG-26-36,조민호,2004-04-10,MF,시흥시민축구단,36,https://www.kfa.or.kr/competition/k3_2026.php
+SHG-26-15,여재욱,2001-04-01,DF,시흥시민축구단,15,https://namu.wiki/w/시흥시민축구단
+SHG-26-19,안은산,1996-10-04,MF,시흥시민축구단,19,https://namu.wiki/w/시흥시민축구단
+SHG-26-42,양준영,2002-10-24,MF,시흥시민축구단,42,https://namu.wiki/w/시흥시민축구단
+SHG-26-14,김태헌,2004-10-17,FW,시흥시민축구단,14,https://namu.wiki/w/시흥시민축구단
+YPG-26-20,차인석,1996-03-01,DF,양평FC,20,https://namu.wiki/w/양평FC
+YPG-26-28,천세윤,2002-11-06,MF,양평FC,28,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-91,김유종,,MF,양평FC,91,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-90,브레노,2001-04-10,FW,양평FC,90,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-77,조영진,1996-05-09,MF,양평FC,77,https://namu.wiki/w/양평FC
+YPG-26-45,김성수,,DF,양평FC,45,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-10,김동욱,1998-12-24,MF,양평FC,10,https://namu.wiki/w/양평FC
+YPG-26-09,덴젤,2003-01-20,FW,양평FC,9,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-11b,조형인,,FW,양평FC,11,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-16,박준이,,FW,양평FC,16,https://www.kfa.or.kr/competition/k3_2026.php
+CWN-26-88,정성우,2003-12-08,DF,창원FC,88,https://namu.wiki/w/창원FC
+CWN-26-09,고병범,2001-03-19,MF,창원FC,9,https://namu.wiki/w/창원FC
+CWN-26-04,한상규,2005-08-05,DF,창원FC,4,https://namu.wiki/w/창원FC
+CWN-26-06b,전승민,,MF,창원FC,6,https://www.kfa.or.kr/competition/k3_2026.php
+CWN-26-20,박세민,2002-05-30,FW,창원FC,20,https://namu.wiki/w/창원FC
+ULC-26-18,이선일,1996-02-11,GK,울산시민축구단,18,https://namu.wiki/w/울산시민축구단
+ULC-26-14,김동윤,1997-07-14,DF,울산시민축구단,14,https://namu.wiki/w/울산시민축구단
+ULC-26-06,부성혁,1994-03-25,MF,울산시민축구단,6,https://namu.wiki/w/울산시민축구단
+ULC-26-09,이기운,1997-02-15,FW,울산시민축구단,9,https://namu.wiki/w/울산시민축구단
+GNG-26-18,최성진,,DF,FC강릉,18,https://www.kfa.or.kr/competition/k3_2026.php
+GNG-26-44,지병우,,DF,FC강릉,44,https://www.kfa.or.kr/competition/k3_2026.php
+GNG-26-15,김경수,,MF,FC강릉,15,https://www.kfa.or.kr/competition/k3_2026.php
+GNG-26-07,우병철,2000-11-05,FW,FC강릉,7,https://namu.wiki/w/강릉시민축구단
+GNG-26-34,김재봉,1996-09-06,DF,FC강릉,34,https://namu.wiki/w/강릉시민축구단
+GNG-26-23,이현규,2002-10-09,FW,FC강릉,23,https://namu.wiki/w/강릉시민축구단
+GNG-26-33,김진현,,FW,FC강릉,33,https://www.kfa.or.kr/competition/k3_2026.php
+DJN-26-06,신재욱,2000-05-21,DF,당진시민축구단,6,https://namu.wiki/w/당진시민축구단
+DJN-26-20,김주형,1999-12-26,DF,당진시민축구단,20,https://namu.wiki/w/당진시민축구단
+DJN-26-62,김영선,,DF,당진시민축구단,62,https://www.kfa.or.kr/competition/k3_2026.php
+DJN-26-11,곽승조,,FW,당진시민축구단,11,https://www.kfa.or.kr/competition/k3_2026.php
+DJN-26-32,이병욱,,DF,당진시민축구단,32,https://www.kfa.or.kr/competition/k3_2026.php
+DJN-26-35,민승기,1998-02-23,DF,당진시민축구단,35,https://namu.wiki/w/당진시민축구단
+DJN-26-77,이시명,2006-06-21,MF,당진시민축구단,77,https://namu.wiki/w/당진시민축구단
+DJN-26-15,지상욱,2003-01-13,FW,당진시민축구단,15,https://namu.wiki/w/당진시민축구단
+DJN-26-22,한창구,1998-01-20,FW,당진시민축구단,22,https://namu.wiki/w/당진시민축구단
+MKP-26-33,박정우,2006-05-04,FW,FC목포,33,https://namu.wiki/w/FC목포
+MKP-26-21,한승협,2001-08-10,GK,FC목포,21,https://namu.wiki/w/FC목포
+MKP-26-32,김정우,2000-11-16,DF,FC목포,32,https://namu.wiki/w/FC목포
+MKP-26-16,김민재,2003-01-24,DF,FC목포,16,https://namu.wiki/w/FC목포
+MKP-26-88,차승규,2002-01-11,FW,FC목포,88,https://namu.wiki/w/FC목포
+MKP-26-17,전보민,2000-05-10,DF,FC목포,17,https://namu.wiki/w/FC목포
+MKP-26-72,서명식,2006-06-02,FW,FC목포,72,https://namu.wiki/w/FC목포
+DKR-26-28,유승범,,DF,대전 코레일 FC,28,https://www.kfa.or.kr/competition/k3_2026.php
+YJU-26-06,이동건,1999-02-07,DF,여주FC,6,https://namu.wiki/w/여주FC
+YJU-26-26b,이현왕,2001-06-09,MF,여주FC,26,https://namu.wiki/w/여주FC
+YJU-26-10,이시이,2000-04-02,MF,여주FC,10,https://namu.wiki/w/여주FC
+YJU-26-94,임찬울,1994-07-14,FW,여주FC,94,https://www.kfa.or.kr/competition/k3_2026.php
+YJU-26-01,김형수,2003-06-10,GK,여주FC,1,https://namu.wiki/w/여주FC
+YJU-26-33,여현준,,MF,여주FC,33,https://www.kfa.or.kr/competition/k3_2026.php
+YJU-26-25,서동은,,MF,여주FC,25,https://www.kfa.or.kr/competition/k3_2026.php
+YJU-26-23,장혁재,2004-04-05,MF,여주FC,23,https://namu.wiki/w/여주FC
+YJU-26-70,정인증,2004-07-06,FW,여주FC,70,https://namu.wiki/w/여주FC
+YJU-26-17,홍동관,1999-07-10,FW,여주FC,17,https://www.kfa.or.kr/competition/k3_2026.php
+YJU-26-11,김도형,,FW,여주FC,11,https://www.kfa.or.kr/competition/k3_2026.php
+BTC-26-18,윤경원,,FW,부산교통공사축구단,18,https://www.kfa.or.kr/competition/k3_2026.php
+PCN-26-36,온예카오비존,2005-06-30,FW,포천시민축구단,36,https://www.kfa.or.kr/competition/k3_2026.php
+GNG-26-09,조건규,1998-10-15,FW,FC강릉,9,https://www.kfa.or.kr/competition/k3_2026.php
+GNG-26-27,권태영,2002-06-05,FW,FC강릉,27,https://www.kfa.or.kr/competition/k3_2026.php
+GNG-26-39,최성민,2003-06-12,FW,FC강릉,39,https://www.kfa.or.kr/competition/k3_2026.php
+ULC-26-21,김성진,2000-02-01,DF,울산시민축구단,21,https://www.kfa.or.kr/competition/k3_2026.php
+ULC-26-47,권혁찬,2004-04-30,MF,울산시민축구단,47,https://www.kfa.or.kr/competition/k3_2026.php
+ULC-26-29,김태환,2002-08-14,DF,울산시민축구단,29,https://www.kfa.or.kr/competition/k3_2026.php
+GYJ-26-20,정호근,1999-03-17,DF,경주한수원FC,20,https://www.kfa.or.kr/competition/k3_2026.php
+JBN-26-15,김하준,2002-07-17,DF,전북현대모터스,15,https://www.kfa.or.kr/competition/k3_2026.php
+JBN-26-27,황승준,2005-08-03,DF,전북현대모터스,27,https://www.kfa.or.kr/competition/k3_2026.php
+CWN-26-17,홍지민,,FW,창원FC,17,https://www.kfa.or.kr/competition/k3_2026.php
+DJN-26-13,임준석,2003-02-19,GK,당진시민축구단,13,https://www.kfa.or.kr/competition/k3_2026.php
+DJN-26-18,이현우,2003-07-19,MF,당진시민축구단,18,https://www.kfa.or.kr/competition/k3_2026.php
+MKP-26-26,강영종,1996-11-02,DF,FC목포,26,https://www.kfa.or.kr/competition/k3_2026.php
+MKP-26-08,양준모,1989-04-25,MF,FC목포,8,https://www.kfa.or.kr/competition/k3_2026.php
+MKP-26-09,장한영,1999-12-20,FW,FC목포,9,https://www.kfa.or.kr/competition/k3_2026.php
+MKP-26-10,이정,2001-03-02,FW,FC목포,10,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-01,심민,1998-02-15,GK,양평FC,1,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-13,윤양균,2002-07-17,MF,양평FC,13,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-30,이민혁,,FW,양평FC,30,https://www.kfa.or.kr/competition/k3_2026.php
+SHG-26-05,신일수,1994-09-04,DF,시흥시민축구단,5,https://www.kfa.or.kr/competition/k3_2026.php
+SHG-26-18,tanaka haruto,,FW,시흥시민축구단,18,https://www.kfa.or.kr/competition/k3_2026.php
+YJU-26-66,강태욱,1992-05-28,MF,여주FC,66,https://www.kfa.or.kr/competition/k3_2026.php
+YJU-26-14,서선웅,2000-02-18,FW,여주FC,14,https://www.kfa.or.kr/competition/k3_2026.php
+YJU-26-17b,김준서,2002-09-07,DF,여주FC,17,https://www.kfa.or.kr/competition/k3_2026.php
+YJU-26-77,최상헌,2001-07-16,MF,여주FC,77,https://www.kfa.or.kr/competition/k3_2026.php
+YJU-26-09,문경민,2000-04-02,FW,여주FC,9,https://www.kfa.or.kr/competition/k3_2026.php
+YJU-26-11b,정종근,2001-05-24,FW,여주FC,11,https://www.kfa.or.kr/competition/k3_2026.php
+YJU-26-16,강민성,2005-03-22,FW,여주FC,16,https://www.kfa.or.kr/competition/k3_2026.php
+PCN-26-26,서도현,2005-03-26,DF,포천시민축구단,26,https://www.kfa.or.kr/competition/k3_2026.php
+YJU-26-29,안성준,2003-05-20,DF,여주FC,29,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-62,황건,,DF,양평FC,62,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-15,이정근,1994-04-22,MF,양평FC,15,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-74,김재영,,DF,양평FC,74,https://www.kfa.or.kr/competition/k3_2026.php
+GNG-26-18b,송준민,2002-10-22,FW,FC강릉,18,https://www.kfa.or.kr/competition/k3_2026.php
+DJN-26-17,한준영,2002-10-06,FW,당진시민축구단,17,https://www.kfa.or.kr/competition/k3_2026.php
+SHG-26-98,나준영,1998-12-15,DF,시흥시민축구단,98,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-66,원우진,,DF,양평FC,66,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-48,남궁환,,MF,양평FC,48,https://www.kfa.or.kr/competition/k3_2026.php
+CCN-26-77,정승현,2004-09-30,MF,춘천시민축구단,77,https://www.kfa.or.kr/competition/k3_2026.php
+GYJ-26-33,현상엽,2005-01-31,MF,경주한수원FC,33,https://www.kfa.or.kr/competition/k3_2026.php
+SHG-26-31,강성혁,2005-08-24,GK,시흥시민축구단,31,https://www.kfa.or.kr/competition/k3_2026.php
+YJU-26-01b,김형수,,GK,여주FC,1,https://www.kfa.or.kr/competition/k3_2026.php
+YJU-26-28,송지완,2003-11-10,FW,여주FC,28,https://www.kfa.or.kr/competition/k3_2026.php
+JBN-26-24,이상명,,DF,전북현대모터스,24,https://www.kfa.or.kr/competition/k3_2026.php
+JBN-26-16,감보아,,MF,전북현대모터스,16,https://www.kfa.or.kr/competition/k3_2026.php
+JBN-26-98,임준휘,2005-02-14,FW,전북현대모터스,98,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-88,최민혁,,MF,양평FC,88,https://www.kfa.or.kr/competition/k3_2026.php
+CCN-26-16,석린,2007-09-08,MF,춘천시민축구단,16,https://www.kfa.or.kr/competition/k3_2026.php
+CCN-26-26,브레노,,FW,춘천시민축구단,26,https://www.kfa.or.kr/competition/k3_2026.php
+YJU-26-04,김형수,,MF,여주FC,4,https://www.kfa.or.kr/competition/k3_2026.php
+SHG-26-06,안지호,1987-04-24,DF,시흥시민축구단,6,https://www.kfa.or.kr/competition/k3_2026.php
+GYJ-26-02,이종현,1997-01-24,DF,경주한수원FC,2,https://www.kfa.or.kr/competition/k3_2026.php
+GYJ-26-27,유신,2000-05-05,FW,경주한수원FC,27,https://www.kfa.or.kr/competition/k3_2026.php
+DJN-26-25,임동주,2004-06-17,DF,당진시민축구단,25,https://www.kfa.or.kr/competition/k3_2026.php
+DJN-26-88,백세현,2001-09-07,MF,당진시민축구단,88,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-22,이찬솔,,DF,양평FC,22,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-19,이정찬,,MF,양평FC,19,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-12,이상오,2000-01-26,MF,양평FC,12,https://www.kfa.or.kr/competition/k3_2026.php
+PCN-26-30,류상우,2006-06-17,MF,포천시민축구단,30,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-55,성민준,,DF,양평FC,55,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-38,장한들,,FW,양평FC,38,https://www.kfa.or.kr/competition/k3_2026.php
+CCN-26-11,이광재,1998-06-10,FW,춘천시민축구단,11,https://www.kfa.or.kr/competition/k3_2026.php
+CCN-26-90,김형준,2007-09-03,FW,춘천시민축구단,90,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-27,조현준,,FW,양평FC,27,https://www.kfa.or.kr/competition/k3_2026.php
+GNG-26-13,김연수,1998-04-07,GK,FC강릉,13,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-26,이규서,,DF,양평FC,26,https://www.kfa.or.kr/competition/k3_2026.php
+GNG-26-16,김장우,2003-04-21,FW,FC강릉,16,https://www.kfa.or.kr/competition/k3_2026.php
+JBN-26-19,박주영,,FW,전북현대모터스,19,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-42,장재혁,,MF,양평FC,42,https://www.kfa.or.kr/competition/k3_2026.php
+PCN-26-32,김승섭,2005-02-20,FW,포천시민축구단,32,https://www.kfa.or.kr/competition/k3_2026.php
+JBN-26-01,이주현,,GK,전북현대모터스,1,https://www.kfa.or.kr/competition/k3_2026.php
+DJN-26-27,현상진,2005-01-31,MF,당진시민축구단,27,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-37,김용환,,DF,양평FC,37,https://www.kfa.or.kr/competition/k3_2026.php
+PCN-26-37,박관우,,DF,포천시민축구단,37,https://www.kfa.or.kr/competition/k3_2026.php
+CWN-26-03,이지형,,DF,창원FC,3,https://www.kfa.or.kr/competition/k3_2026.php
+CWN-26-39,김정현,,MF,창원FC,39,https://www.kfa.or.kr/competition/k3_2026.php
+YJU-26-47,김윤겸,2004-02-17,MF,여주FC,47,https://www.kfa.or.kr/competition/k3_2026.php
+GNG-26-22,이형욱,2004-07-22,MF,FC강릉,22,https://www.kfa.or.kr/competition/k3_2026.php
+SHG-26-27,이선유,,FW,시흥시민축구단,27,https://www.kfa.or.kr/competition/k3_2026.php
+GNG-26-47,이희재,2005-09-22,FW,FC강릉,47,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-79,김민서,,DF,양평FC,79,https://www.kfa.or.kr/competition/k3_2026.php
+CWN-26-47,이재민,2004-07-14,MF,창원FC,47,https://www.kfa.or.kr/competition/k3_2026.php
+GYJ-26-95,정충근,,FW,경주한수원FC,95,https://www.kfa.or.kr/competition/k3_2026.php
+SHG-26-28,오창환,,FW,시흥시민축구단,28,https://www.kfa.or.kr/competition/k3_2026.php
+PCN-26-35,김민구,,FW,포천시민축구단,35,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-19b,김태훈,,MF,양평FC,19,https://www.kfa.or.kr/competition/k3_2026.php
+GYJ-26-04,황명현,,DF,경주한수원FC,4,https://www.kfa.or.kr/competition/k3_2026.php
+JBN-26-37,한재빈,2006-11-04,DF,전북현대모터스,37,https://www.kfa.or.kr/competition/k3_2026.php
+JBN-26-61,구교빈,2008-10-06,MF,전북현대모터스,61,https://www.kfa.or.kr/competition/k3_2026.php
+JBN-26-62,김태영,2008-10-17,DF,전북현대모터스,62,https://www.kfa.or.kr/competition/k3_2026.php
+JBN-26-63,한승민,2009-11-09,MF,전북현대모터스,63,https://www.kfa.or.kr/competition/k3_2026.php
+CCN-26-70,손영윤,2002-09-04,FW,춘천시민축구단,70,https://www.kfa.or.kr/competition/k3_2026.php
+CCN-26-28,김호경,2000-05-01,DF,춘천시민축구단,28,https://www.kfa.or.kr/competition/k3_2026.php
+CCN-26-29,김채웅,2002-01-14,FW,춘천시민축구단,29,https://www.kfa.or.kr/competition/k3_2026.php
+CCN-26-30,이상민,2006-05-12,FW,춘천시민축구단,30,https://www.kfa.or.kr/competition/k3_2026.php
+YJU-26-74,유정찬,,FW,여주FC,74,https://www.kfa.or.kr/competition/k3_2026.php
+GYJ-26-23,최지호,2003-09-19,DF,경주한수원FC,23,https://www.kfa.or.kr/competition/k3_2026.php
+CCN-26-72,배민준,2008-06-07,FW,춘천시민축구단,72,https://www.kfa.or.kr/competition/k3_2026.php
+JBN-26-21,츄마시,,FW,전북현대모터스,21,https://www.kfa.or.kr/competition/k3_2026.php
+SHG-26-03,박현준,2001-05-03,DF,시흥시민축구단,3,https://www.kfa.or.kr/competition/k3_2026.php
+YPG-26-72,안성재,,MF,양평FC,72,https://www.kfa.or.kr/competition/k3_2026.php
+JBN-26-17b,이수빈,,MF,전북현대모터스,17,https://www.kfa.or.kr/competition/k3_2026.php
+BTC-26-42,김민성,,DF,부산교통공사축구단,42,https://www.kfa.or.kr/competition/k3_2026.php
+JBN-26-14,전병관,,FW,전북현대모터스,14,https://www.kfa.or.kr/competition/k3_2026.php
+BTC-26-23,최우담,2004-06-11,MF,부산교통공사축구단,23,https://www.kfa.or.kr/competition/k3_2026.php
+SHG-26-25,김태현,2002-10-02,MF,시흥시민축구단,25,https://www.kfa.or.kr/competition/k3_2026.php
+SHG-26-47,이정재,2007-01-14,FW,시흥시민축구단,47,https://www.kfa.or.kr/competition/k3_2026.php
