@@ -16,6 +16,7 @@ D = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data')
 SHORT = {'강원': 'GAN', '광주': 'GWA', '김천': 'GIM', '대전': 'DAE', '부천': 'BUC', '서울': 'SEO',
          '안양': 'ANY', '대구': 'DAG', '수원FC': 'SFC', '수원': 'SSB', '성남': 'SNG', '부산': 'BUS', '상주': 'SJS',
          '서울E': 'SEL', '충남아산': 'ASA', '안산': 'ANS', '경남': 'GYE', '전남': 'JNM', '김포': 'GMP', '천안': 'CHE', '충북청주': 'CBC', '화성': 'HWA',
+         '고양': 'GOY', '충주': 'CJU', '안산무': 'ANM', '아산': 'ASM',
          '울산': 'ULS', '인천': 'INC', '전북': 'JEO', '제주': 'JEJ', '포항': 'POH'}
 POS = {'GK': 'GK', 'LB': 'DF', 'RB': 'DF', 'CB': 'DF', 'LWB': 'DF', 'RWB': 'DF', 'SW': 'DF', 'DF': 'DF',
        'DM': 'MF', 'CM': 'MF', 'CAM': 'MF', 'AM': 'MF', 'LM': 'MF', 'RM': 'MF', 'MF': 'MF',
@@ -112,11 +113,12 @@ def main():
     games = json.load(open(os.path.join(a.raw, 'games_index.json'), encoding='utf-8'))
     mine = games if a.team == 'all' else [g for g in games if a.team in (g['homeTeamName'], g['awayTeamName'])]
     YR = a.year; YY = YR[2:]; TIER = 'K' + a.meet; LEAGUE = 'K리그' + a.meet
+    allrows_all = {}   # (선수번호, 팀) 별 목록: 시즌 중 이적한 선수 대응
     allrows = {}   # 같은 시즌 다른 경기 선수 목록 (그 경기 목록에 빠진 선수의 팀·배번 보충용)
     for gg in games:
         lp = os.path.join(a.raw, 'games', str(gg['gameId']), 'lineup.json')
         if os.path.exists(lp):
-            for q, v in json.load(open(lp, encoding='utf-8'))['rows'].items(): allrows[q] = (v[0], v[1], v[2], re.sub(r'\s*\([^)]*\)\s*$', '', v[3].strip()))
+            for q, v in json.load(open(lp, encoding='utf-8'))['rows'].items(): allrows[q] = allrows_all[(q, v[0])] = (v[0], v[1], v[2], re.sub(r'\s*\([^)]*\)\s*$', '', v[3].strip()))
     have = {m['match_id'] for m in mrows}; n0 = max(int(re.sub(r'\D', '', e['event_id']) or 0) for e in erows)
     byk = {(r['kleague_id'], r['team'], re.search(r'-(\d{2})-', r['player_id']).group(1), int(r['shirt_no'])): r for r in rrows if r['kleague_id']}
     used = {r['player_id'] for r in rrows}
@@ -133,6 +135,13 @@ def main():
         if mid in have: skipped.append(mid + ' (이미 있음)'); continue
         if mid in a.exclude.split(','): skipped.append(mid + ' (원본에서 출전 선수를 확정할 수 없어 제외)'); continue
         fix_ids(info, det, rows, mid, log)
+        # 선수 목록이 부족한 경기(예: 개막전은 목록이 비어 있음): 이벤트에 나오는 선수 중 목록에 없는 선수를 같은 시즌 다른 경기의 팀·배번으로 보충
+        for e in [e for k in ('firstHalf', 'secondHalf') for e in info.get(k) or []]:
+            for k2 in ('playerId', 'playerId2'):
+                q = e.get(k2)
+                tt2 = [t for t in (hid, aid) if (q, t) in allrows_all]
+                if q and q not in rows and len(tt2) == 1:
+                    rows[q] = allrows_all[(q, tt2[0])]; log.append(f'{mid}: 선수 목록에 없던 {rows[q][3]}({q})를 같은 시즌 다른 경기의 팀·배번({rows[q][1]}번)으로 보충')
         # 출전 선수 = 선발 명단 + 교체 투입 (사이트 상세 통계가 비어 있는 경기도 있어 이 방식이 기본, 통계가 있으면 대조)
         start = set()
         for tbl in starters:
