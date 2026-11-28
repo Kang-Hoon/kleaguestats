@@ -29,7 +29,11 @@ def lineup(h):
                 td = [x.get_text(' ', strip=True) for x in tr.find_all('td')]
                 cur.append([int(td[0]), td[2]])
             starters.append(cur)
-    return {'rows': rows, 'starters': starters}
+    # 경기장 그림(선발 11명씩): playerDetailPop('팀','선수번호') 다음의 <p>배번.이름</p>
+    flat = re.sub(r'\s+', ' ', h); pitch = []
+    for tid, pid, no, nm in re.findall(r"playerDetailPop\('(K\d+)', '(\d+)'\)\" style=\"cursor:pointer[^>]*>(?:(?!playerDetailPop).)*?<p>(\d+)\.([^<]+)</p>", flat):
+        pitch.append([tid, pid, int(no), nm.strip()])
+    return {'rows': rows, 'starters': starters, 'pitch': pitch}
 os.makedirs(f'{OUT}/games', exist_ok=True)
 rounds = post('/api/ddf/match/getRoundList.do', year=YEAR, meetSeq=MEET)['data']['roundList']
 games = []
