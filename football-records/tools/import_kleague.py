@@ -75,8 +75,15 @@ def fix_ids(info, det, rows, mid, log):
     for e in evs:
         q = e.get('playerId')
         if q and q not in rows and q not in alias:
-            c = [p for p, (t, n, ps, nm) in rows.items() if t == e.get('teamId') and n == e.get('backNo')]
+            # 사이트 이벤트·표의 배번은 경기 당시 번호가 아니라 최근 등록 번호라 배번만으로 사람을 잇지 않는다: 같은 팀·같은 이름으로만 잇고,
+            # 목록에 이름이 비어 있는 같은 팀·같은 배번 선수가 하나뿐이면 그 선수로(이름 빈 칸 보충), 아니면 이벤트의 정보로 새 선수 항목을 만든다.
+            en = (e.get('playerName') or '').strip()
+            c = [p for p, (t, n, ps, nm) in rows.items() if t == e.get('teamId') and nm == en and en]
+            if len(c) != 1 and not c:
+                c = [p for p, (t, n, ps, nm) in rows.items() if t == e.get('teamId') and n == e.get('backNo') and not nm]
             if len(c) == 1: alias[q] = c[0]; names[c[0]] = e.get('playerName')
+            elif not c and en and e.get('teamId'):
+                rows[q] = (e['teamId'], e.get('backNo') or 0, '', en); log.append(f"{mid}: 선수 목록에 없던 {en}({q})를 이벤트 정보로 추가 (배번 {e.get('backNo')})")
     for e in evs:
         q = e.get('playerId2')
         if q and q not in rows and q not in alias:
@@ -119,6 +126,19 @@ def main():
         lp = os.path.join(a.raw, 'games', str(gg['gameId']), 'lineup.json')
         if os.path.exists(lp):
             for q, v in json.load(open(lp, encoding='utf-8'))['rows'].items(): allrows[q] = allrows_all[(q, v[0])] = (v[0], v[1], v[2], re.sub(r'\s*\([^)]*\)\s*$', '', v[3].strip()))
+    pcount = defaultdict(Counter)   # (선수번호, 팀) -> 경기장 그림 배번 (선발로 나온 경기 기준)
+    for gg in games:
+        lp = os.path.join(a.raw, 'games', str(gg['gameId']), 'lineup.json')
+        if os.path.exists(lp):
+            for t, q, n, nm in json.load(open(lp, encoding='utf-8')).get('pitch') or []: pcount[(q, t)][int(n)] += 1
+    pshirt = {k: c.most_common(1)[0][0] for k, c in pcount.items()}
+    ebn = {}   # (선수번호, 팀) -> 시즌 중 이벤트에 적힌 배번 (경기 당시 번호가 아닐 수 있어 pitch 배번이 없을 때만 씀)
+    for gg in games:
+        ip = os.path.join(a.raw, 'games', str(gg['gameId']), 'matchInfo.json')
+        if os.path.exists(ip):
+            for k3 in ('firstHalf', 'secondHalf'):
+                for e3 in (json.load(open(ip, encoding='utf-8'))['data'].get(k3) or []):
+                    if e3.get('playerId') and e3.get('backNo') and e3.get('teamId'): ebn.setdefault((e3['playerId'], e3['teamId']), e3['backNo'])
     have = {m['match_id'] for m in mrows}; n0 = max(int(re.sub(r'\D', '', e['event_id']) or 0) for e in erows)
     byk = {(r['kleague_id'], r['team'], re.search(r'-(\d{2})-', r['player_id']).group(1), int(r['shirt_no'])): r for r in rrows if r['kleague_id']}
     used = {r['player_id'] for r in rrows}
@@ -142,6 +162,11 @@ def main():
                 tt2 = [t for t in (hid, aid) if (q, t) in allrows_all]
                 if q and q not in rows and len(tt2) == 1:
                     rows[q] = allrows_all[(q, tt2[0])]; log.append(f'{mid}: 선수 목록에 없던 {rows[q][3]}({q})를 같은 시즌 다른 경기의 팀·배번({rows[q][1]}번)으로 보충')
+                elif q and q not in rows and e.get('teamId') in (hid, aid) and ((e.get('playerName2') if k2 == 'playerId2' else e.get('playerName')) or '').strip():
+                    nm0 = ((e.get('playerName2') if k2 == 'playerId2' else e.get('playerName')) or '').strip(); t0 = e['teamId']
+                    n0 = pshirt.get((q, t0)) or ebn.get((q, t0)) or 0
+                    rows[q] = (t0, n0, '', nm0)
+                    log.append(f"{mid}: 선수 목록에 없던 {nm0}({q})를 이벤트 정보로 추가 (배번 {n0 if n0 else '모름→0'})")
         # 출전 선수 = 선발 명단 + 교체 투입 (사이트 상세 통계가 비어 있는 경기도 있어 이 방식이 기본, 통계가 있으면 대조)
         start = set()
         for tbl in starters:
@@ -180,7 +205,8 @@ def main():
         if det_by and set(det_by) != set(applist):
             log.append(f"{mid}: 출전 선수가 사이트 통계와 다름 (통계에만 {sorted(set(det_by)-set(applist))}, 명단에만 {sorted(set(applist)-set(det_by))})")
         if not det_by: log.append(f"{mid}: 사이트 선수 통계가 비어 있어 출전시간 대조는 생략")
-        info_p = {pid: rows[pid] for pid in applist}
+        # 배번: 선발로 나온 적 있으면 경기장 그림(경기 당시 번호), 아니면 표·이벤트의 번호(최근 등록 번호일 수 있음)
+        info_p = {pid: (rows[pid][0], pshirt.get((pid, rows[pid][0]), rows[pid][1]), rows[pid][2], rows[pid][3]) for pid in applist}
         for t in (hid, aid):
             if len([p for p in start if rows[p][0] == t]) != 11: errs.append(f'{mid}: {tid2name[t]} 선발 {len([p for p in start if rows[p][0]==t])}명')
         sides = defaultdict(list)
@@ -202,7 +228,8 @@ def main():
         ev = []
         def add(m, typ, pid, rel=None, team=None, half=1):
             for q in (pid, rel):
-                if q and q not in pidmap: raise KeyError(f"{mid}: 이벤트 선수 {q} ({rows.get(q)}) 가 출전 명단에 없음 (선발 {len(start)}, 교체투입 {len(subin)})")
+                if q and q not in pidmap:
+                    errs.append(f"{mid}: 이벤트 선수 {q} ({rows.get(q)}) 가 출전 명단에 없음 (선발 {len(start)}, 교체투입 {len(subin)})"); return
             ev.append(dict(_h=half, minute=m[0], extra_minute=m[1] or '', type=typ, player_id=pidmap[pid], team=team or tid2name[rows[pid][0]],
                            related_player_id=pidmap[rel] if rel else '', note=''))
         for pid in applist:
