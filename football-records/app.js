@@ -8,6 +8,8 @@
   const SHOW_ROWS = 8;
   // 리그별 정규 경기 수(팀당). 아는 리그만 적고, 모르면 데이터에 있는 경기 수를 그대로 씀
   const LEAGUE_GAMES = { 'K리그1': 38, 'K3리그': 26 };
+  const SEASON_GAMES = { 'K리그1:2020': 27 };   // 시즌마다 경기 수가 다른 경우(2020은 코로나로 27경기)
+  const gamesOf = (lg, season) => SEASON_GAMES[lg + ':' + season] || LEAGUE_GAMES[lg] || 0;
   let model = null;
   let teamList = [];   // data/teams.csv (없으면 경기 데이터의 팀만 사용)
   let mode = 'real';
@@ -102,9 +104,9 @@
     present.filter(l => LEAGUES.indexOf(l) < 0).forEach(l => { s += chip(l, l, 'var(--muted)'); });
     return '<div class="chips">' + s + '</div>';
   }
-  function seasonSelect(current) {
+  function seasonSelect(current, list) {
     const opts = ['<option value="all">통산 (전체 시즌)</option>']
-      .concat(model.meta.seasons.map(s => '<option value="' + s + '"' + (String(s) === String(current) ? ' selected' : '') + '>' + s + ' 시즌</option>'));
+      .concat((list || model.meta.seasons).map(s => '<option value="' + s + '"' + (String(s) === String(current) ? ' selected' : '') + '>' + s + ' 시즌</option>'));
     return '<div class="filters"><label class="sel">시즌 <select data-param="season">' + opts.join('') + '</select></label></div>';
   }
   function srcHTML(s) {
@@ -142,10 +144,10 @@
     const s = p.get('season');
     return s && s !== 'all' ? Number(s) : 'all';
   }
-  function wdl(team, season) {
+  function wdl(team, season, lg) {
     let w = 0, d = 0, l = 0, gf = 0, ga = 0, n = 0;
     model.matches.forEach(m => {
-      if ((m.home_team !== team && m.away_team !== team) || (season !== 'all' && m.season !== season)) return;
+      if ((m.home_team !== team && m.away_team !== team) || (season !== 'all' && m.season !== season) || (lg && lg !== 'all' && m.league !== lg)) return;
       if (m.home_score === null || m.away_score === null) return;
       const mine = m.home_team === team ? m.home_score : m.away_score;
       const their = m.home_team === team ? m.away_score : m.home_score;
@@ -242,7 +244,7 @@
       const emb = t.emblem ? '<span class="emb"><img src="emblems/' + esc(t.emblem) + '" alt="" loading="lazy"></span>' : '';
       if (!t.ready) return '<span class="tbtn off">' + emb + '<b>' + esc(t.name) + '</b><small>준비 중</small></span>';
       const r = wdl(t.name, 'all');
-      return '<a class="tbtn" href="' + href('/team/' + encodeURIComponent(t.name), { league: cur }) + '">' + emb + '<b>' + esc(t.name) +
+      return '<a class="tbtn" href="' + href('/team/' + encodeURIComponent(t.name), {}) + '">' + emb + '<b>' + esc(t.name) +
         '</b><small>' + (LEAGUE_GAMES[cur] && r.n < LEAGUE_GAMES[cur] ? r.n + '/' + LEAGUE_GAMES[cur] + '경기 수집됨' : r.n + '경기 · ' + r.w + '승 ' + r.d + '무 ' + r.l + '패') + '</small></a>';
     }).join('');
     return '<h1>구단</h1><p class="lead">리그를 고르고 구단을 누르면 그 팀의 기록실이 열려요.</p>' + chips + '<div class="tgrid">' + grid + '</div>';
@@ -260,32 +262,57 @@
       return '<div class="sumcard"><p>' + esc(label) + '</p>' + body + '</div>';
     }).join('') + '</div>';
   }
-  function coverage(team, season) {
-    let total = 0, withEv = 0, lg = '';
+  // 그 구단이 뛴 리그·시즌 목록 (리그 순서대로, 시즌 오름차순)
+  function teamLeagues(team) {
+    const by = {};
     model.matches.forEach(m => {
-      if ((m.home_team !== team && m.away_team !== team) || (season !== 'all' && m.season !== season)) return;
-      total++; lg = m.league;
+      if (m.home_team !== team && m.away_team !== team) return;
+      (by[m.league] = by[m.league] || new Set()).add(m.season);
+    });
+    const order = l => { const k = LEAGUES.indexOf(l); return k < 0 ? 99 : k; };
+    return Object.keys(by).sort((a, b) => order(a) - order(b))
+      .map(l => ({ league: l, seasons: Array.from(by[l]).sort((a, b) => a - b) }));
+  }
+  const seasonRange = ss => ss.length === 1 ? ss[0] + '' : ss[0] + '~' + ss[ss.length - 1] + ' (' + ss.length + '시즌)';
+  function coverage(team, season, lg) {
+    // 리그·시즌별로 "그 시즌 정규 경기 수"를 더해서 기대 경기 수를 계산 (뛰지 않은 시즌은 세지 않음)
+    const seen = {}; let total = 0, withEv = 0, unknown = false;
+    model.matches.forEach(m => {
+      if ((m.home_team !== team && m.away_team !== team) || (season !== 'all' && m.season !== season) || (lg !== 'all' && m.league !== lg)) return;
+      total++; seen[m.league + ':' + m.season] = (seen[m.league + ':' + m.season] || 0) + 1;
       if ((model.eventsByMatch.get(m.match_id) || []).length) withEv++;
     });
-    const per = LEAGUE_GAMES[lg] || total;
-    const seasons = season === 'all' ? model.meta.seasons.length : 1;
-    const expect = Math.max(per * seasons, total);
+    let expect = 0;
+    Object.keys(seen).forEach(k => {
+      const [l, ss] = k.split(':'); const g = gamesOf(l, ss);
+      if (g) expect += Math.max(g, seen[k]); else { expect += seen[k]; unknown = true; }
+    });
     const lack = expect - withEv;
-    const why = total < expect ? '아직 수집하지 못한 경기가 있어' : '득점·출장 기록이 아직 없는 경기가 있어';
+    const why = total < expect ? '아직 수집하지 못했거나 치르지 않은 경기가 있어' : '득점·출장 기록이 아직 없는 경기가 있어';
     return '<p class="cover' + (lack ? ' warn' : '') + '">기록 반영 경기 ' + withEv + '/' + expect +
       (lack ? ' · ' + lack + '경기는 ' + why + ' 팀 기록이 실제보다 적을 수 있어요' : ' · 모든 경기의 상세 기록이 들어 있어요') + '</p>';
   }
   function viewTeam(team, p) {
     const known = model.matches.some(m => m.home_team === team || m.away_team === team);
     if (!known) return '<a class="crumb" href="#/teams">← 구단 목록</a><h1>찾을 수 없는 구단이에요</h1><p class="lead">구단 이름이 데이터에 없어요.</p>';
-    const season = seasonOf(p);
+    const tl = teamLeagues(team);
+    const want = p.get('league');
+    const lg = tl.some(x => x.league === want) ? want : 'all';          // 리그별 보기 (기본: 전체 리그 통산)
+    const mySeasons = Array.from(new Set([].concat(...tl.filter(x => lg === 'all' || x.league === lg).map(x => x.seasons)))).sort((a, b) => a - b);
+    let season = seasonOf(p); if (season !== 'all' && mySeasons.indexOf(season) < 0) season = 'all';
     const tab = currentTab(p);
-    const q = R.query(model, { team, season });
-    const lg = (model.matches.find(m => m.home_team === team || m.away_team === team) || {}).league;
-    const r = wdl(team, season);
-    return '<a class="crumb" href="' + href('/teams', { league: lg }) + '">← ' + esc(lg || '구단') + ' 구단 목록</a><h1>' + esc(team) + '</h1>' +
-      '<p class="lead">' + esc(lg || '') + ' · ' + r.n + '경기 ' + r.w + '승 ' + r.d + '무 ' + r.l + '패 · 득점 ' + r.gf + ' 실점 ' + r.ga + '</p>' +
-      coverage(team, season) + teamSummary(q) + seasonSelect(season) + tabs('/team/' + encodeURIComponent(team), { season: season === 'all' ? '' : String(season) }, tab) +
+    const q = R.query(model, { team, season, league: lg });
+    const r = wdl(team, season, lg);
+    const crumbLg = lg !== 'all' ? lg : tl[0].league;
+    const lgNow = lg !== 'all' ? [tl.find(x => x.league === lg)] : tl;
+    const lead = lgNow.map(x => esc(x.league) + ' ' + seasonRange(x.seasons)).join(' · ');
+    const extra = { season: season === 'all' ? '' : String(season), league: lg === 'all' ? '' : lg };
+    const chips = tl.length < 2 ? '' : '<div class="chips">' + [{ league: 'all', label: '전체 리그' }].concat(tl.map(x => ({ league: x.league, label: x.league + ' · ' + seasonRange(x.seasons) })))
+      .map(x => '<a class="chip" style="--c:' + (LEAGUE_COLOR[x.league] || 'var(--chalk)') + '"' + (x.league === lg ? ' aria-current="true"' : '') +
+        ' href="' + href('/team/' + encodeURIComponent(team), { league: x.league === 'all' ? '' : x.league, tab }) + '"><i></i>' + esc(x.label) + '</a>').join('') + '</div>';
+    return '<a class="crumb" href="' + href('/teams', { league: crumbLg }) + '">← ' + esc(crumbLg || '구단') + ' 구단 목록</a><h1>' + esc(team) + '</h1>' +
+      '<p class="lead">' + lead + ' · ' + r.n + '경기 ' + r.w + '승 ' + r.d + '무 ' + r.l + '패 · 득점 ' + r.gf + ' 실점 ' + r.ga + '</p>' + chips +
+      coverage(team, season, lg) + teamSummary(q) + seasonSelect(season, mySeasons) + tabs('/team/' + encodeURIComponent(team), extra, tab) +
       q.lists.filter(l => l.group === tab).map(l => listHTML(l, true)).join('');
   }
   function viewData() {
