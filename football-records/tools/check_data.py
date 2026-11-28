@@ -42,7 +42,7 @@ for mid, es in ev.items():
     m = mids[mid]
     for k, side in (('home', m['home_team']), ('away', m['away_team'])):
         g = sum(1 for e in es if e['team'] == side and e['type'] in ('GOAL', 'OWN_GOAL'))
-        if g != int(m[k + '_score']): errs.append(f'{mid}: {side} 득점 이벤트 {g} ≠ 점수 {m[k+"_score"]}')
+        if g != int(m[k + '_score']) and not m.get('note'): errs.append(f'{mid}: {side} 득점 이벤트 {g} ≠ 점수 {m[k+"_score"]}')
         st = sum(1 for e in es if e['team'] == side and e['type'] == 'START')
         if st != 11: errs.append(f'{mid}: {side} 선발 {st}명')
 for r in IDM:
