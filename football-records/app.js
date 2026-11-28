@@ -244,7 +244,7 @@
       const emb = t.emblem ? '<span class="emb"><img src="emblems/' + esc(t.emblem) + '" alt="" loading="lazy"></span>' : '';
       if (!t.ready) return '<span class="tbtn off">' + emb + '<b>' + esc(t.name) + '</b><small>준비 중</small></span>';
       const r = wdl(t.name, 'all');
-      return '<a class="tbtn" href="' + href('/team/' + encodeURIComponent(t.name), {}) + '">' + emb + '<b>' + esc(t.name) +
+      return '<a class="tbtn" href="' + href('/team/' + encodeURIComponent(t.name), { league: cur }) + '">' + emb + '<b>' + esc(t.name) +
         '</b><small>' + (LEAGUE_GAMES[cur] && r.n < LEAGUE_GAMES[cur] ? r.n + '/' + LEAGUE_GAMES[cur] + '경기 수집됨' : r.n + '경기 · ' + r.w + '승 ' + r.d + '무 ' + r.l + '패') + '</small></a>';
     }).join('');
     return '<h1>구단</h1><p class="lead">리그를 고르고 구단을 누르면 그 팀의 기록실이 열려요.</p>' + chips + '<div class="tgrid">' + grid + '</div>';

@@ -265,9 +265,12 @@
 
     // 선수별 통산
     const stats = new Map();
+    // 같은 사람이 팀·시즌마다 다른 player_id를 가져도 K리그 고유번호(kleague_id)로 한 사람으로 합산
+    const pkey = pid => { const p = P(pid); return p && p.kleague_id ? 'k' + p.kleague_id : pid; };
     const S = (pid, team) => {
-      if (!stats.has(pid)) stats.set(pid, { pid, team, apps: 0, starts: 0, minutes: 0, goals: 0, assists: 0, yellow: 0, red: 0, cleanSheets: 0 });
-      const s = stats.get(pid); if (team) s.team = team; return s;
+      const k = pkey(pid);
+      if (!stats.has(k)) stats.set(k, { pid, team, apps: 0, starts: 0, minutes: 0, goals: 0, assists: 0, yellow: 0, red: 0, cleanSheets: 0 });
+      const s = stats.get(k); if (team) s.team = team; return s;
     };
     apps.forEach(a => {
       const s = S(a.pid, a.team);
@@ -334,10 +337,10 @@
     // 단일 경기·시즌 득점 기록
     const perMatch = new Map(), perSeason = new Map();
     goalEvents.forEach(({ e, m }) => {
-      const k1 = e.player_id + '|' + m.match_id;
+      const k1 = pkey(e.player_id) + '|' + m.match_id;
       if (!perMatch.has(k1)) perMatch.set(k1, { pid: e.player_id, team: e.team, m, n: 0, source: e.source });
       perMatch.get(k1).n++;
-      const k2 = e.player_id + '|' + m.season;
+      const k2 = pkey(e.player_id) + '|' + m.season + '|' + m.league;
       if (!perSeason.has(k2)) perSeason.set(k2, { pid: e.player_id, team: e.team, season: m.season, league: m.league, n: 0 });
       perSeason.get(k2).n++;
     });
