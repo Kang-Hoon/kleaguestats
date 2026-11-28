@@ -88,8 +88,14 @@ def main():
         # 출전 선수 = 선발 명단 + 교체 투입 (사이트 상세 통계가 비어 있는 경기도 있어 이 방식이 기본, 통계가 있으면 대조)
         start = set()
         for tbl in starters:
+            tteams = Counter(rows[c[0]][0] for c in ([pid for pid, (t, n, p, nm) in rows.items() if t in (hid, aid) and n == no and nm == name] for no, name, yy in tbl) if len(c) == 1)
+            tt = tteams.most_common(1)[0][0] if tteams else None
             for no, name, yy in tbl:
                 c = [pid for pid, (t, n, p, nm) in rows.items() if t in (hid, aid) and n == no and nm == name]
+                if len(c) != 1 and tt:   # 이름 표기가 다르면(예: 표에는 별칭) 같은 팀·같은 배번의 선수로 매칭
+                    c2 = [pid for pid, (t, n, p, nm) in rows.items() if t == tt and n == no]
+                    if len(c2) == 1:
+                        log.append(f'{mid}: 선발표 {no}.{name} = 선수 목록 {rows[c2[0]][3]} (같은 팀·배번, 이름 표기 다름 → 선수 목록의 이름 사용)'); c = c2
                 if len(c) != 1: errs.append(f'{mid}: 선발 {no}.{name} 선수 매칭 {len(c)}건'); continue
                 start.add(c[0])
         name2id = {(t, nm): pid for pid, (t, n, p, nm) in rows.items()}
