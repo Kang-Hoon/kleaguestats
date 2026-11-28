@@ -141,9 +141,9 @@
       if (!evs.length) { addIssue('info', 'no_events', m.match_id + ': 이벤트가 아직 없어요 (득점자·출장 기록 미입력)'); return; }
       const cnt = t => evs.filter(e => (e.type === 'GOAL' || e.type === 'OWN_GOAL') && e.team === t).length;
       if (cnt(m.home_team) !== m.home_score || cnt(m.away_team) !== m.away_score)
-        addIssue('error', 'score_mismatch',
+        addIssue(m.note ? 'info' : 'error', 'score_mismatch',
           m.match_id + ': 점수 ' + m.home_score + '-' + m.away_score + ' 인데 득점 이벤트는 ' +
-          cnt(m.home_team) + '-' + cnt(m.away_team));
+          cnt(m.home_team) + '-' + cnt(m.away_team) + (m.note ? ' (' + m.note + ')' : ''));
     });
 
     // 생년월일
@@ -274,7 +274,7 @@
       s.apps++; if (a.start) s.starts++; s.minutes += a.minutes;
       const p = P(a.pid), m = a.m;
       if (p && p.position === 'GK' && a.start && a.to >= m.length) {
-        const conceded = a.team === m.home_team ? m.away_score : m.home_score;
+        const conceded = m.note ? (model.eventsByMatch.get(m.match_id) || []).filter(e => (e.type === 'GOAL' || e.type === 'OWN_GOAL') && e.team !== a.team).length : (a.team === m.home_team ? m.away_score : m.home_score);
         if (conceded === 0) s.cleanSheets++;
       }
     });

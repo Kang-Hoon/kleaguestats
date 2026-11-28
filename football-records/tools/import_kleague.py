@@ -14,11 +14,13 @@ from bs4 import BeautifulSoup
 
 D = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data')
 SHORT = {'강원': 'GAN', '광주': 'GWA', '김천': 'GIM', '대전': 'DAE', '부천': 'BUC', '서울': 'SEO',
-         '안양': 'ANY', '대구': 'DAG', '수원FC': 'SFC', '울산': 'ULS', '인천': 'INC', '전북': 'JEO', '제주': 'JEJ', '포항': 'POH'}
+         '안양': 'ANY', '대구': 'DAG', '수원FC': 'SFC', '수원': 'SSB', '성남': 'SNG', '부산': 'BUS', '상주': 'SJS', '울산': 'ULS', '인천': 'INC', '전북': 'JEO', '제주': 'JEJ', '포항': 'POH'}
 POS = {'GK': 'GK', 'LB': 'DF', 'RB': 'DF', 'CB': 'DF', 'LWB': 'DF', 'RWB': 'DF', 'SW': 'DF', 'DF': 'DF',
        'DM': 'MF', 'CM': 'MF', 'CAM': 'MF', 'AM': 'MF', 'LM': 'MF', 'RM': 'MF', 'MF': 'MF',
        'CF': 'FW', 'ST': 'FW', 'SS': 'FW', 'LW': 'FW', 'RW': 'FW', 'FW': 'FW'}
 URL = 'https://www.kleague.com/match.do?year=%s&meetSeq=1&gameId=%s&leagueId=1&startTabNum=1'
+# 연맹이 경기 후 결과를 정정한 경기 {match_id: (공식 홈, 공식 원정, 실제 홈, 실제 원정, 설명)}: 공식 점수와 실제 득점 이벤트가 다름 (이벤트는 실제 경기대로 둠)
+CORRECTED = {'K1-2021-0918-GWA-JEJ': (0, 3, 1, 1, '실제 경기 결과는 1-1이었으나 연맹이 광주의 교체 횟수 초과를 이유로 광주 0-3 패로 정정(2021-09-24). 득점 이벤트는 실제 경기 기준')}
 ORD = {'START': 0, 'SUB_OUT': 1, 'SUB_IN': 2}
 
 
@@ -52,11 +54,14 @@ def parse_html(h):
 def load_lineup(d):
     """lineup.json(축소 raw) 또는 match.html(전체 raw) → parse_html 과 같은 형태"""
     lp = os.path.join(d, 'lineup.json')
-    if not os.path.exists(lp): return parse_html(open(f'{d}/match.html', encoding='utf-8').read())
+    if not os.path.exists(lp): return (*parse_html(open(f'{d}/match.html', encoding='utf-8').read()), [])
     j = json.load(open(lp, encoding='utf-8'))
     rows = {pid: (t, n, p, re.sub(r'\s*\([^)]*\)\s*$', '', nm.strip())) for pid, (t, n, p, nm) in j['rows'].items()}
     starters = [[(no, re.match(r'^(.+?)\(\d{2}\)', nm).group(1).strip(), re.search(r'\((\d{2})\)', nm).group(1)) for no, nm in tbl] for tbl in j['starters']]
-    return rows, starters
+    pitch = j.get('pitch') or []
+    for t, q, n, nm in pitch:   # 선수 목록 표에 빠진 선발 선수 보충 (포지션은 사이트 통계에서)
+        rows.setdefault(q, (t, n, '', re.sub(r'\s*\([^)]*\)\s*$', '', nm.strip())))
+    return rows, starters, [q for t, q, n, nm in pitch]
 
 
 def main():
@@ -67,10 +72,16 @@ def main():
     th, trows = rd('teams'); tname = {t['team_code']: t['name'] for t in trows}
     mh, mrows = rd('matches'); rh, rrows = rd('roster'); eh, erows = rd('events')
     if 'kleague_id' not in rh: rh = rh + ['kleague_id']
+    if 'note' not in mh: mh = mh + ['note']
     for r in rrows: r.setdefault('kleague_id', '')
     games = json.load(open(os.path.join(a.raw, 'games_index.json'), encoding='utf-8'))
     mine = games if a.team == 'all' else [g for g in games if a.team in (g['homeTeamName'], g['awayTeamName'])]
     YR = a.year; YY = YR[2:]
+    allrows = {}   # 같은 시즌 다른 경기 선수 목록 (그 경기 목록에 빠진 선수의 팀·배번 보충용)
+    for gg in games:
+        lp = os.path.join(a.raw, 'games', str(gg['gameId']), 'lineup.json')
+        if os.path.exists(lp):
+            for q, v in json.load(open(lp, encoding='utf-8'))['rows'].items(): allrows[q] = (v[0], v[1], v[2], re.sub(r'\s*\([^)]*\)\s*$', '', v[3].strip()))
     have = {m['match_id'] for m in mrows}; n0 = max(int(re.sub(r'\D', '', e['event_id']) or 0) for e in erows)
     byk = {(r['kleague_id'], r['team'], re.search(r'-(\d{2})-', r['player_id']).group(1), int(r['shirt_no'])): r for r in rrows if r['kleague_id']}
     used = {r['player_id'] for r in rrows}
@@ -80,7 +91,7 @@ def main():
         info = json.load(open(f'{d}/matchInfo.json', encoding='utf-8'))['data']
         if info.get('gameStatus') != 'FE': skipped.append(f"{g['gameDate']} {g['homeTeamName']}-{g['awayTeamName']} (경기 전/미종료)"); continue
         det = json.load(open(f'{d}/allDetail.json', encoding='utf-8'))['data']
-        rows, starters = load_lineup(d)
+        rows, starters, pitch = load_lineup(d)
         hc, ac = SHORT[g['homeTeamName']], SHORT[g['awayTeamName']]
         hid, aid = g['homeTeam'], g['awayTeam']; tid2code = {hid: hc, aid: ac}; tid2name = {hid: tname[hc], aid: tname[ac]}
         mid = f"K1-{YR}-{g['gameDate'][5:7]}{g['gameDate'][8:10]}-{hc}-{ac}"
@@ -100,12 +111,23 @@ def main():
                 start.add(c[0])
         name2id = {(t, nm): pid for pid, (t, n, p, nm) in rows.items()}
         subin = set()
+        dstat = {p['playerId']: p for p in det['listH'] + det['listA'] if p.get('minutePlay')}
         for half, k in ((1, 'firstHalf'), (2, 'secondHalf')):
             for e in info.get(k) or []:
                 if e['eventName'] == '교체':
-                    pin = name2id.get((e['teamId'], e['playerName2'].strip()))
+                    pin = (e.get('playerId2') if e.get('playerId2') in rows else name2id.get((e['teamId'], e['playerName2'].strip())))
                     if not pin: errs.append(f"{mid}: 교체 IN {e['playerName2']} 못 찾음")
                     else: subin.add(pin)
+        if not starters and len(pitch) == 22:   # 오래된 경기: 선발 명단 표 대신 경기장 그림의 선발 11명씩 사용
+            start = set(pitch); log.append(f'{mid}: 선발 명단 표가 없어 경기장 그림의 선발 22명 사용')
+        elif not starters:   # 오래된 경기는 선발 명단 표가 없음 → 출전 기록(출전 분>0) 중 교체 투입이 아닌 선수를 선발로 봄
+            if not dstat: errs.append(f'{mid}: 선발 명단도 출전 통계도 없어 선발을 알 수 없음'); continue
+            for q in [q for q in dstat if q not in rows]:
+                if q in allrows and allrows[q][0] in (hid, aid) and dstat[q].get('playerName') in (None, allrows[q][3]):
+                    rows[q] = allrows[q]; log.append(f'{mid}: 선수 목록에 없던 {allrows[q][3]}({q})를 같은 시즌 다른 경기의 팀·배번({allrows[q][1]}번)으로 보충')
+            bad = [q for q in dstat if q not in rows]
+            if bad: errs.append(f'{mid}: 출전 통계 선수 {bad} 가 선수 목록에 없음'); continue
+            start = set(dstat) - subin; log.append(f'{mid}: 선발 명단 표가 없어 출전 통계에서 선발을 판단')
         det_by = {p['playerId']: p for p in det['listH'] + det['listA']}
         if det_by and not any(p.get('minutePlay') for p in det_by.values()): det_by = {}   # 통계가 0으로만 채워진 경기
         applist = {pid: det_by.get(pid, {'playerName': rows[pid][3], 'playerPos': rows[pid][2], 'minutePlay': None}) for pid in start | subin}
@@ -151,7 +173,7 @@ def main():
             if e['eventName'] in ('경고', '퇴장'):
                 add(m, 'YELLOW' if e['eventName'] == '경고' else 'RED', e['playerId'], half=half)
             elif e['eventName'] == '교체':
-                pin = name2id.get((e['teamId'], e['playerName2'].strip()))
+                pin = (e.get('playerId2') if e.get('playerId2') in rows else name2id.get((e['teamId'], e['playerName2'].strip())))
                 if not pin: errs.append(f"{mid}: 교체 IN {e['playerName2']} 못 찾음"); continue
                 add(m, 'SUB_OUT', e['playerId'], pin, half=half); add(m, 'SUB_IN', pin, e['playerId'], half=half)
             elif e['eventName'] == '득점':
@@ -164,7 +186,9 @@ def main():
                 add(m, 'OWN_GOAL', e['playerId'], team=tid2name[other], half=half)
         if len(used_assist) != sum(1 for h_, e in tl if e['eventName'] == '도움'): errs.append(f'{mid}: 짝 없는 도움')
         ev.sort(key=lambda x: (x['minute'], x['extra_minute'] or 0, ORD.get(x['type'], 3)))
+        cor = CORRECTED.get(mid)
         for t, sc in ((hid, info['homeGoal']), (aid, info['awayGoal'])):
+            if cor: sc = cor[2] if t == hid else cor[3]   # 실제 경기 기준 득점과 대조
             n = sum(1 for x in ev if x['team'] == tid2name[t] and x['type'] in ('GOAL', 'OWN_GOAL'))
             if n != sc: errs.append(f'{mid}: {tid2name[t]} 득점 이벤트 {n} ≠ 점수 {sc}')
         fh = max((e['timeMin'] for e in info.get('firstHalf') or [] if e['eventName'] == '전반종료'), default=None)
@@ -181,7 +205,7 @@ def main():
             if mp is not None and abs((t_out - t_in) - mp) > 1: mindiff.append(f"{mid} {p['playerName']}: 계산 {t_out - t_in} / 사이트 {mp}")
         newm.append(dict(match_id=mid, season=YR, league='K리그1', round=str(g['_round']), date=g['gameDate'].replace('/', '-'),
                          venue=g.get('fieldNameFull', ''), home_team=tid2name[hid], away_team=tid2name[aid],
-                         home_score=str(info['homeGoal']), away_score=str(info['awayGoal']), attendance='', source=URL % (YR, gid),
+                         home_score=str(cor[0] if cor else info['homeGoal']), away_score=str(cor[1] if cor else info['awayGoal']), note=cor[4] if cor else '', attendance='', source=URL % (YR, gid),
                          first_half_extra=str(fh - 45) if fh and fh > 45 else '', second_half_extra=str(sh - 45) if sh and sh > 45 else ''))
         for x in ev:
             n0 += 1; x.update(event_id=f'E{n0:05d}', match_id=mid, source=URL % (YR, gid)); newe.append(x)
