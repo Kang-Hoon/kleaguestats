@@ -1,0 +1,17 @@
+name: kleague-html
+on:
+  push:
+    branches: [collector-kleague]
+    paths: ['tools/probe/kleague_html.py', '.github/workflows/kleague-html.yml', 'tools/probe/html_games.txt']
+permissions:
+  contents: write
+jobs:
+  h:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python3 tools/probe/kleague_html.py $(cat tools/probe/html_games.txt)
+          cd out; git init -q -b raw; git config user.name Kang-Hoon; git config user.email khlee3179@gmail.com
+          git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          git add -A; git commit -q -m html; git push -f origin raw:kleague-raw-html
