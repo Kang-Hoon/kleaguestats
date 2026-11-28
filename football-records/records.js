@@ -356,6 +356,29 @@
         rank: x.rank, name: nameOf(x.pid), team: x.team, pid: x.pid,
         value: x.n + '골', sub: x.season + ' 시즌 · ' + x.league,
       }));
+    // 도움: 득점 이벤트의 related_player_id (도움 준 선수의 팀 = 득점한 팀)
+    const aMatch = new Map(), aSeason = new Map();
+    goalEvents.forEach(({ e, m }) => {
+      const q = e.related_player_id; if (!q) return;
+      const k1 = pkey(q) + '|' + m.match_id;
+      if (!aMatch.has(k1)) aMatch.set(k1, { pid: q, team: e.team, m, n: 0, source: e.source });
+      aMatch.get(k1).n++;
+      const k2 = pkey(q) + '|' + m.season + '|' + m.league;
+      if (!aSeason.has(k2)) aSeason.set(k2, { pid: q, team: e.team, season: m.season, league: m.league, n: 0 });
+      aSeason.get(k2).n++;
+    });
+    const matchAssists = ranked(
+      Array.from(aMatch.values()).filter(x => x.n >= 2).sort((a, b) => b.n - a.n || (a.m.date < b.m.date ? -1 : 1)),
+      x => x.n, TOP_N).map(x => row({
+        rank: x.rank, name: nameOf(x.pid), team: x.team, pid: x.pid,
+        value: x.n + '개', sub: matchLabel(x.m), matchId: x.m.match_id, source: x.source || x.m.source,
+      }));
+    const seasonAssists = ranked(
+      Array.from(aSeason.values()).sort((a, b) => b.n - a.n || nameOf(a.pid).localeCompare(nameOf(b.pid), 'ko')),
+      x => x.n, TOP_N).map(x => row({
+        rank: x.rank, name: nameOf(x.pid), team: x.team, pid: x.pid,
+        value: x.n + '개', sub: x.season + ' 시즌 · ' + x.league,
+      }));
     const fastest = ranked(
       goalEvents.filter(g => g.e.minute !== null && g.e.minute >= 1)
         .sort((a, b) => (a.e.minute * 100 + a.e.extra) - (b.e.minute * 100 + b.e.extra) || (a.m.date < b.m.date ? -1 : 1)),
@@ -424,6 +447,8 @@
       { id: 'old_app', group: 'unusual', title: '최고령 출장', rows: aO.rows, excluded: aO.excluded, empty: '생년월일이 입력된 출장 선수가 없어요' },
       { id: 'fast', group: 'unusual', title: '가장 빠른 득점', rows: fastest, empty: '득점 시간이 입력된 기록이 없어요' },
       { id: 'match_goals', group: 'unusual', title: '한 경기 최다 득점 (선수)', rows: matchGoals, empty: '한 경기 2골 이상 기록한 선수가 아직 없어요' },
+      { id: 'match_assists', group: 'unusual', title: '한 경기 최다 도움 (선수)', rows: matchAssists, empty: '한 경기 2도움 이상 기록한 선수가 아직 없어요' },
+      { id: 'season_assists', group: 'unusual', title: '한 시즌 최다 도움 (선수)', rows: seasonAssists, empty: '도움 기록이 없어요' },
       { id: 'season_goals', group: 'unusual', title: '한 시즌 최다 득점 (선수)', rows: seasonGoals, empty: '득점 기록이 아직 없어요' },
 
       { id: 'big_win', group: 'match', title: '최다 점수차 승리', rows: bigWins, empty: '승리 경기가 아직 없어요' },
