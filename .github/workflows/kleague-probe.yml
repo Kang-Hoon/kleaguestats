@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 tools/probe/kleague_probe.py
+      - run: python3 tools/probe/kleague_probe2.py
       - name: publish raw
         run: |
           cd out
