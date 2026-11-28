@@ -9,8 +9,14 @@ def get(u):
         except Exception as e: err = repr(e); time.sleep(2 * (i + 1))
     return 'ERR ' + err
 if sample: ids = ids[:sample]
+res = {}
 for n, pid in enumerate(ids):
     h = get(f'https://www.kleague.com/record/playerDetail.do?playerId={pid}')
-    open(f'{out}/{pid}.html', 'w', encoding='utf-8').write(h)
+    flat = re.sub(r'\s+', ' ', h)
+    kv = {k.strip(): v.strip() for k, v in re.findall(r'<th>([^<]+)</th>\s*<td>([^<]*)</td>', flat) if k.strip()}
+    nm = re.search(r'<title>([^<]*)</title>', flat)
+    res[pid] = {'info': kv, 'err': h[:60] if h.startswith('ERR') else ''}
+    if n < 3: open(f'{out}/{pid}.html', 'w', encoding='utf-8').write(h)
     time.sleep(0.15)
-print('done', len(ids))
+json.dump(res, open(f'{out}/players.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
+print('done', len(ids), sum(1 for v in res.values() if v['info'].get('생년월일')))
