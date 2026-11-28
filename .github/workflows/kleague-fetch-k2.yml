@@ -1,0 +1,24 @@
+name: kleague-fetch-k2
+on:
+  push:
+    branches: [collector-kleague]
+    paths: ['.github/workflows/kleague-fetch-k2.yml', 'tools/probe/k2_run.txt']
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        year: [2020, 2021, 2022, 2023, 2024, 2025]
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install beautifulsoup4 >/dev/null
+      - run: python3 tools/probe/kleague_fetch.py ${{ matrix.year }} out 2
+      - run: |
+          cd out
+          git init -q -b raw; git config user.name Kang-Hoon; git config user.email khlee3179@gmail.com
+          git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          git add -A; git commit -q -m "kleague K2 raw ${{ matrix.year }}"; git push -f origin raw:kleague-raw-k2-${{ matrix.year }}

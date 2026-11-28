@@ -16,7 +16,7 @@ def call(req, tries=4):
             err = repr(e); time.sleep(2 * (i + 1))
     raise RuntimeError(err)
 def post(ep, **kw): return json.loads(call(urllib.request.Request(B + ep, data=urllib.parse.urlencode(kw).encode(), headers=UA)))
-def html(gid): return call(urllib.request.Request(f'{B}/match.do?year={YEAR}&meetSeq={MEET}&gameId={gid}&leagueId=1&startTabNum=1', headers={'User-Agent': UA['User-Agent']}))
+def html(gid): return call(urllib.request.Request(f'{B}/match.do?year={YEAR}&meetSeq={MEET}&gameId={gid}&leagueId={MEET}&startTabNum=1', headers={'User-Agent': UA['User-Agent']}))
 def lineup(h):
     rows = {}
     for tid, pid, no, pos, name in re.findall(r"playerDetailPop\('(K\d+)', '(\d+)'\)\"[^>]*>\s*<td>(\d+)</td>\s*<td>(\w+)</td>\s*<td>\s*([^<]+?)</td>", h):
