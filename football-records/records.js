@@ -306,8 +306,9 @@
         const pid = getPid(x), p = P(pid);
         const a = p && p.birth_date ? ageAt(p.birth_date, getDate(x)) : null;
         if (!a) { excluded.add(pid); return; }
-        const cur = best.get(pid);
-        if (!cur || (dir === 'asc' ? a.total < cur.a.total : a.total > cur.a.total)) best.set(pid, { x, a, pid });
+        const key = p.kleague_id ? 'k' + p.kleague_id : pid;   // 같은 사람이 팀·시즌마다 다른 player_id를 가져도 K리그 고유번호로 한 줄에 묶음
+        const cur = best.get(key);
+        if (!cur || (dir === 'asc' ? a.total < cur.a.total : a.total > cur.a.total)) best.set(key, { x, a, pid });
       });
       const items = Array.from(best.values()).sort((p, q) =>
         (dir === 'asc' ? p.a.total - q.a.total : q.a.total - p.a.total) || (getDate(p.x) < getDate(q.x) ? -1 : 1));
