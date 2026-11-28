@@ -10,7 +10,7 @@ def get(u):
     return 'ERR ' + err
 if sample: ids = ids[:sample]
 for n, pid in enumerate(ids):
-    h = get(f'https://www.kleague.com/player/playerDetail.do?playerId={pid}')
+    h = get(f'https://www.kleague.com/record/playerDetail.do?playerId={pid}')
     open(f'{out}/{pid}.html', 'w', encoding='utf-8').write(h)
     time.sleep(0.15)
 print('done', len(ids))
