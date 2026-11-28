@@ -14,11 +14,13 @@ from bs4 import BeautifulSoup
 
 D = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data')
 SHORT = {'강원': 'GAN', '광주': 'GWA', '김천': 'GIM', '대전': 'DAE', '부천': 'BUC', '서울': 'SEO',
-         '안양': 'ANY', '대구': 'DAG', '수원FC': 'SFC', '수원': 'SSB', '성남': 'SNG', '부산': 'BUS', '상주': 'SJS', '울산': 'ULS', '인천': 'INC', '전북': 'JEO', '제주': 'JEJ', '포항': 'POH'}
+         '안양': 'ANY', '대구': 'DAG', '수원FC': 'SFC', '수원': 'SSB', '성남': 'SNG', '부산': 'BUS', '상주': 'SJS',
+         '서울E': 'SEL', '충남아산': 'ASA', '안산': 'ANS', '경남': 'GYE', '전남': 'JNM', '김포': 'GMP', '천안': 'CHE', '충북청주': 'CBC', '화성': 'HWA',
+         '울산': 'ULS', '인천': 'INC', '전북': 'JEO', '제주': 'JEJ', '포항': 'POH'}
 POS = {'GK': 'GK', 'LB': 'DF', 'RB': 'DF', 'CB': 'DF', 'LWB': 'DF', 'RWB': 'DF', 'SW': 'DF', 'DF': 'DF',
        'DM': 'MF', 'CM': 'MF', 'CAM': 'MF', 'AM': 'MF', 'LM': 'MF', 'RM': 'MF', 'MF': 'MF',
        'CF': 'FW', 'ST': 'FW', 'SS': 'FW', 'LW': 'FW', 'RW': 'FW', 'FW': 'FW'}
-URL = 'https://www.kleague.com/match.do?year=%s&meetSeq=1&gameId=%s&leagueId=1&startTabNum=1'
+URL = 'https://www.kleague.com/match.do?year=%s&meetSeq=%s&gameId=%s&leagueId=%s&startTabNum=1'
 # 연맹이 경기 후 결과를 정정한 경기 {match_id: (공식 홈, 공식 원정, 실제 홈, 실제 원정, 설명)}: 공식 점수와 실제 득점 이벤트가 다름 (이벤트는 실제 경기대로 둠)
 CORRECTED = {'K1-2021-0918-GWA-JEJ': (0, 3, 1, 1, '실제 경기 결과는 1-1이었으나 연맹이 광주의 교체 횟수 초과를 이유로 광주 0-3 패로 정정(2021-09-24). 득점 이벤트는 실제 경기 기준')}
 ORD = {'START': 0, 'SUB_OUT': 1, 'SUB_IN': 2}
@@ -64,9 +66,42 @@ def load_lineup(d):
     return rows, starters, [q for t, q, n, nm in pitch]
 
 
+def fix_ids(info, det, rows, mid, log):
+    """같은 사람인데 경기 페이지의 선수 번호(playerId)와 이벤트·통계의 번호가 다른 경우를 같은 팀·배번(또는 이름)으로 이어 붙임.
+    경기 페이지 쪽 번호를 기준으로 삼고, 페이지에 이름이 비어 있으면 이벤트·통계의 이름을 채움."""
+    evs = [e for k in ('firstHalf', 'secondHalf') for e in info.get(k) or []]
+    alias, names = {}, {}
+    for e in evs:
+        q = e.get('playerId')
+        if q and q not in rows and q not in alias:
+            c = [p for p, (t, n, ps, nm) in rows.items() if t == e.get('teamId') and n == e.get('backNo')]
+            if len(c) == 1: alias[q] = c[0]; names[c[0]] = e.get('playerName')
+    for e in evs:
+        q = e.get('playerId2')
+        if q and q not in rows and q not in alias:
+            n2 = (e.get('playerName2') or '').strip()
+            c = [p for p, (t, n, ps, nm) in rows.items() if t == e.get('teamId') and nm == n2]
+            if len(c) == 1: alias[q] = c[0]; names[c[0]] = n2
+    stats = det['listH'] + det['listA']
+    for st in stats:
+        q = st['playerId']
+        if q not in rows and q not in alias:
+            c = [p for p, (t, n, ps, nm) in rows.items() if nm == st.get('playerName') and p not in {x['playerId'] for x in stats}]
+            if len(c) == 1: alias[q] = c[0]
+    if not alias: return
+    for e in evs:
+        for k in ('playerId', 'playerId2'):
+            if e.get(k) in alias: e[k] = alias[e[k]]
+    for st in stats:
+        if st['playerId'] in alias: st['playerId'] = alias[st['playerId']]
+    for p, nm in names.items():
+        if nm and not rows[p][3]: rows[p] = (rows[p][0], rows[p][1], rows[p][2], nm)
+    log.append(f"{mid}: 경기 페이지와 이벤트·통계의 선수 번호가 다른 선수 {len(alias)}명을 같은 팀·배번으로 연결 ({', '.join(f'{k}→{v}' for k, v in alias.items())})")
+
+
 def main():
     global D
-    ap = argparse.ArgumentParser(); ap.add_argument('raw'); ap.add_argument('--team', default='all'); ap.add_argument('--year', default='2026')
+    ap = argparse.ArgumentParser(); ap.add_argument('raw'); ap.add_argument('--team', default='all'); ap.add_argument('--year', default='2026'); ap.add_argument('--meet', default='1', help='1=K리그1, 2=K리그2'); ap.add_argument('--exclude', default='', help='반영하지 않을 match_id (쉼표 구분). 원본에서 선수를 확정할 수 없는 경기')
     ap.add_argument('--dry-run', action='store_true'); ap.add_argument('--data', default=D); a = ap.parse_args()
     D = a.data
     th, trows = rd('teams'); tname = {t['team_code']: t['name'] for t in trows}
@@ -76,7 +111,7 @@ def main():
     for r in rrows: r.setdefault('kleague_id', '')
     games = json.load(open(os.path.join(a.raw, 'games_index.json'), encoding='utf-8'))
     mine = games if a.team == 'all' else [g for g in games if a.team in (g['homeTeamName'], g['awayTeamName'])]
-    YR = a.year; YY = YR[2:]
+    YR = a.year; YY = YR[2:]; TIER = 'K' + a.meet; LEAGUE = 'K리그' + a.meet
     allrows = {}   # 같은 시즌 다른 경기 선수 목록 (그 경기 목록에 빠진 선수의 팀·배번 보충용)
     for gg in games:
         lp = os.path.join(a.raw, 'games', str(gg['gameId']), 'lineup.json')
@@ -94,8 +129,10 @@ def main():
         rows, starters, pitch = load_lineup(d)
         hc, ac = SHORT[g['homeTeamName']], SHORT[g['awayTeamName']]
         hid, aid = g['homeTeam'], g['awayTeam']; tid2code = {hid: hc, aid: ac}; tid2name = {hid: tname[hc], aid: tname[ac]}
-        mid = f"K1-{YR}-{g['gameDate'][5:7]}{g['gameDate'][8:10]}-{hc}-{ac}"
+        mid = f"{TIER}-{YR}-{g['gameDate'][5:7]}{g['gameDate'][8:10]}-{hc}-{ac}"
         if mid in have: skipped.append(mid + ' (이미 있음)'); continue
+        if mid in a.exclude.split(','): skipped.append(mid + ' (원본에서 출전 선수를 확정할 수 없어 제외)'); continue
+        fix_ids(info, det, rows, mid, log)
         # 출전 선수 = 선발 명단 + 교체 투입 (사이트 상세 통계가 비어 있는 경기도 있어 이 방식이 기본, 통계가 있으면 대조)
         start = set()
         for tbl in starters:
@@ -203,12 +240,12 @@ def main():
             if t_in is None: errs.append(f"{mid}: {p['playerName']} 선발도 교체투입도 아닌데 출전 기록 있음"); continue
             mp = p.get('minutePlay')
             if mp is not None and abs((t_out - t_in) - mp) > 1: mindiff.append(f"{mid} {p['playerName']}: 계산 {t_out - t_in} / 사이트 {mp}")
-        newm.append(dict(match_id=mid, season=YR, league='K리그1', round=str(g['_round']), date=g['gameDate'].replace('/', '-'),
+        newm.append(dict(match_id=mid, season=YR, league=LEAGUE, round=str(g['_round']), date=g['gameDate'].replace('/', '-'),
                          venue=g.get('fieldNameFull', ''), home_team=tid2name[hid], away_team=tid2name[aid],
-                         home_score=str(cor[0] if cor else info['homeGoal']), away_score=str(cor[1] if cor else info['awayGoal']), note=cor[4] if cor else '', attendance='', source=URL % (YR, gid),
+                         home_score=str(cor[0] if cor else info['homeGoal']), away_score=str(cor[1] if cor else info['awayGoal']), note=cor[4] if cor else '', attendance='', source=URL % (YR, a.meet, gid, a.meet),
                          first_half_extra=str(fh - 45) if fh and fh > 45 else '', second_half_extra=str(sh - 45) if sh and sh > 45 else ''))
         for x in ev:
-            n0 += 1; x.update(event_id=f'E{n0:05d}', match_id=mid, source=URL % (YR, gid)); newe.append(x)
+            n0 += 1; x.update(event_id=f'E{n0:05d}', match_id=mid, source=URL % (YR, a.meet, gid, a.meet)); newe.append(x)
     for r in rrows:
         v = posvote.get(r['player_id'])
         if v and not r['position']: r['position'] = v.most_common(1)[0][0]
