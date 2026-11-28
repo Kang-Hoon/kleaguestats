@@ -1,0 +1,19 @@
+name: kleague-player
+on:
+  push:
+    branches: [collector-kleague]
+    paths: ['tools/probe/kleague_player.py', '.github/workflows/kleague-player.yml', 'tools/probe/player_mode.txt']
+permissions:
+  contents: write
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python3 tools/probe/kleague_player.py tools/probe/player_ids.txt out $(cat tools/probe/player_mode.txt)
+          cd out
+          git init -q -b raw; git config user.name Kang-Hoon; git config user.email khlee3179@gmail.com
+          git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          git add -A; git commit -q -m "kleague player pages"; git push -f origin raw:kleague-raw-player
