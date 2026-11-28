@@ -15,17 +15,12 @@ jobs:
       - run: pip install beautifulsoup4 >/dev/null
       - name: fetch
         run: |
-          YEAR=$(cat tools/probe/fetch_year.txt)
-          python3 tools/probe/kleague_fetch.py "$YEAR" out
+          for Y in $(cat tools/probe/fetch_year.txt); do python3 tools/probe/kleague_fetch.py "$Y" out/$Y; done
           du -sh out
       - name: publish raw
         run: |
-          YEAR=$(cat tools/probe/fetch_year.txt)
-          cd out
-          git init -q -b raw
-          git config user.name Kang-Hoon
-          git config user.email khlee3179@gmail.com
-          git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
-          git add -A
-          git commit -q -m "kleague raw $YEAR"
-          git push -f origin raw:kleague-raw-$YEAR
+          for Y in $(cat tools/probe/fetch_year.txt); do
+            (cd out/$Y && git init -q -b raw && git config user.name Kang-Hoon && git config user.email khlee3179@gmail.com \
+             && git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" \
+             && git add -A && git commit -q -m "kleague raw $Y" && git push -f origin raw:kleague-raw-$Y)
+          done
