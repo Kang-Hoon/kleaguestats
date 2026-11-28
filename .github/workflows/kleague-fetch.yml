@@ -1,0 +1,31 @@
+name: kleague-fetch
+on:
+  push:
+    branches: [collector-kleague]
+    paths: ['tools/probe/kleague_fetch.py', '.github/workflows/kleague-fetch.yml', 'tools/probe/fetch_year.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install beautifulsoup4 >/dev/null
+      - name: fetch
+        run: |
+          YEAR=$(cat tools/probe/fetch_year.txt)
+          python3 tools/probe/kleague_fetch.py "$YEAR" out
+          du -sh out
+      - name: publish raw
+        run: |
+          YEAR=$(cat tools/probe/fetch_year.txt)
+          cd out
+          git init -q -b raw
+          git config user.name Kang-Hoon
+          git config user.email khlee3179@gmail.com
+          git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          git add -A
+          git commit -q -m "kleague raw $YEAR"
+          git push -f origin raw:kleague-raw-$YEAR
