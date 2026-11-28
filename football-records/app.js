@@ -307,7 +307,7 @@
     const lgNow = lg !== 'all' ? [tl.find(x => x.league === lg)] : tl;
     const lead = lgNow.map(x => esc(x.league) + ' ' + seasonRange(x.seasons)).join(' · ');
     const extra = { season: season === 'all' ? '' : String(season), league: lg === 'all' ? '' : lg };
-    const chips = tl.length < 2 ? '' : '<div class="chips">' + [{ league: 'all', label: '전체 리그' }].concat(tl.map(x => ({ league: x.league, label: x.league + ' · ' + seasonRange(x.seasons) })))
+    const chips = tl.length < 2 ? '' : '<div class="chips">' + [{ league: 'all', label: '전체 기록 (통합)' }].concat(tl.map(x => ({ league: x.league, label: x.league + ' 기록 · ' + seasonRange(x.seasons) })))
       .map(x => '<a class="chip" style="--c:' + (LEAGUE_COLOR[x.league] || 'var(--chalk)') + '"' + (x.league === lg ? ' aria-current="true"' : '') +
         ' href="' + href('/team/' + encodeURIComponent(team), { league: x.league === 'all' ? '' : x.league, tab }) + '"><i></i>' + esc(x.label) + '</a>').join('') + '</div>';
     return '<a class="crumb" href="' + href('/teams', { league: crumbLg }) + '">← ' + esc(crumbLg || '구단') + ' 구단 목록</a><h1>' + esc(team) + '</h1>' +
