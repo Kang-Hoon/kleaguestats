@@ -1,0 +1,2066 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="target-densitydpi=device-dpi, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width" />
+  
+  <title>K LEAGUE</title>
+  <link rel="stylesheet" href="/assets/js/jquery-ui.min.css">
+  <link rel="stylesheet" href="/assets/js/swiper5.3.8/swiper.min.css">
+
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/jquery-ui.min.js"></script>
+  <script src="/assets/js/swiper5.3.8/swiper.min.js"></script>
+  <script src="/assets/js/script.js"></script>
+</head>
+<body>
+
+  
+    
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <title>K LEAGUE</title>
+    <link rel="stylesheet" href="/assets/js/jquery-ui.min.css">
+    <link rel="stylesheet" href="/assets/js/swiper5.3.8/swiper.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css?v=1.5" class="theme">
+    <link rel="stylesheet" href="/assets/css/icon.css?v=1.5">
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery-ui.min.js"></script>
+    <script src="/assets/js/swiper5.3.8/swiper.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+
+    <script src="/assets/js/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyCn98NmJHHz-fQxEvViK7C84BhxwlbF0dc",
+            authDomain: "k-league-c362b.firebaseapp.com",
+            databaseURL: "https://k-league-c362b.firebaseio.com",
+            projectId: "k-league-c362b",
+            storageBucket: "k-league-c362b.appspot.com",
+            messagingSenderId: "365443416884",
+            appId: "1:365443416884:web:bc597c79cc63ec14ca9b61",
+            measurementId: "G-L3LH9NY4ZZ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        var link = linkConvert(window.location.pathname);
+        firebase.analytics().logEvent('homepage', {"view": link});
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function changeLang() {
+            var link = document.location.href;
+            while (link.endsWith("#")) {
+                link = link.substr(0, link.length - 1)
+            }
+
+            $.ajax({
+                url: "/changeLang.do",
+                type: "POST",
+                enctype: "json",
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (res) {
+                    if (resultCode = "200") {
+                        location.href = link;
+                    }
+                },
+                error: function (request, status, error) {
+                    alert("code:" + request.status + "\n" + "message:" + request.responseText + "\n" + "error:" + error);
+                }
+            });
+        }
+
+        function searchAll() {
+            let searchText = $("#searchInput").val();
+            searchText = encodeURIComponent(searchText);
+            location.href = "/search.do?searchWord=" + searchText;
+        }
+    </script>
+
+</head>
+
+<body style="display: none;">
+<header>
+    <div class="head-top">
+        <div class="header-bar">
+            <div class="bar-con">
+                <ul>
+                    
+                        <li><a href="/login.do">로그인</a></li>
+                        <li><a href="/join/step1.do">회원가입</a></li>
+                    
+                    
+                </ul>
+                <div class="lang-sel">
+                    <span>KR</span>
+                    <select id="language" onchange="javascript:changeLang();">
+                        <option value="ko"  selected  > KR</option>
+                        <option value="en"  > EN</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="header-con">
+            <h1><a href="/index.do"><img src="/assets/images/logo/logo.png" srcset="/assets/images/logo/logo.png 1x,/assets/images/logo/logo@2x.png 2x,/assets/images/logo/logo@3x.png 3x" alt="K LEAGUE"></a></h1>
+
+            <div class="league-wrap">
+                <div class="f-wrap">
+                    <ul class="tab-btns kleague-txt">
+                        <li class="active"><img src="/assets/images/text/kleague_txt1.png" srcset="/assets/images/text/kleague_txt1.png 1x,/assets/images/text/kleague_txt1@2x.png 2x,/assets/images/text/kleague_txt1@3x.png 3x" alt="K LEAGUE"></li>
+                        <li> <img src="/assets/images/text/kleague_txt2.png" srcset="/assets/images/text/kleague_txt2.png 1x,/assets/images/text/kleague_txt2@2x.png 2x,/assets/images/text/kleague_txt2@3x.png 3x" alt="K LEAGUE"> </li>
+                    </ul>
+                    <div class="tab-con-wrap">
+                        <div class="cont active">
+                            <ul class="f-wrap">
+                                
+                                    <li> <a href="https://www.fcseoul.com/" title="서울" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K09.png" srcset="/assets/images/emblem/emblem_K09.png 1x,/assets/images/emblem/emblem_K09@2x.png 2x,/assets/images/emblem/emblem_K09@3x.png 3x" alt="서울>"></a> </li>
+                                
+                                    <li> <a href="https://www.uhdfc.com/fc/greetings.php" title="울산" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K01.png" srcset="/assets/images/emblem/emblem_K01.png 1x,/assets/images/emblem/emblem_K01@2x.png 2x,/assets/images/emblem/emblem_K01@3x.png 3x" alt="울산>"></a> </li>
+                                
+                                    <li> <a href="https://www.dhcfc.kr/" title="대전" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K10.png" srcset="/assets/images/emblem/emblem_K10.png 1x,/assets/images/emblem/emblem_K10@2x.png 2x,/assets/images/emblem/emblem_K10@3x.png 3x" alt="대전>"></a> </li>
+                                
+                                    <li> <a href="https://www.incheonutd.com" title="인천" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K18.png" srcset="/assets/images/emblem/emblem_K18.png 1x,/assets/images/emblem/emblem_K18@2x.png 2x,/assets/images/emblem/emblem_K18@3x.png 3x" alt="인천>"></a> </li>
+                                
+                                    <li> <a href="https://www.gangwon-fc.com" title="강원" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K21.png" srcset="/assets/images/emblem/emblem_K21.png 1x,/assets/images/emblem/emblem_K21@2x.png 2x,/assets/images/emblem/emblem_K21@3x.png 3x" alt="강원>"></a> </li>
+                                
+                                    <li> <a href="https://www.hyundai-motorsfc.com" title="전북" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K05.png" srcset="/assets/images/emblem/emblem_K05.png 1x,/assets/images/emblem/emblem_K05@2x.png 2x,/assets/images/emblem/emblem_K05@3x.png 3x" alt="전북>"></a> </li>
+                                
+                                    <li> <a href="https://www.jejuskfc.com/" title="제주" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K04.png" srcset="/assets/images/emblem/emblem_K04.png 1x,/assets/images/emblem/emblem_K04@2x.png 2x,/assets/images/emblem/emblem_K04@3x.png 3x" alt="제주>"></a> </li>
+                                
+                                    <li> <a href="https://www.fc-anyang.com" title="안양" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K27.png" srcset="/assets/images/emblem/emblem_K27.png 1x,/assets/images/emblem/emblem_K27@2x.png 2x,/assets/images/emblem/emblem_K27@3x.png 3x" alt="안양>"></a> </li>
+                                
+                                    <li> <a href="https://www.steelers.co.kr" title="포항" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K03.png" srcset="/assets/images/emblem/emblem_K03.png 1x,/assets/images/emblem/emblem_K03@2x.png 2x,/assets/images/emblem/emblem_K03@3x.png 3x" alt="포항>"></a> </li>
+                                
+                                    <li> <a href="https://gimcheonfc.com/" title="김천" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K35.png" srcset="/assets/images/emblem/emblem_K35.png 1x,/assets/images/emblem/emblem_K35@2x.png 2x,/assets/images/emblem/emblem_K35@3x.png 3x" alt="김천>"></a> </li>
+                                
+                                    <li> <a href="https://www.bfc1995.com" title="부천" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K26.png" srcset="/assets/images/emblem/emblem_K26.png 1x,/assets/images/emblem/emblem_K26@2x.png 2x,/assets/images/emblem/emblem_K26@3x.png 3x" alt="부천>"></a> </li>
+                                
+                                    <li> <a href="https://www.gwangjufc.com/" title="광주" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K22.png" srcset="/assets/images/emblem/emblem_K22.png 1x,/assets/images/emblem/emblem_K22@2x.png 2x,/assets/images/emblem/emblem_K22@3x.png 3x" alt="광주>"></a> </li>
+                                
+                            </ul>
+                        </div>
+                        <div class="cont">
+                            <ul class="f-wrap">
+                                
+                                    <li style="margin-left: 10px;"> <a href="https://www.bluewings.kr/" title="수원" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K02.png" srcset="/assets/images/emblem/emblem_K02.png 1x,/assets/images/emblem/emblem_K02@2x.png 2x,/assets/images/emblem/emblem_K02@3x.png 3x" alt="수원>"></a> </li>
+                                
+                                    <li style="margin-left: 10px;"> <a href="https://www.suwonfc.com" title="수원FC" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K29.png" srcset="/assets/images/emblem/emblem_K29.png 1x,/assets/images/emblem/emblem_K29@2x.png 2x,/assets/images/emblem/emblem_K29@3x.png 3x" alt="수원FC>"></a> </li>
+                                
+                                    <li style="margin-left: 10px;"> <a href="https://daegufc.co.kr" title="대구" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K17.png" srcset="/assets/images/emblem/emblem_K17.png 1x,/assets/images/emblem/emblem_K17@2x.png 2x,/assets/images/emblem/emblem_K17@3x.png 3x" alt="대구>"></a> </li>
+                                
+                                    <li style="margin-left: 10px;"> <a href="https://www.seoulelandfc.com" title="서울E" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K31.png" srcset="/assets/images/emblem/emblem_K31.png 1x,/assets/images/emblem/emblem_K31@2x.png 2x,/assets/images/emblem/emblem_K31@3x.png 3x" alt="서울E>"></a> </li>
+                                
+                                    <li style="margin-left: 10px;"> <a href="https://www.busanipark.com" title="부산" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K06.png" srcset="/assets/images/emblem/emblem_K06.png 1x,/assets/images/emblem/emblem_K06@2x.png 2x,/assets/images/emblem/emblem_K06@3x.png 3x" alt="부산>"></a> </li>
+                                
+                                    <li style="margin-left: 10px;"> <a href="https://www.hwaseongfc.com/" title="화성" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K39.png" srcset="/assets/images/emblem/emblem_K39.png 1x,/assets/images/emblem/emblem_K39@2x.png 2x,/assets/images/emblem/emblem_K39@3x.png 3x" alt="화성>"></a> </li>
+                                
+                                    <li style="margin-left: 10px;"> <a href="https://www.asanfc.com" title="충남아산" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K34.png" srcset="/assets/images/emblem/emblem_K34.png 1x,/assets/images/emblem/emblem_K34@2x.png 2x,/assets/images/emblem/emblem_K34@3x.png 3x" alt="충남아산>"></a> </li>
+                                
+                                    <li style="margin-left: 10px;"> <a href="https://www.gimpofc.com" title="김포" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K36.png" srcset="/assets/images/emblem/emblem_K36.png 1x,/assets/images/emblem/emblem_K36@2x.png 2x,/assets/images/emblem/emblem_K36@3x.png 3x" alt="김포>"></a> </li>
+                                
+                                    <li style="margin-left: 10px;"> <a href="https://seongnamfc.com/" title="성남" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K08.png" srcset="/assets/images/emblem/emblem_K08.png 1x,/assets/images/emblem/emblem_K08@2x.png 2x,/assets/images/emblem/emblem_K08@3x.png 3x" alt="성남>"></a> </li>
+                                
+                                    <li style="margin-left: 10px;"> <a href="http://www.gyeongnamfc.com" title="경남" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K20.png" srcset="/assets/images/emblem/emblem_K20.png 1x,/assets/images/emblem/emblem_K20@2x.png 2x,/assets/images/emblem/emblem_K20@3x.png 3x" alt="경남>"></a> </li>
+                                
+                                    <li style="margin-left: 10px;"> <a href="https://www.pajufrontier.com/" title="파주" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K40.png" srcset="/assets/images/emblem/emblem_K40.png 1x,/assets/images/emblem/emblem_K40@2x.png 2x,/assets/images/emblem/emblem_K40@3x.png 3x" alt="파주>"></a> </li>
+                                
+                                    <li style="margin-left: 10px;"> <a href="https://cheonancityfc.kr/" title="천안" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K38.png" srcset="/assets/images/emblem/emblem_K38.png 1x,/assets/images/emblem/emblem_K38@2x.png 2x,/assets/images/emblem/emblem_K38@3x.png 3x" alt="천안>"></a> </li>
+                                
+                                    <li style="margin-left: 10px;"> <a href="https://www.yonginfc.co.kr/" title="용인" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K42.png" srcset="/assets/images/emblem/emblem_K42.png 1x,/assets/images/emblem/emblem_K42@2x.png 2x,/assets/images/emblem/emblem_K42@3x.png 3x" alt="용인>"></a> </li>
+                                
+                                    <li style="margin-left: 10px;"> <a href="https://chfc.kr/" title="충북청주" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K37.png" srcset="/assets/images/emblem/emblem_K37.png 1x,/assets/images/emblem/emblem_K37@2x.png 2x,/assets/images/emblem/emblem_K37@3x.png 3x" alt="충북청주>"></a> </li>
+                                
+                                    <li style="margin-left: 10px;"> <a href="https://www.greenersfc.com/" title="안산" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K32.png" srcset="/assets/images/emblem/emblem_K32.png 1x,/assets/images/emblem/emblem_K32@2x.png 2x,/assets/images/emblem/emblem_K32@3x.png 3x" alt="안산>"></a> </li>
+                                
+                                    <li style="margin-left: 10px;"> <a href="https://www.dragons.co.kr" title="전남" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K07.png" srcset="/assets/images/emblem/emblem_K07.png 1x,/assets/images/emblem/emblem_K07@2x.png 2x,/assets/images/emblem/emblem_K07@3x.png 3x" alt="전남>"></a> </li>
+                                
+                                    <li style="margin-left: 10px;"> <a href="https://gimhaefc2008.com/" title="김해" target="_blank"><img width="32px;" src="/assets/images/emblem/emblem_K41.png" srcset="/assets/images/emblem/emblem_K41.png 1x,/assets/images/emblem/emblem_K41@2x.png 2x,/assets/images/emblem/emblem_K41@3x.png 3x" alt="김해>"></a> </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-wrap">
+        <div class="menu">
+            <ul class="f-wrap">
+                <li class="fixed-logo"> <a href="/index.do"><img src="/assets/images/logo/s_emblem.png" srcset="/assets/images/logo/s_emblem.png 1x,/assets/images/logo/s_emblem@2x.png 2x,/assets/images/logo/s_emblem@3x.png 3x" alt="K LEAGUE"></a> </li>
+
+                
+
+
+
+
+
+<li>
+    <a href="/news_list.do">뉴스</a>
+    <ul class="s-menu">
+        <li><a href="/news_list.do">전체</a></li>
+        <li><a href="/news_list.do?category=notice"> 공지사항 </a></li>
+        <li><a href="/news_list.do?category=league"> 리그 </a></li>
+        <li><a href="/news_list.do?category=club"> 구단 </a></li>
+        <li><a href="/news_list.do?category=youth"> 유소년 </a></li>
+        <li><a href="/news_list.do?category=fan"> 팬 </a></li>
+    </ul>
+</li>
+<li>
+    <a href="/video_list.do?category=highlight">영상</a>
+    <ul class="s-menu">
+        <li><a href="/video_list.do"> 전체 </a></li>
+        <li><a href="/video_list.do?category=highlight"> 하이라이트 </a></li>
+        <li><a href="/video_list.do?category=goal"> 골 </a></li>
+        <li><a href="/video_list.do?category=etc"> 케튜브 </a></li>
+        <li><a href="/video_list.do?category=club"> 구단 </a></li>
+        <li><a href="https://tv.kleague.com/" target="_blank"> K리그 TV </a></li>
+    </ul>
+</li>
+<li>
+    <a href="/schedule.do"> 일정/결과/티켓 </a>
+    <ul class="s-menu">
+        <li><a href="/schedule.do?leagueId=1"> K리그1 </a></li>
+        <li><a href="/schedule.do?leagueId=2"> K리그2 </a></li>
+    </ul>
+</li>
+<li>
+    <a href="/record/team.do"> 기록</a>
+    <ul class="s-menu">
+        <li><a href="/record/team.do"> 팀 순위 </a></li>
+        <li><a href="/record/player.do"> 선수 순위 </a></li>
+        <li><a href="/record/dynamicPoint.do"> ADIDAS POINT </a></li>
+        <li><a href="https://data.kleague.com" target="_blank"> 데이터 포털 </a></li>
+        <li><a href="/record/audience.do"> 관중 현황 </a></li>
+    </ul>
+</li>
+<li>
+    <a href="/player.do"> 선수/감독</a>
+</li>
+
+
+    <li>
+        <a href="/youth/junior.do"> 유소년</a>
+        <ul class="s-menu">
+            <li><a href="/youth/junior.do"> K리그 주니어 </a></li>
+            <li><a href="/youth/youth.do"> K리그 유스 챔피언십 </a></li>
+            <li><a href="/youth/trust.do"> YOUTH TRUST </a></li>
+            <li><a href="/youth/media.do"> SOCIAL MEDIA </a></li>
+            <li><a href="https://www.bepro11.com/main" target="_blank"> 유소년 부가데이터 </a></li>
+        </ul>
+    </li>
+
+
+
+
+
+    <li>
+        <a href="https://www.kleaguefantasy.com/">이벤트</a>
+        <ul class="s-menu">
+            
+                
+                
+                    <li><a href="https://www.kleaguefantasy.com/" target="_blank">K리그 판타지</a></li>
+                
+            
+            <li><a href="/tripday/list.do">K리그 트립데이</a></li>
+        </ul>
+    </li>
+
+    <li>
+        <a style="cursor:pointer;" onclick="window.open('https://assist.kleague.com');"> 사회공헌</a>
+        <ul class="s-menu">
+            
+                <li><a href="https://assist.kleague.com" target="_blank">K LEAGUE Assist</a></li>
+            
+                <li><a href="https://assist.kleague.com/program?tab=voice&subTab=map" target="_blank">이동약자 안내지도</a></li>
+            
+                <li><a href="https://assist.kleague.com/program?tab=voice&subTab=voice" target="_blank">시각장애인 음성중계</a></li>
+            
+                <li><a href="https://assist.kleague.com/program?tab=greenKickOff" target="_blank">그린킥오프</a></li>
+            
+                <li><a href="https://assist.kleague.com/program?tab=voice&subTab=playone" target="_blank">PlayOne Cup</a></li>
+            
+                <li><a href="https://assist.kleague.com/kare?tab=info" target="_blank">케어프로젝트</a></li>
+            
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+
+        </ul>
+    </li>
+
+    <li>
+        <a href="/about/greetings.do"> About K LEAGUE</a>
+        <div class="s-menu f-wrap">
+            <ul class="left">
+                <li><a href="/about/greetings.do"> 인사말 </a></li>
+                <li><a href="/about/history.do"> 연혁 </a></li>
+                <li><a href="/about/ci.do"> CI소개 </a></li>
+                <li><a href="/about/organization.do"> 조직도 </a></li>
+                <li><a href="/about/sponsor.do"> 스폰서 </a></li>
+                <li><a href="/about/regulations.do"> 정관/규정 </a></li>
+                <li><a href="/about/competition.do"> 대회요강 </a></li>
+                <li><a href="/about/management.do"> 경영공시 </a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="/about/reference.do">자료실</a></li>
+                <li><a href="/about/emblem.do"> 역대 엠블럼 </a></li>
+                <li><a href="/about/academy.do"> 아카데미 </a></li>
+                <li><a href="/about/clean_center.do"> K리그 클린센터 </a></li>
+                <li><a href="/about/protection_center.do"> 권리 보호 센터 </a></li>
+                <li><a href="/about/directions.do"> 찾아오시는 길 </a></li>
+                <li><a href="https://portal.kleague.com/user/service/userCertPrintNice.do" target="_blank">경력증명서발급</a></li>
+                <li><a href="/about/fonts.do">K리그 폰트</a></li>
+                <li><a href="/about/hof.do">명예의 전당</a></li>
+                
+                    <li><a href="/about/recruitment.do">수시채용</a></li>
+                
+            </ul>
+        </div>
+    </li>
+
+
+
+
+            </ul>
+
+            <div class="icon-wrap">
+                <a href="#" class="btn-sch">
+                    <img src="/assets/images/icon/ico_sch.png" srcset="/assets/images/icon/ico_sch.png 1x,/assets/images/icon/ico_sch@2x.png 2x, /assets/images/icon/ico_sch@3x.png 3x" alt="검색">
+                    <img class="close" src="/assets/images/icon/ico_close.png" srcset="/assets/images/icon/ico_close.png 1x,/assets/images/icon/ico_close@2x.png 2x, /assets/images/icon/ico_close@3x.png 3x" alt="검색">
+                </a>
+            </div>
+        </div>
+        <div class="dim"></div>
+        <div class="sch-wrap">
+            <div class="sch-box">
+                <input type="text" id="searchInput" onkeydown="if(event.keyCode == 13){ searchAll(); }" placeholder="검색어를 입력해주세요">
+                <button class="sch-btn" onclick="searchAll();"><span class="ico ico-sch3"> 검색 </span></button>
+            </div>
+        </div>
+    </div>
+
+</header>
+</body>
+
+</html>
+
+  
+  <div class="sub-top club K18">
+    <div class="f-wrap">
+      <img width="78px;" class="left" src="/assets/images/emblem/emblem_K18.png"
+           srcset="/assets/images/emblem/emblem_K18.png 1x ,/assets/images/emblem/emblem_K18@2x.png 2x,/assets/images/emblem/emblem_K18@3x.png 3x" alt="인천 Utd"
+           onerror="this.onerror=null; this.src='/assets/images/kemblem_60.png'; this.srcset='/assets/images/kemblem_60.png 1x ,/assets/images/kemblem_60@2x.png 2x ,/assets/images/kemblem_60@3x.png 3x';"
+      >
+      <div class="txt left">
+        <span class="str">인천 유나이티드</span>
+        <span>
+          인천 축구 전용경기장
+        </span>
+        <span>
+          공식 홈페이지 : <a href="https://www.incheonutd.com" target="_blank">https://www.incheonutd.com</a>
+        </span>
+        <ul>
+          <li><img class="left" src="/assets/images/icon/club-fb.png" srcset="/assets/images/icon/club-fb.png 1x, /assets/images/icon/club-fb@2x.png 2x, /assets/images/icon/club-fb@3x.png 3x" alt="" style="cursor:pointer;"
+                   onclick="location.href='https://www.facebook.com/incheonutd2003'"></li>
+          <li><img class="left" src="/assets/images/icon/club-insta.png" srcset="/assets/images/icon/club-insta.png 1x, /assets/images/icon/club-insta@2x.png 2x, /assets/images/icon/club-insta@3x.png 3x" alt="" style="cursor:pointer;"
+                   onclick="location.href='https://www.instagram.com/incheonutd/'"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-contents-wrap">
+    <div class="contents club record">
+      <div class="f-wrap player" style="margin-top: 2.8571428571rem;">
+        <h3 class="tit-box style2">선수 정보</h3>
+        <div class="cont-box f-wrap left player-rank record-player detail">
+          <div class="img-box">
+            <img src="https://d2tfp74nsbbrkr.cloudfront.net/v1/player/player_19970122.jpg" onerror="this.onerror=null; this.src='/images/no_player.png';" alt="">
+          </div>
+          <div class="txt-box">
+            <img width="60px;" src="/assets/images/emblem/emblem_K18.png"
+                 srcset="/assets/images/emblem/emblem_K18.png 1x, /assets/images/emblem/emblem_K18@2x.png 2x, /assets/images/emblem/emblem_K18@3x.png 3x"
+                 onerror="this.onerror=null; this.src='/assets/images/kemblem_60.png'; this.srcset='/assets/images/kemblem_60.png 1x ,/assets/images/kemblem_60@2x.png 2x ,/assets/images/kemblem_60@3x.png 3x';"
+                 alt="">
+            <div class="txt">
+              
+              <span class="name">김한윤
+                
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="cont-box right player-rank">
+          <table class="style2 center">
+            <tbody>
+              <tr>
+                <th>이름</th>
+                <td>김한윤</td>
+                <th>영문명</th>
+                <td>Kim Han-Yun</td>
+              </tr>
+              <tr>
+                <th>소속구단</th>
+                <td>인천</td>
+                <th>포지션</th>
+                
+                  <td>-</td>
+                
+                
+              </tr>
+              <tr>
+                <th>배번</th>
+                
+                  <td>-</td>
+                
+                
+                <th>국적</th>
+                <td>한국</td>
+              </tr>
+              <tr>
+                <th>키</th>
+                
+                  <td>-</td>
+                
+                
+                <th>몸무게</th>
+                
+                  <td>-</td>
+                
+                
+              </tr>
+              <tr>
+                <th>생년월일</th>
+                <td>1974/07/11</td>
+                <th></th>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="f-wrap player-rank">
+        <h3 class="tit-box style2">요약</h3>
+        <div class="table-wrap">
+          <table>
+            <colgroup>
+              <col style="width: auto;">
+            </colgroup>
+            <thead>
+            <tr>
+              <th colspan="15">대회</th>
+              <th colspan="3" rowspan="2">통산</th>
+            </tr>
+            <tr>
+              <th colspan="3">K리그1</th>
+              <th colspan="3">K리그2</th>
+              <th colspan="3">플레이오프</th>
+              <th colspan="3">리그컵</th>
+              <th colspan="3">슈퍼컵</th>
+            </tr>
+            <tr>
+              <th>출장</th>
+              
+              
+                <th>득점</th>
+                <th>도움</th>
+              
+              <th>출장</th>
+              
+              
+                <th>득점</th>
+                <th>도움</th>
+              
+              <th>출장</th>
+              
+              
+                <th>득점</th>
+                <th>도움</th>
+              
+              <th>출장</th>
+              
+              
+                <th>득점</th>
+                <th>도움</th>
+              
+              <th>출장</th>
+              
+              
+                <th>득점</th>
+                <th>도움</th>
+              
+              <th>출장</th>
+              
+              
+                <th>득점</th>
+                <th>도움</th>
+              
+            </tr>
+            </thead>
+            <tbody>
+            
+              <tr>
+                <td>327</td>
+                
+                
+                  <td>8</td>
+                  <td>6</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>6</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>97</td>
+                
+                
+                  <td>3</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>430</td>
+                
+                
+                  <td>11</td>
+                  <td>6</td>
+                
+              </tr>
+            
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="f-wrap player-rank">
+        <h3 class="tit-box style2">시즌별</h3>
+        <div class="table-wrap">
+          <table>
+            <colgroup>
+              <col style="width: auto;">
+            </colgroup>
+            <thead>
+            <tr>
+              <th rowspan="3">시즌</th>
+              <th rowspan="3">팀</th>
+              <th colspan="15">대회</th>
+              <th colspan="3" rowspan="2">통산</th>
+            </tr>
+            <tr>
+              <th colspan="3">K리그1</th>
+              <th colspan="3">K리그2</th>
+              <th colspan="3">플레이오프</th>
+              <th colspan="3">리그컵</th>
+              <th colspan="3">슈퍼컵</th>
+            </tr>
+            <tr>
+              <th>출장</th>
+              
+              
+                <th>득점</th>
+                <th>도움</th>
+              
+              <th>출장</th>
+              
+              
+                <th>득점</th>
+                <th>도움</th>
+              
+              <th>출장</th>
+              
+              
+                <th>득점</th>
+                <th>도움</th>
+              
+              <th>출장</th>
+              
+              
+                <th>득점</th>
+                <th>도움</th>
+              
+              <th>출장</th>
+              
+              
+                <th>득점</th>
+                <th>도움</th>
+              
+              <th>출장</th>
+              
+              
+                <th>득점</th>
+                <th>도움</th>
+              
+            </tr>
+            </thead>
+            <tbody>
+            
+              <tr>
+                <td>1997</td>
+                <td>부천SK</td>
+                <td>14</td>
+                
+                
+                  <td>1</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>14</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>28</td>
+                
+                
+                  <td>1</td>
+                  <td>0</td>
+                
+              </tr>
+            
+              <tr>
+                <td>1998</td>
+                <td>부천SK</td>
+                <td>14</td>
+                
+                
+                  <td>1</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>10</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>24</td>
+                
+                
+                  <td>1</td>
+                  <td>0</td>
+                
+              </tr>
+            
+              <tr>
+                <td>1999</td>
+                <td>부천SK</td>
+                <td>6</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>2</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>8</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+              </tr>
+            
+              <tr>
+                <td>1999</td>
+                <td>포항</td>
+                <td>11</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>3</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>14</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+              </tr>
+            
+              <tr>
+                <td>2000</td>
+                <td>포항</td>
+                <td>16</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>6</td>
+                
+                
+                  <td>1</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>22</td>
+                
+                
+                  <td>1</td>
+                  <td>0</td>
+                
+              </tr>
+            
+              <tr>
+                <td>2001</td>
+                <td>부천SK</td>
+                <td>8</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>8</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>16</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+              </tr>
+            
+              <tr>
+                <td>2002</td>
+                <td>부천SK</td>
+                <td>9</td>
+                
+                
+                  <td>1</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>6</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>15</td>
+                
+                
+                  <td>1</td>
+                  <td>0</td>
+                
+              </tr>
+            
+              <tr>
+                <td>2003</td>
+                <td>부천SK</td>
+                <td>34</td>
+                
+                
+                  <td>0</td>
+                  <td>1</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>34</td>
+                
+                
+                  <td>0</td>
+                  <td>1</td>
+                
+              </tr>
+            
+              <tr>
+                <td>2004</td>
+                <td>부천SK</td>
+                <td>19</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>1</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>20</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+              </tr>
+            
+              <tr>
+                <td>2005</td>
+                <td>부천SK</td>
+                <td>18</td>
+                
+                
+                  <td>1</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>10</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>28</td>
+                
+                
+                  <td>1</td>
+                  <td>0</td>
+                
+              </tr>
+            
+              <tr>
+                <td>2006</td>
+                <td>서울</td>
+                <td>21</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>1</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>9</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>31</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+              </tr>
+            
+              <tr>
+                <td>2007</td>
+                <td>서울</td>
+                <td>21</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>8</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>29</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+              </tr>
+            
+              <tr>
+                <td>2008</td>
+                <td>서울</td>
+                <td>17</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>3</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>6</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>26</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+              </tr>
+            
+              <tr>
+                <td>2009</td>
+                <td>서울</td>
+                <td>21</td>
+                
+                
+                  <td>0</td>
+                  <td>1</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>1</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>3</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>25</td>
+                
+                
+                  <td>0</td>
+                  <td>1</td>
+                
+              </tr>
+            
+              <tr>
+                <td>2010</td>
+                <td>서울</td>
+                <td>14</td>
+                
+                
+                  <td>0</td>
+                  <td>1</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>6</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>20</td>
+                
+                
+                  <td>0</td>
+                  <td>1</td>
+                
+              </tr>
+            
+              <tr>
+                <td>2011</td>
+                <td>부산</td>
+                <td>21</td>
+                
+                
+                  <td>1</td>
+                  <td>1</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>1</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>5</td>
+                
+                
+                  <td>2</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>27</td>
+                
+                
+                  <td>3</td>
+                  <td>1</td>
+                
+              </tr>
+            
+              <tr>
+                <td>2012</td>
+                <td>부산</td>
+                <td>36</td>
+                
+                
+                  <td>2</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>36</td>
+                
+                
+                  <td>2</td>
+                  <td>0</td>
+                
+              </tr>
+            
+              <tr>
+                <td>2013</td>
+                <td>성남</td>
+                <td>27</td>
+                
+                
+                  <td>1</td>
+                  <td>2</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>27</td>
+                
+                
+                  <td>1</td>
+                  <td>2</td>
+                
+              </tr>
+            
+              <tr>
+                <td>합계</td>
+                <td></td>
+                <td>327</td>
+                
+                
+                  <td>8</td>
+                  <td>6</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>6</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>97</td>
+                
+                
+                  <td>3</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>430</td>
+                
+                
+                  <td>11</td>
+                  <td>6</td>
+                
+              </tr>
+            
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="f-wrap player-rank">
+        <h3 class="tit-box style2">팀별</h3>
+        <div class="table-wrap">
+          <table>
+            <colgroup>
+              <col style="width: auto;">
+            </colgroup>
+            <thead>
+            <tr>
+              <th rowspan="3">팀</th>
+              <th colspan="15">대회</th>
+              <th colspan="3" rowspan="2">통산</th>
+            </tr>
+            <tr>
+              <th colspan="3">K리그1</th>
+              <th colspan="3">K리그2</th>
+              <th colspan="3">플레이오프</th>
+              <th colspan="3">리그컵</th>
+              <th colspan="3">슈퍼컵</th>
+            </tr>
+            <tr>
+              <th>출장</th>
+              
+              
+                <th>득점</th>
+                <th>도움</th>
+              
+              <th>출장</th>
+              
+              
+                <th>득점</th>
+                <th>도움</th>
+              
+              <th>출장</th>
+              
+              
+                <th>득점</th>
+                <th>도움</th>
+              
+              <th>출장</th>
+              
+              
+                <th>득점</th>
+                <th>도움</th>
+              
+              <th>출장</th>
+              
+              
+                <th>득점</th>
+                <th>도움</th>
+              
+              <th>출장</th>
+              
+              
+                <th>득점</th>
+                <th>도움</th>
+              
+            </tr>
+            </thead>
+            <tbody>
+            
+              <tr>
+                <td>부천SK</td>
+                <td>122</td>
+                
+                
+                  <td>4</td>
+                  <td>1</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>51</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>173</td>
+                
+                
+                  <td>4</td>
+                  <td>1</td>
+                
+              </tr>
+            
+              <tr>
+                <td>포항</td>
+                <td>27</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>9</td>
+                
+                
+                  <td>1</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>36</td>
+                
+                
+                  <td>1</td>
+                  <td>0</td>
+                
+              </tr>
+            
+              <tr>
+                <td>서울</td>
+                <td>94</td>
+                
+                
+                  <td>0</td>
+                  <td>2</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>5</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>32</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>131</td>
+                
+                
+                  <td>0</td>
+                  <td>2</td>
+                
+              </tr>
+            
+              <tr>
+                <td>부산</td>
+                <td>57</td>
+                
+                
+                  <td>3</td>
+                  <td>1</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>1</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>5</td>
+                
+                
+                  <td>2</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>63</td>
+                
+                
+                  <td>5</td>
+                  <td>1</td>
+                
+              </tr>
+            
+              <tr>
+                <td>성남</td>
+                <td>27</td>
+                
+                
+                  <td>1</td>
+                  <td>2</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>27</td>
+                
+                
+                  <td>1</td>
+                  <td>2</td>
+                
+              </tr>
+            
+              <tr>
+                <td>합계</td>
+                <td>327</td>
+                
+                
+                  <td>8</td>
+                  <td>6</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>6</td>
+                
+                
+                  <td>0</td>
+                  <td>0</td>
+                
+                <td>97</td>
+                
+                
+                  <td>3</td>
+                  <td>0</td>
+                
+                <td>-</td>
+                
+                
+                  <td>-</td>
+                  <td>-</td>
+                
+                <td>430</td>
+                
+                
+                  <td>11</td>
+                  <td>6</td>
+                
+              </tr>
+            
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <div class="btn-wrap center">
+        <button class="btn btn-primary btn-sm" onclick="history.back();">돌아가기</button>
+      </div>
+    </div>
+  </div>
+
+  
+    
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<body>
+
+<button type="button" class="theme-btn" id="themeBtn" name="toDark" role="button" aria-pressed="false" onclick="themeBtn()"><span class="blind">라이트 모드로 보기</span></button>
+
+<footer>
+    <div class="partner">
+        <div class="slider">
+            <div class="swiper-wrapper">
+                <a href="https://www.hanabank.com" target="_blank" class="swiper-slide"> <img src="/assets/images/logo/2024/sponsor_hanabank@2x.png" alt="하나은행"> </a>
+
+                <a href="https://www.hd-hyundaielectric.com/elect/ko/index.jsp" target="_blank" class="swiper-slide"> <img src="/assets/images/logo/2024/sponsor_hd_electric7.png" alt=""> </a>
+                <a href="https://www.ea.com/sports" target="_blank" class="swiper-slide"> <img src="/assets/images/logo/2024/sponsor_ea@2x.png" alt=""> </a>
+                <a href="https://www.7-eleven.co.kr/" target="_blank" class="swiper-slide"> <img src="/assets/images/logo/2024/sponsor_7eleven@2x.png" alt=""> </a>
+
+                <a href="https://www.adidas.co.kr/" target="_blank" class="swiper-slide"> <img src="/assets/images/logo/2024/sponsor_adidas@2x.png" alt=""> </a>
+                <a href="https://www.lingerwatershop.com/" target="_blank" class="swiper-slide"> <img src="/assets/images/logo/2024/sponsor_lingtee@2x.png" alt=""> </a>
+                <a href="https://www.dongwonfnb.com/services/Brand/Brand_View?brandno=97" target="_blank" class="swiper-slide"> <img src="/assets/images/logo/2024/sponsor_dongwon@2x.png" alt=""> </a>
+                <a href="https://flex.team/" target="_blank" class="swiper-slide"> <img src="/assets/images/logo/2024/sponsor_flex.png" alt=""> </a>
+
+                <a href="https://www.coupangplay.com/" target="_blank" class="swiper-slide"> <img src="/assets/images/logo/2024/sponsor_coupangplay@2x.png" alt=""> </a>
+
+                <a href="https://www.lguplus.com/biz" target="_blank" class="swiper-slide"> <img src="/assets/images/logo/2026/sponsor_lgup.png" alt=""> </a>
+                <a href="https://www.sportstoto.co.kr/" target="_blank" class="swiper-slide"> <img src="/assets/images/logo/2026/sponsor_sportstoto@2x.png" alt=""> </a>
+            </div>
+        </div>
+    </div>
+    <div class="foot-menu">
+        <ul class="f-wrap">
+            
+
+
+
+
+
+<li>
+    <a href="/news_list.do">뉴스</a>
+    <ul class="s-menu">
+        <li><a href="/news_list.do">전체</a></li>
+        <li><a href="/news_list.do?category=notice"> 공지사항 </a></li>
+        <li><a href="/news_list.do?category=league"> 리그 </a></li>
+        <li><a href="/news_list.do?category=club"> 구단 </a></li>
+        <li><a href="/news_list.do?category=youth"> 유소년 </a></li>
+        <li><a href="/news_list.do?category=fan"> 팬 </a></li>
+    </ul>
+</li>
+<li>
+    <a href="/video_list.do?category=highlight">영상</a>
+    <ul class="s-menu">
+        <li><a href="/video_list.do"> 전체 </a></li>
+        <li><a href="/video_list.do?category=highlight"> 하이라이트 </a></li>
+        <li><a href="/video_list.do?category=goal"> 골 </a></li>
+        <li><a href="/video_list.do?category=etc"> 케튜브 </a></li>
+        <li><a href="/video_list.do?category=club"> 구단 </a></li>
+        <li><a href="https://tv.kleague.com/" target="_blank"> K리그 TV </a></li>
+    </ul>
+</li>
+<li>
+    <a href="/schedule.do"> 일정/결과/티켓 </a>
+    <ul class="s-menu">
+        <li><a href="/schedule.do?leagueId=1"> K리그1 </a></li>
+        <li><a href="/schedule.do?leagueId=2"> K리그2 </a></li>
+    </ul>
+</li>
+<li>
+    <a href="/record/team.do"> 기록</a>
+    <ul class="s-menu">
+        <li><a href="/record/team.do"> 팀 순위 </a></li>
+        <li><a href="/record/player.do"> 선수 순위 </a></li>
+        <li><a href="/record/dynamicPoint.do"> ADIDAS POINT </a></li>
+        <li><a href="https://data.kleague.com" target="_blank"> 데이터 포털 </a></li>
+        <li><a href="/record/audience.do"> 관중 현황 </a></li>
+    </ul>
+</li>
+<li>
+    <a href="/player.do"> 선수/감독</a>
+</li>
+
+
+    <li>
+        <a href="/youth/junior.do"> 유소년</a>
+        <ul class="s-menu">
+            <li><a href="/youth/junior.do"> K리그 주니어 </a></li>
+            <li><a href="/youth/youth.do"> K리그 유스 챔피언십 </a></li>
+            <li><a href="/youth/trust.do"> YOUTH TRUST </a></li>
+            <li><a href="/youth/media.do"> SOCIAL MEDIA </a></li>
+            <li><a href="https://www.bepro11.com/main" target="_blank"> 유소년 부가데이터 </a></li>
+        </ul>
+    </li>
+
+
+
+
+
+    <li>
+        <a href="https://www.kleaguefantasy.com/">이벤트</a>
+        <ul class="s-menu">
+            
+                
+                
+                    <li><a href="https://www.kleaguefantasy.com/" target="_blank">K리그 판타지</a></li>
+                
+            
+            <li><a href="/tripday/list.do">K리그 트립데이</a></li>
+        </ul>
+    </li>
+
+    <li>
+        <a style="cursor:pointer;" onclick="window.open('https://assist.kleague.com');"> 사회공헌</a>
+        <ul class="s-menu">
+            
+                <li><a href="https://assist.kleague.com" target="_blank">K LEAGUE Assist</a></li>
+            
+                <li><a href="https://assist.kleague.com/program?tab=voice&subTab=map" target="_blank">이동약자 안내지도</a></li>
+            
+                <li><a href="https://assist.kleague.com/program?tab=voice&subTab=voice" target="_blank">시각장애인 음성중계</a></li>
+            
+                <li><a href="https://assist.kleague.com/program?tab=greenKickOff" target="_blank">그린킥오프</a></li>
+            
+                <li><a href="https://assist.kleague.com/program?tab=voice&subTab=playone" target="_blank">PlayOne Cup</a></li>
+            
+                <li><a href="https://assist.kleague.com/kare?tab=info" target="_blank">케어프로젝트</a></li>
+            
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+
+        </ul>
+    </li>
+
+    <li>
+        <a href="/about/greetings.do"> About K LEAGUE</a>
+        <div class="s-menu f-wrap">
+            <ul class="left">
+                <li><a href="/about/greetings.do"> 인사말 </a></li>
+                <li><a href="/about/history.do"> 연혁 </a></li>
+                <li><a href="/about/ci.do"> CI소개 </a></li>
+                <li><a href="/about/organization.do"> 조직도 </a></li>
+                <li><a href="/about/sponsor.do"> 스폰서 </a></li>
+                <li><a href="/about/regulations.do"> 정관/규정 </a></li>
+                <li><a href="/about/competition.do"> 대회요강 </a></li>
+                <li><a href="/about/management.do"> 경영공시 </a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="/about/reference.do">자료실</a></li>
+                <li><a href="/about/emblem.do"> 역대 엠블럼 </a></li>
+                <li><a href="/about/academy.do"> 아카데미 </a></li>
+                <li><a href="/about/clean_center.do"> K리그 클린센터 </a></li>
+                <li><a href="/about/protection_center.do"> 권리 보호 센터 </a></li>
+                <li><a href="/about/directions.do"> 찾아오시는 길 </a></li>
+                <li><a href="https://portal.kleague.com/user/service/userCertPrintNice.do" target="_blank">경력증명서발급</a></li>
+                <li><a href="/about/fonts.do">K리그 폰트</a></li>
+                <li><a href="/about/hof.do">명예의 전당</a></li>
+                
+                    <li><a href="/about/recruitment.do">수시채용</a></li>
+                
+            </ul>
+        </div>
+    </li>
+
+
+
+
+        </ul>
+    </div>
+    <div class="foot-info">
+        <div class="f-wrap">
+            <h2 class="foot-logo left">
+                <img src="/assets/images/logo/foot_logo.png"
+                     srcset="/assets/images/logo/foot_logo.png 1x ,/assets/images/logo/foot_logo@2x.png 2x,/assets/images/logo/foot_logo@3x.png 3x"
+                     alt="K LEAGUE">
+            </h2>
+            <div class="info">
+                <span><span class="str">T &nbsp; </span>02-2002-0702</span>
+                <span><span class="str">A &nbsp; </span>서울 종로구 경희궁길 46 축구회관 5층</span>
+                <div class="bg-select">
+                    <span>Family Sites<span class="plus"></span></span>
+                    <select onchange="if(this.value) window.open(this.value);" style="background-color: darkgray;">
+                        <option value="https://www.fifa.com/">국제축구연맹(FIFA)</option>
+                        <option value="https://www.the-afc.com/">아시아축구연맹(AFC)</option>
+                        <option value="https://www.kfa.or.kr/">대한축구협회(KFA)</option>
+                        <option value="http://www.sky-k.co.kr/">스카이케이(skyK)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="WA2021"></div>
+            <div class="sns-wrap right">
+                <a href="https://www.youtube.com/user/withkleague/" target="_blank" class="sns-youtube">
+                    <img src="/assets/images/icon/foot_sns_youtube.png"
+                         srcset="/assets/images/icon/foot_sns_youtube.png 1x ,/assets/images/icon/foot_sns_youtube@2x.png 2x,/assets/images/icon/foot_sns_youtube@3x.png 3x"
+                         alt="유투브">
+                </a>
+                <a href="https://www.instagram.com/kleague" target="_blank" class="sns-instagram">
+                    <img src="/assets/images/icon/foot_sns_insta.png"
+                         srcset="/assets/images/icon/foot_sns_insta.png 1x ,/assets/images/icon/foot_sns_insta@2x.png 2x,/assets/images/icon/foot_sns_insta@3x.png 3x"
+                         alt="인스타그램">
+                </a>
+                <a href="https://www.facebook.com/KLEAGUEofficial" target="_blank" class="sns-facebook">
+                    <img src="/assets/images/icon/foot_sns_face.png"
+                         srcset="/assets/images/icon/foot_sns_face.png 1x ,/assets/images/icon/foot_sns_face@2x.png 2x,/assets/images/icon/foot_sns_face@3x.png 3x"
+                         alt="페이스북">
+                </a>
+                <a href="https://twitter.com/kleague" target="_blank" class="sns-twitter">
+                    <img src="/assets/images/icon/club-yt.png"
+                         srcset="/assets/images/icon/club-yt.png 1x ,/assets/images/icon/club-yt@2x.png 2x,/assets/images/icon/club-yt@3x.png 3x"
+                         alt="twitter">
+                </a>
+                <a href="https://www.tiktok.com/@kleague_official" target="_blank" class="sns-tiktok">
+                    <img src="/assets/images/icon/foot_sns_tiktok.png"
+                         srcset="/assets/images/icon/foot_sns_tiktok.png 1x ,/assets/images/icon/foot_sns_tiktok@2x.png 2x,/assets/images/icon/foot_sns_tiktok@3x.png 3x"
+                         alt="틱톡">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="foot-copy">
+        <div class="f-wrap">
+            <p class="left">Copyright 2021 &copy; K LEAGUE. All right reserved.</p>
+            <ul class="menu">
+                <li><a href="/about/privacy.do"><b>개인정보처리방침</b></a></li>
+                <li><a href="/about/terms.do"><b>이용약관</b></a></li>
+                <li><a href="https://portal.kleague.com/user/service/userCertPrintNice.do" target="_blank"><b>경력증명서발급</b></a></li>
+                <li><a href="/about/directions.do"><b>찾아오시는 길</b></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+<script>
+    function clickVoteBtn() {
+        location.href= "/about/hof.do";
+    }
+</script>
+</html>
+
+  
+</body>
+</html>
