@@ -6,6 +6,8 @@
   const LEAGUE_COLOR = { 'K리그1': '#E4572E', 'K리그2': '#4C956C', 'K3리그': '#4D80E4', 'K4리그': '#B98CCB', 'WK리그': '#E0B354' };
   const TAB_GROUPS = [['unusual', '특이 기록'], ['player', '선수 통산'], ['match', '경기 기록']];
   const SHOW_ROWS = 8;
+  // 리그별 정규 경기 수(팀당). 아는 리그만 적고, 모르면 데이터에 있는 경기 수를 그대로 씀
+  const LEAGUE_GAMES = { 'K리그1': 38, 'K3리그': 26 };
   let model = null;
   let teamList = [];   // data/teams.csv (없으면 경기 데이터의 팀만 사용)
   let mode = 'real';
@@ -241,7 +243,7 @@
       if (!t.ready) return '<span class="tbtn off">' + emb + '<b>' + esc(t.name) + '</b><small>준비 중</small></span>';
       const r = wdl(t.name, 'all');
       return '<a class="tbtn" href="' + href('/team/' + encodeURIComponent(t.name), { league: cur }) + '">' + emb + '<b>' + esc(t.name) +
-        '</b><small>' + r.n + '경기 · ' + r.w + '승 ' + r.d + '무 ' + r.l + '패</small></a>';
+        '</b><small>' + (LEAGUE_GAMES[cur] && r.n < LEAGUE_GAMES[cur] ? r.n + '/' + LEAGUE_GAMES[cur] + '경기 수집됨' : r.n + '경기 · ' + r.w + '승 ' + r.d + '무 ' + r.l + '패') + '</small></a>';
     }).join('');
     return '<h1>구단</h1><p class="lead">리그를 고르고 구단을 누르면 그 팀의 기록실이 열려요.</p>' + chips + '<div class="tgrid">' + grid + '</div>';
   }
@@ -259,15 +261,19 @@
     }).join('') + '</div>';
   }
   function coverage(team, season) {
-    let total = 0, withEv = 0;
+    let total = 0, withEv = 0, lg = '';
     model.matches.forEach(m => {
       if ((m.home_team !== team && m.away_team !== team) || (season !== 'all' && m.season !== season)) return;
-      total++;
+      total++; lg = m.league;
       if ((model.eventsByMatch.get(m.match_id) || []).length) withEv++;
     });
-    const lack = total - withEv;
-    return '<p class="cover' + (lack ? ' warn' : '') + '">기록 반영 경기 ' + withEv + '/' + total +
-      (lack ? ' · ' + lack + '경기는 득점·출장 기록이 아직 없어 팀 기록이 실제보다 적을 수 있어요' : ' · 모든 경기의 상세 기록이 들어 있어요') + '</p>';
+    const per = LEAGUE_GAMES[lg] || total;
+    const seasons = season === 'all' ? model.meta.seasons.length : 1;
+    const expect = Math.max(per * seasons, total);
+    const lack = expect - withEv;
+    const why = total < expect ? '아직 수집하지 못한 경기가 있어' : '득점·출장 기록이 아직 없는 경기가 있어';
+    return '<p class="cover' + (lack ? ' warn' : '') + '">기록 반영 경기 ' + withEv + '/' + expect +
+      (lack ? ' · ' + lack + '경기는 ' + why + ' 팀 기록이 실제보다 적을 수 있어요' : ' · 모든 경기의 상세 기록이 들어 있어요') + '</p>';
   }
   function viewTeam(team, p) {
     const known = model.matches.some(m => m.home_team === team || m.away_team === team);
