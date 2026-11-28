@@ -15,7 +15,7 @@ codes = [t['team_code'] for t in T]
 errs += [f'teams.csv 코드 중복: {c}' for c, n in Counter(codes).items() if n > 1]
 for t in T:
     if t.get('emblem') and not os.path.exists(os.path.join(D, '..', 'emblems', t['emblem'])): errs.append(f"엠블럼 파일 없음: {t['emblem']}")
-byname = {t['name']: t['team_code'] for t in T if t['league'] == 'K3리그'}
+byname = {t['name']: t['team_code'] for t in T}
 pids = {p['player_id']: p for p in P}
 if len(pids) != len(P): errs.append('player_id 중복')
 mids = {m['match_id']: m for m in M}
@@ -26,8 +26,10 @@ for p in P:
     elif byname.get(p['team']) != m[1]: errs.append(f"{p['player_id']}: 소속 팀 {p['team']} 와 코드 불일치")
     elif int(m[3]) != int(p['shirt_no']): errs.append(f"{p['player_id']}: 등번호 {p['shirt_no']} 와 ID 불일치")
     if p['birth_date'] and not re.match(r'^\d{4}-\d{2}-\d{2}$', p['birth_date']): errs.append(f"생년월일 형식: {p['player_id']}")
+kl = Counter((p.get('kleague_id'), p['team'], p['shirt_no']) for p in P if p.get('kleague_id'))
+errs += [f'kleague_id 중복(같은 팀·번호): {k}' for k, n in kl.items() if n > 1]
 for m in M:
-    x = re.match(r'^K3-\d{4}-\d{4}-([A-Z]{3})-([A-Z]{3})$', m['match_id'])
+    x = re.match(r'^K[1-4]-\d{4}-\d{4}-([A-Z]{3})-([A-Z]{3})$', m['match_id'])
     if not x or x[1] not in codes or x[2] not in codes: errs.append(f"match_id 형식/팀코드: {m['match_id']}"); continue
     if byname.get(m['home_team']) != x[1] or byname.get(m['away_team']) != x[2]: errs.append(f"{m['match_id']}: 팀 이름과 ID 불일치")
 ev = defaultdict(list)
