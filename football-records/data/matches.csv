@@ -218,3 +218,231 @@ K1-2026-1031-JEO-DAE,2026,K리그1,34,2026-10-31,전주 월드컵 경기장,전�
 K1-2026-1108-DAE-INC,2026,K리그1,35,2026-11-08,대전 월드컵 경기장,대전 하나 시티즌,인천 유나이티드 FC,2,0,,https://www.kleague.com/match.do?year=2026&meetSeq=1&gameId=208&leagueId=1&startTabNum=1,4,6
 K1-2026-1121-GAN-DAE,2026,K리그1,36,2026-11-21,강릉하이원아레나,강원 FC,대전 하나 시티즌,1,3,,https://www.kleague.com/match.do?year=2026&meetSeq=1&gameId=213&leagueId=1&startTabNum=1,5,5
 K1-2026-1128-SEO-DAE,2026,K리그1,37,2026-11-28,서울 월드컵 경기장,FC 서울,대전 하나 시티즌,4,1,,https://www.kleague.com/match.do?year=2026&meetSeq=1&gameId=217&leagueId=1&startTabNum=1,6,8
+K1-2025-0215-POH-DAE,2025,K리그1,1,2025-02-15,포항 스틸야드,포항 스틸러스,대전 하나 시티즌,0,3,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=1&leagueId=1&startTabNum=1,5,
+K1-2025-0215-JEJ-SEO,2025,K리그1,1,2025-02-15,제주 월드컵 경기장,제주 SK FC,FC 서울,2,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=2&leagueId=1&startTabNum=1,6,
+K1-2025-0215-GWA-SFC,2025,K리그1,1,2025-02-15,광주 월드컵 경기장,광주 FC,수원 FC,0,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=3&leagueId=1&startTabNum=1,1,
+K1-2025-0216-ULS-ANY,2025,K리그1,1,2025-02-16,울산 문수 축구경기장,울산 HD FC,FC 안양,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=4&leagueId=1&startTabNum=1,3,
+K1-2025-0216-JEO-GIM,2025,K리그1,1,2025-02-16,전주 월드컵 경기장,전북 현대 모터스,김천 상무 FC,2,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=5&leagueId=1&startTabNum=1,6,
+K1-2025-0216-DAG-GAN,2025,K리그1,1,2025-02-16,대구iM뱅크PARK,대구 FC,강원 FC,2,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=6&leagueId=1&startTabNum=1,3,
+K1-2025-0222-JEJ-GIM,2025,K리그1,2,2025-02-22,제주 월드컵 경기장,제주 SK FC,김천 상무 FC,2,3,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=7&leagueId=1&startTabNum=1,4,
+K1-2025-0222-SEO-ANY,2025,K리그1,2,2025-02-22,서울 월드컵 경기장,FC 서울,FC 안양,2,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=8&leagueId=1&startTabNum=1,2,
+K1-2025-0222-DAG-SFC,2025,K리그1,2,2025-02-22,대구iM뱅크PARK,대구 FC,수원 FC,3,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=9&leagueId=1&startTabNum=1,5,
+K1-2025-0223-DAE-ULS,2025,K리그1,2,2025-02-23,대전 월드컵 경기장,대전 하나 시티즌,울산 HD FC,0,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=10&leagueId=1&startTabNum=1,3,
+K1-2025-0223-JEO-GWA,2025,K리그1,2,2025-02-23,전주 월드컵 경기장,전북 현대 모터스,광주 FC,2,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=11&leagueId=1&startTabNum=1,3,
+K1-2025-0223-GAN-POH,2025,K리그1,2,2025-02-23,춘천 송암 스포츠타운,강원 FC,포항 스틸러스,2,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=12&leagueId=1&startTabNum=1,1,
+K1-2025-0301-ULS-JEO,2025,K리그1,3,2025-03-01,울산 문수 축구경기장,울산 HD FC,전북 현대 모터스,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=13&leagueId=1&startTabNum=1,2,
+K1-2025-0301-POH-DAG,2025,K리그1,3,2025-03-01,포항 스틸야드,포항 스틸러스,대구 FC,0,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=14&leagueId=1&startTabNum=1,2,
+K1-2025-0301-GWA-ANY,2025,K리그1,3,2025-03-01,광주 월드컵 경기장,광주 FC,FC 안양,2,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=15&leagueId=1&startTabNum=1,3,
+K1-2025-0302-DAE-SFC,2025,K리그1,3,2025-03-02,대전 월드컵 경기장,대전 하나 시티즌,수원 FC,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=16&leagueId=1&startTabNum=1,1,
+K1-2025-0302-GAN-JEJ,2025,K리그1,3,2025-03-02,춘천 송암 스포츠타운,강원 FC,제주 SK FC,0,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=17&leagueId=1&startTabNum=1,1,
+K1-2025-0303-SEO-GIM,2025,K리그1,3,2025-03-03,서울 월드컵 경기장,FC 서울,김천 상무 FC,0,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=18&leagueId=1&startTabNum=1,2,
+K1-2025-0308-SFC-SEO,2025,K리그1,4,2025-03-08,수원 종합 운동장,수원 FC,FC 서울,0,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=19&leagueId=1&startTabNum=1,1,
+K1-2025-0308-DAG-DAE,2025,K리그1,4,2025-03-08,대구iM뱅크PARK,대구 FC,대전 하나 시티즌,1,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=20&leagueId=1&startTabNum=1,4,
+K1-2025-0308-ANY-GIM,2025,K리그1,4,2025-03-08,안양 종합 운동장,FC 안양,김천 상무 FC,1,3,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=21&leagueId=1&startTabNum=1,8,
+K1-2025-0309-ULS-JEJ,2025,K리그1,4,2025-03-09,울산 문수 축구경기장,울산 HD FC,제주 SK FC,2,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=22&leagueId=1&startTabNum=1,5,
+K1-2025-0309-JEO-GAN,2025,K리그1,4,2025-03-09,전주 월드컵 경기장,전북 현대 모터스,강원 FC,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=24&leagueId=1&startTabNum=1,1,
+K1-2025-0315-JEJ-DAE,2025,K리그1,5,2025-03-15,제주 월드컵 경기장,제주 SK FC,대전 하나 시티즌,1,3,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=25&leagueId=1&startTabNum=1,2,
+K1-2025-0315-GAN-SEO,2025,K리그1,5,2025-03-15,춘천 송암 스포츠타운,강원 FC,FC 서울,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=26&leagueId=1&startTabNum=1,1,
+K1-2025-0315-DAG-ANY,2025,K리그1,5,2025-03-15,대구iM뱅크PARK,대구 FC,FC 안양,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=27&leagueId=1&startTabNum=1,6,
+K1-2025-0316-SFC-ULS,2025,K리그1,5,2025-03-16,수원 종합 운동장,수원 FC,울산 HD FC,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=28&leagueId=1&startTabNum=1,5,
+K1-2025-0316-GIM-GWA,2025,K리그1,5,2025-03-16,김천 종합 운동장,김천 상무 FC,광주 FC,0,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=29&leagueId=1&startTabNum=1,1,
+K1-2025-0316-JEO-POH,2025,K리그1,5,2025-03-16,전주 월드컵 경기장,전북 현대 모터스,포항 스틸러스,2,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=30&leagueId=1&startTabNum=1,4,
+K1-2025-0322-GWA-POH,2025,K리그1,4,2025-03-22,광주 월드컵 경기장,광주 FC,포항 스틸러스,2,3,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=23&leagueId=1&startTabNum=1,2,
+K1-2025-0329-SEO-DAG,2025,K리그1,6,2025-03-29,서울 월드컵 경기장,FC 서울,대구 FC,3,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=31&leagueId=1&startTabNum=1,6,11
+K1-2025-0329-POH-ULS,2025,K리그1,6,2025-03-29,포항 스틸야드,포항 스틸러스,울산 HD FC,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=32&leagueId=1&startTabNum=1,1,4
+K1-2025-0329-DAE-GWA,2025,K리그1,6,2025-03-29,대전 월드컵 경기장,대전 하나 시티즌,광주 FC,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=33&leagueId=1&startTabNum=1,3,7
+K1-2025-0330-JEJ-SFC,2025,K리그1,6,2025-03-30,제주 월드컵 경기장,제주 SK FC,수원 FC,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=34&leagueId=1&startTabNum=1,2,3
+K1-2025-0330-GIM-GAN,2025,K리그1,6,2025-03-30,김천 종합 운동장,김천 상무 FC,강원 FC,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=35&leagueId=1&startTabNum=1,1,6
+K1-2025-0330-ANY-JEO,2025,K리그1,6,2025-03-30,안양 종합 운동장,FC 안양,전북 현대 모터스,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=36&leagueId=1&startTabNum=1,3,12
+K1-2025-0401-ULS-DAE,2025,K리그1,18,2025-04-01,울산 문수 축구경기장,울산 HD FC,대전 하나 시티즌,2,3,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=108&leagueId=1&startTabNum=1,5,3
+K1-2025-0405-ULS-SEO,2025,K리그1,7,2025-04-05,울산 문수 축구경기장,울산 HD FC,FC 서울,0,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=37&leagueId=1&startTabNum=1,3,5
+K1-2025-0405-GIM-DAG,2025,K리그1,7,2025-04-05,김천 종합 운동장,김천 상무 FC,대구 FC,2,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=38&leagueId=1&startTabNum=1,3,11
+K1-2025-0405-DAE-JEO,2025,K리그1,7,2025-04-05,대전 월드컵 경기장,대전 하나 시티즌,전북 현대 모터스,0,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=39&leagueId=1&startTabNum=1,3,6
+K1-2025-0405-SFC-POH,2025,K리그1,7,2025-04-05,수원 종합 운동장,수원 FC,포항 스틸러스,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=40&leagueId=1&startTabNum=1,5,7
+K1-2025-0406-ANY-GAN,2025,K리그1,7,2025-04-06,안양 종합 운동장,FC 안양,강원 FC,2,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=41&leagueId=1&startTabNum=1,4,6
+K1-2025-0406-GWA-JEJ,2025,K리그1,7,2025-04-06,광주 월드컵 경기장,광주 FC,제주 SK FC,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=42&leagueId=1&startTabNum=1,3,7
+K1-2025-0409-GWA-DAG,2025,K리그1,10,2025-04-09,광주 월드컵 경기장,광주 FC,대구 FC,2,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=56&leagueId=1&startTabNum=1,3,7
+K1-2025-0412-SFC-GIM,2025,K리그1,8,2025-04-12,수원 종합 운동장,수원 FC,김천 상무 FC,3,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=43&leagueId=1&startTabNum=1,2,9
+K1-2025-0412-SEO-DAE,2025,K리그1,8,2025-04-12,서울 월드컵 경기장,FC 서울,대전 하나 시티즌,2,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=44&leagueId=1&startTabNum=1,5,7
+K1-2025-0412-POH-ANY,2025,K리그1,8,2025-04-12,포항 스틸야드,포항 스틸러스,FC 안양,2,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=45&leagueId=1&startTabNum=1,7,8
+K1-2025-0413-GAN-GWA,2025,K리그1,8,2025-04-13,춘천 송암 스포츠타운,강원 FC,광주 FC,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=46&leagueId=1&startTabNum=1,2,6
+K1-2025-0413-JEO-JEJ,2025,K리그1,8,2025-04-13,전주 월드컵 경기장,전북 현대 모터스,제주 SK FC,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=47&leagueId=1&startTabNum=1,3,9
+K1-2025-0413-DAG-ULS,2025,K리그1,8,2025-04-13,대구iM뱅크PARK,대구 FC,울산 HD FC,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=48&leagueId=1&startTabNum=1,1,5
+K1-2025-0419-ULS-GAN,2025,K리그1,9,2025-04-19,울산 문수 축구경기장,울산 HD FC,강원 FC,1,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=49&leagueId=1&startTabNum=1,4,7
+K1-2025-0419-GIM-DAE,2025,K리그1,9,2025-04-19,김천 종합 운동장,김천 상무 FC,대전 하나 시티즌,0,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=50&leagueId=1&startTabNum=1,2,6
+K1-2025-0419-ANY-SFC,2025,K리그1,9,2025-04-19,안양 종합 운동장,FC 안양,수원 FC,3,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=51&leagueId=1&startTabNum=1,5,5
+K1-2025-0419-SEO-GWA,2025,K리그1,9,2025-04-19,서울 월드컵 경기장,FC 서울,광주 FC,1,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=52&leagueId=1&startTabNum=1,4,8
+K1-2025-0420-JEJ-POH,2025,K리그1,9,2025-04-20,제주 월드컵 경기장,제주 SK FC,포항 스틸러스,2,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=53&leagueId=1&startTabNum=1,3,6
+K1-2025-0420-JEO-DAG,2025,K리그1,9,2025-04-20,전주 월드컵 경기장,전북 현대 모터스,대구 FC,3,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=54&leagueId=1&startTabNum=1,7,4
+K1-2025-0423-ANY-ULS,2025,K리그1,19,2025-04-23,안양 종합 운동장,FC 안양,울산 HD FC,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=114&leagueId=1&startTabNum=1,3,7
+K1-2025-0426-SFC-JEO,2025,K리그1,10,2025-04-26,수원 종합 운동장,수원 FC,전북 현대 모터스,1,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=55&leagueId=1&startTabNum=1,4,9
+K1-2025-0426-ANY-JEJ,2025,K리그1,10,2025-04-26,안양 종합 운동장,FC 안양,제주 SK FC,2,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=57&leagueId=1&startTabNum=1,5,7
+K1-2025-0427-POH-SEO,2025,K리그1,10,2025-04-27,포항 스틸야드,포항 스틸러스,FC 서울,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=58&leagueId=1&startTabNum=1,4,8
+K1-2025-0427-GIM-ULS,2025,K리그1,10,2025-04-27,김천 종합 운동장,김천 상무 FC,울산 HD FC,2,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=59&leagueId=1&startTabNum=1,2,11
+K1-2025-0427-DAE-GAN,2025,K리그1,10,2025-04-27,대전 월드컵 경기장,대전 하나 시티즌,강원 FC,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=60&leagueId=1&startTabNum=1,2,6
+K1-2025-0502-ULS-GWA,2025,K리그1,11,2025-05-02,울산 문수 축구경기장,울산 HD FC,광주 FC,3,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=61&leagueId=1&startTabNum=1,3,7
+K1-2025-0502-POH-GIM,2025,K리그1,11,2025-05-02,포항 스틸야드,포항 스틸러스,김천 상무 FC,1,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=62&leagueId=1&startTabNum=1,2,8
+K1-2025-0503-DAE-ANY,2025,K리그1,11,2025-05-03,대전 월드컵 경기장,대전 하나 시티즌,FC 안양,2,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=63&leagueId=1&startTabNum=1,3,7
+K1-2025-0503-DAG-JEJ,2025,K리그1,11,2025-05-03,대구iM뱅크PARK,대구 FC,제주 SK FC,3,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=64&leagueId=1&startTabNum=1,5,13
+K1-2025-0503-SEO-JEO,2025,K리그1,11,2025-05-03,서울 월드컵 경기장,FC 서울,전북 현대 모터스,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=65&leagueId=1&startTabNum=1,3,8
+K1-2025-0503-GAN-SFC,2025,K리그1,11,2025-05-03,춘천 송암 스포츠타운,강원 FC,수원 FC,0,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=66&leagueId=1&startTabNum=1,3,5
+K1-2025-0505-GWA-GIM,2025,K리그1,12,2025-05-05,광주 월드컵 경기장,광주 FC,김천 상무 FC,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=67&leagueId=1&startTabNum=1,6,7
+K1-2025-0505-ULS-POH,2025,K리그1,12,2025-05-05,울산 문수 축구경기장,울산 HD FC,포항 스틸러스,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=68&leagueId=1&startTabNum=1,5,9
+K1-2025-0506-JEO-DAE,2025,K리그1,12,2025-05-06,전주 월드컵 경기장,전북 현대 모터스,대전 하나 시티즌,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=69&leagueId=1&startTabNum=1,2,5
+K1-2025-0506-JEJ-GAN,2025,K리그1,12,2025-05-06,제주 월드컵 경기장,제주 SK FC,강원 FC,0,3,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=70&leagueId=1&startTabNum=1,4,6
+K1-2025-0506-ANY-SEO,2025,K리그1,12,2025-05-06,안양 종합 운동장,FC 안양,FC 서울,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=71&leagueId=1&startTabNum=1,2,8
+K1-2025-0506-SFC-DAG,2025,K리그1,12,2025-05-06,수원 종합 운동장,수원 FC,대구 FC,2,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=72&leagueId=1&startTabNum=1,3,5
+K1-2025-0510-POH-SFC,2025,K리그1,13,2025-05-10,포항 스틸야드,포항 스틸러스,수원 FC,2,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=73&leagueId=1&startTabNum=1,5,6
+K1-2025-0510-DAE-SEO,2025,K리그1,13,2025-05-10,대전 월드컵 경기장,대전 하나 시티즌,FC 서울,0,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=74&leagueId=1&startTabNum=1,2,7
+K1-2025-0510-ANY-DAG,2025,K리그1,13,2025-05-10,안양 종합 운동장,FC 안양,대구 FC,2,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=75&leagueId=1&startTabNum=1,5,9
+K1-2025-0511-JEJ-ULS,2025,K리그1,13,2025-05-11,제주 월드컵 경기장,제주 SK FC,울산 HD FC,1,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=76&leagueId=1&startTabNum=1,3,16
+K1-2025-0511-GAN-GIM,2025,K리그1,13,2025-05-11,춘천 송암 스포츠타운,강원 FC,김천 상무 FC,0,4,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=77&leagueId=1&startTabNum=1,4,2
+K1-2025-0511-GWA-JEO,2025,K리그1,13,2025-05-11,광주 월드컵 경기장,광주 FC,전북 현대 모터스,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=78&leagueId=1&startTabNum=1,4,6
+K1-2025-0517-JEO-ANY,2025,K리그1,14,2025-05-17,전주 월드컵 경기장,전북 현대 모터스,FC 안양,2,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=79&leagueId=1&startTabNum=1,4,4
+K1-2025-0517-GAN-ULS,2025,K리그1,14,2025-05-17,춘천 송암 스포츠타운,강원 FC,울산 HD FC,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=80&leagueId=1&startTabNum=1,6,10
+K1-2025-0517-GIM-JEJ,2025,K리그1,14,2025-05-17,김천 종합 운동장,김천 상무 FC,제주 SK FC,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=81&leagueId=1&startTabNum=1,1,10
+K1-2025-0518-POH-GWA,2025,K리그1,14,2025-05-18,포항 스틸야드,포항 스틸러스,광주 FC,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=82&leagueId=1&startTabNum=1,8,5
+K1-2025-0518-DAG-SEO,2025,K리그1,14,2025-05-18,대구iM뱅크PARK,대구 FC,FC 서울,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=83&leagueId=1&startTabNum=1,4,7
+K1-2025-0518-SFC-DAE,2025,K리그1,14,2025-05-18,수원 종합 운동장,수원 FC,대전 하나 시티즌,3,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=84&leagueId=1&startTabNum=1,3,9
+K1-2025-0523-JEJ-JEO,2025,K리그1,15,2025-05-23,제주 월드컵 경기장,제주 SK FC,전북 현대 모터스,0,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=85&leagueId=1&startTabNum=1,4,8
+K1-2025-0523-ANY-POH,2025,K리그1,15,2025-05-23,안양 종합 운동장,FC 안양,포항 스틸러스,0,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=86&leagueId=1&startTabNum=1,3,5
+K1-2025-0524-SEO-SFC,2025,K리그1,15,2025-05-24,서울 월드컵 경기장,FC 서울,수원 FC,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=87&leagueId=1&startTabNum=1,3,8
+K1-2025-0524-ULS-GIM,2025,K리그1,15,2025-05-24,울산 문수 축구경기장,울산 HD FC,김천 상무 FC,3,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=88&leagueId=1&startTabNum=1,2,7
+K1-2025-0524-DAE-DAG,2025,K리그1,15,2025-05-24,대전 월드컵 경기장,대전 하나 시티즌,대구 FC,2,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=89&leagueId=1&startTabNum=1,8,3
+K1-2025-0525-GWA-GAN,2025,K리그1,15,2025-05-25,광주 월드컵 경기장,광주 FC,강원 FC,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=90&leagueId=1&startTabNum=1,6,12
+K1-2025-0527-SFC-JEJ,2025,K리그1,16,2025-05-27,수원 종합 운동장,수원 FC,제주 SK FC,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=91&leagueId=1&startTabNum=1,2,7
+K1-2025-0527-DAE-POH,2025,K리그1,16,2025-05-27,대전 월드컵 경기장,대전 하나 시티즌,포항 스틸러스,1,3,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=92&leagueId=1&startTabNum=1,3,5
+K1-2025-0527-DAG-JEO,2025,K리그1,16,2025-05-27,대구iM뱅크PARK,대구 FC,전북 현대 모터스,0,4,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=93&leagueId=1&startTabNum=1,7,6
+K1-2025-0528-GIM-SEO,2025,K리그1,16,2025-05-28,김천 종합 운동장,김천 상무 FC,FC 서울,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=94&leagueId=1&startTabNum=1,4,8
+K1-2025-0528-GAN-ANY,2025,K리그1,16,2025-05-28,춘천 송암 스포츠타운,강원 FC,FC 안양,1,3,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=95&leagueId=1&startTabNum=1,5,6
+K1-2025-0528-GWA-ULS,2025,K리그1,16,2025-05-28,광주 월드컵 경기장,광주 FC,울산 HD FC,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=96&leagueId=1&startTabNum=1,2,6
+K1-2025-0531-SEO-JEJ,2025,K리그1,17,2025-05-31,서울 월드컵 경기장,FC 서울,제주 SK FC,1,3,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=97&leagueId=1&startTabNum=1,2,10
+K1-2025-0531-JEO-ULS,2025,K리그1,17,2025-05-31,전주 월드컵 경기장,전북 현대 모터스,울산 HD FC,3,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=98&leagueId=1&startTabNum=1,3,10
+K1-2025-0531-ANY-DAE,2025,K리그1,17,2025-05-31,안양 종합 운동장,FC 안양,대전 하나 시티즌,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=99&leagueId=1&startTabNum=1,3,6
+K1-2025-0601-GIM-SFC,2025,K리그1,17,2025-06-01,김천 종합 운동장,김천 상무 FC,수원 FC,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=100&leagueId=1&startTabNum=1,4,6
+K1-2025-0601-POH-GAN,2025,K리그1,17,2025-06-01,포항 스틸야드,포항 스틸러스,강원 FC,2,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=101&leagueId=1&startTabNum=1,4,9
+K1-2025-0601-DAG-GWA,2025,K리그1,17,2025-06-01,대구iM뱅크PARK,대구 FC,광주 FC,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=102&leagueId=1&startTabNum=1,6,11
+K1-2025-0613-GAN-JEO,2025,K리그1,18,2025-06-13,춘천 송암 스포츠타운,강원 FC,전북 현대 모터스,0,3,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=103&leagueId=1&startTabNum=1,6,5
+K1-2025-0613-GWA-SEO,2025,K리그1,18,2025-06-13,광주 월드컵 경기장,광주 FC,FC 서울,1,3,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=104&leagueId=1&startTabNum=1,2,4
+K1-2025-0614-GIM-POH,2025,K리그1,18,2025-06-14,김천 종합 운동장,김천 상무 FC,포항 스틸러스,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=105&leagueId=1&startTabNum=1,3,7
+K1-2025-0614-SFC-ANY,2025,K리그1,18,2025-06-14,수원 종합 운동장,수원 FC,FC 안양,1,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=106&leagueId=1&startTabNum=1,5,14
+K1-2025-0614-JEJ-DAG,2025,K리그1,18,2025-06-14,제주 월드컵 경기장,제주 SK FC,대구 FC,2,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=107&leagueId=1&startTabNum=1,2,6
+K1-2025-0617-SEO-GAN,2025,K리그1,19,2025-06-17,서울 월드컵 경기장,FC 서울,강원 FC,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=109&leagueId=1&startTabNum=1,3,5
+K1-2025-0617-JEO-SFC,2025,K리그1,19,2025-06-17,전주 월드컵 경기장,전북 현대 모터스,수원 FC,3,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=110&leagueId=1&startTabNum=1,4,8
+K1-2025-0617-DAG-POH,2025,K리그1,19,2025-06-17,대구iM뱅크PARK,대구 FC,포항 스틸러스,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=111&leagueId=1&startTabNum=1,2,7
+K1-2025-0618-JEJ-GWA,2025,K리그1,19,2025-06-18,제주 월드컵 경기장,제주 SK FC,광주 FC,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=112&leagueId=1&startTabNum=1,2,7
+K1-2025-0618-DAE-GIM,2025,K리그1,19,2025-06-18,대전 월드컵 경기장,대전 하나 시티즌,김천 상무 FC,0,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=113&leagueId=1&startTabNum=1,1,15
+K1-2025-0621-GAN-DAG,2025,K리그1,20,2025-06-21,강릉하이원아레나,강원 FC,대구 FC,3,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=115&leagueId=1&startTabNum=1,5,4
+K1-2025-0621-POH-JEJ,2025,K리그1,20,2025-06-21,포항 스틸야드,포항 스틸러스,제주 SK FC,2,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=116&leagueId=1&startTabNum=1,2,9
+K1-2025-0621-JEO-SEO,2025,K리그1,20,2025-06-21,전주 월드컵 경기장,전북 현대 모터스,FC 서울,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=117&leagueId=1&startTabNum=1,4,4
+K1-2025-0622-GIM-ANY,2025,K리그1,20,2025-06-22,김천 종합 운동장,김천 상무 FC,FC 안양,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=118&leagueId=1&startTabNum=1,4,3
+K1-2025-0622-GWA-DAE,2025,K리그1,20,2025-06-22,광주 월드컵 경기장,광주 FC,대전 하나 시티즌,2,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=120&leagueId=1&startTabNum=1,3,9
+K1-2025-0627-GIM-JEO,2025,K리그1,21,2025-06-27,김천 종합 운동장,김천 상무 FC,전북 현대 모터스,1,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=121&leagueId=1&startTabNum=1,3,10
+K1-2025-0627-DAE-JEJ,2025,K리그1,21,2025-06-27,대전 월드컵 경기장,대전 하나 시티즌,제주 SK FC,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=122&leagueId=1&startTabNum=1,4,7
+K1-2025-0628-SFC-GAN,2025,K리그1,21,2025-06-28,수원 종합 운동장,수원 FC,강원 FC,1,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=123&leagueId=1&startTabNum=1,8,12
+K1-2025-0628-ANY-GWA,2025,K리그1,21,2025-06-28,안양 종합 운동장,FC 안양,광주 FC,1,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=124&leagueId=1&startTabNum=1,9,5
+K1-2025-0629-SEO-POH,2025,K리그1,21,2025-06-29,서울 월드컵 경기장,FC 서울,포항 스틸러스,4,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=126&leagueId=1&startTabNum=1,5,6
+K1-2025-0712-ULS-DAG,2025,K리그1,21,2025-07-12,울산 문수 축구경기장,울산 HD FC,대구 FC,2,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=125&leagueId=1&startTabNum=1,4,9
+K1-2025-0718-SFC-GWA,2025,K리그1,22,2025-07-18,수원 종합 운동장,수원 FC,광주 FC,2,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=127&leagueId=1&startTabNum=1,2,8
+K1-2025-0718-DAG-GIM,2025,K리그1,22,2025-07-18,대구iM뱅크PARK,대구 FC,김천 상무 FC,2,3,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=128&leagueId=1&startTabNum=1,12,6
+K1-2025-0719-GAN-DAE,2025,K리그1,22,2025-07-19,강릉하이원아레나,강원 FC,대전 하나 시티즌,2,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=129&leagueId=1&startTabNum=1,4,9
+K1-2025-0719-POH-JEO,2025,K리그1,22,2025-07-19,포항 스틸야드,포항 스틸러스,전북 현대 모터스,2,3,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=130&leagueId=1&startTabNum=1,4,8
+K1-2025-0719-JEJ-ANY,2025,K리그1,22,2025-07-19,제주 월드컵 경기장,제주 SK FC,FC 안양,2,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=131&leagueId=1&startTabNum=1,3,5
+K1-2025-0720-SEO-ULS,2025,K리그1,22,2025-07-20,서울 월드컵 경기장,FC 서울,울산 HD FC,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=132&leagueId=1&startTabNum=1,5,5
+K1-2025-0722-POH-SFC,2025,K리그1,23,2025-07-22,포항 스틸야드,포항 스틸러스,수원 FC,1,5,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=133&leagueId=1&startTabNum=1,6,6
+K1-2025-0722-GWA-GIM,2025,K리그1,23,2025-07-22,광주 월드컵 경기장,광주 FC,김천 상무 FC,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=134&leagueId=1&startTabNum=1,3,5
+K1-2025-0722-ANY-DAG,2025,K리그1,23,2025-07-22,안양 종합 운동장,FC 안양,대구 FC,4,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=135&leagueId=1&startTabNum=1,10,5
+K1-2025-0723-ULS-DAE,2025,K리그1,23,2025-07-23,울산 문수 축구경기장,울산 HD FC,대전 하나 시티즌,1,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=136&leagueId=1&startTabNum=1,4,8
+K1-2025-0723-JEJ-SEO,2025,K리그1,23,2025-07-23,제주 월드컵 경기장,제주 SK FC,FC 서울,3,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=137&leagueId=1&startTabNum=1,4,6
+K1-2025-0723-JEO-GAN,2025,K리그1,23,2025-07-23,전주 월드컵 경기장,전북 현대 모터스,강원 FC,2,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=138&leagueId=1&startTabNum=1,9,5
+K1-2025-0726-GIM-JEJ,2025,K리그1,24,2025-07-26,김천 종합 운동장,김천 상무 FC,제주 SK FC,3,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=139&leagueId=1&startTabNum=1,2,6
+K1-2025-0726-SFC-ANY,2025,K리그1,24,2025-07-26,수원 종합 운동장,수원 FC,FC 안양,2,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=140&leagueId=1&startTabNum=1,10,8
+K1-2025-0726-GWA-JEO,2025,K리그1,24,2025-07-26,광주 월드컵 경기장,광주 FC,전북 현대 모터스,1,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=141&leagueId=1&startTabNum=1,8,11
+K1-2025-0727-GAN-ULS,2025,K리그1,24,2025-07-27,강릉하이원아레나,강원 FC,울산 HD FC,2,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=142&leagueId=1&startTabNum=1,4,10
+K1-2025-0727-DAE-SEO,2025,K리그1,24,2025-07-27,대전 월드컵 경기장,대전 하나 시티즌,FC 서울,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=143&leagueId=1&startTabNum=1,3,9
+K1-2025-0727-DAG-POH,2025,K리그1,24,2025-07-27,대구iM뱅크PARK,대구 FC,포항 스틸러스,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=144&leagueId=1&startTabNum=1,2,7
+K1-2025-0802-ULS-SFC,2025,K리그1,20,2025-08-02,울산 문수 축구경기장,울산 HD FC,수원 FC,2,3,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=119&leagueId=1&startTabNum=1,7,9
+K1-2025-0808-SEO-DAG,2025,K리그1,25,2025-08-08,서울 월드컵 경기장,FC 서울,대구 FC,2,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=145&leagueId=1&startTabNum=1,5,7
+K1-2025-0808-JEO-ANY,2025,K리그1,25,2025-08-08,전주 월드컵 경기장,전북 현대 모터스,FC 안양,2,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=146&leagueId=1&startTabNum=1,3,7
+K1-2025-0809-ULS-JEJ,2025,K리그1,25,2025-08-09,울산 문수 축구경기장,울산 HD FC,제주 SK FC,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=147&leagueId=1&startTabNum=1,2,8
+K1-2025-0809-GAN-GIM,2025,K리그1,25,2025-08-09,강릉하이원아레나,강원 FC,김천 상무 FC,0,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=148&leagueId=1&startTabNum=1,4,5
+K1-2025-0810-POH-GWA,2025,K리그1,25,2025-08-10,포항 스틸야드,포항 스틸러스,광주 FC,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=149&leagueId=1&startTabNum=1,4,5
+K1-2025-0810-DAE-SFC,2025,K리그1,25,2025-08-10,대전 월드컵 경기장,대전 하나 시티즌,수원 FC,3,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=150&leagueId=1&startTabNum=1,9,9
+K1-2025-0815-JEJ-GAN,2025,K리그1,26,2025-08-15,제주 월드컵 경기장,제주 SK FC,강원 FC,0,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=151&leagueId=1&startTabNum=1,5,7
+K1-2025-0815-ANY-POH,2025,K리그1,26,2025-08-15,안양 종합 운동장,FC 안양,포항 스틸러스,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=152&leagueId=1&startTabNum=1,10,7
+K1-2025-0816-JEO-DAG,2025,K리그1,26,2025-08-16,전주 월드컵 경기장,전북 현대 모터스,대구 FC,3,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=153&leagueId=1&startTabNum=1,4,5
+K1-2025-0816-SFC-ULS,2025,K리그1,26,2025-08-16,수원 종합 운동장,수원 FC,울산 HD FC,4,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=154&leagueId=1&startTabNum=1,4,9
+K1-2025-0817-GIM-SEO,2025,K리그1,26,2025-08-17,김천 종합 운동장,김천 상무 FC,FC 서울,6,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=155&leagueId=1&startTabNum=1,5,13
+K1-2025-0817-GWA-DAE,2025,K리그1,26,2025-08-17,광주 월드컵 경기장,광주 FC,대전 하나 시티즌,2,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=156&leagueId=1&startTabNum=1,3,9
+K1-2025-0823-GIM-SFC,2025,K리그1,27,2025-08-23,김천 종합 운동장,김천 상무 FC,수원 FC,3,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=157&leagueId=1&startTabNum=1,6,8
+K1-2025-0823-GWA-GAN,2025,K리그1,27,2025-08-23,광주 월드컵 경기장,광주 FC,강원 FC,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=158&leagueId=1&startTabNum=1,3,10
+K1-2025-0823-DAG-JEJ,2025,K리그1,27,2025-08-23,대구iM뱅크PARK,대구 FC,제주 SK FC,2,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=159&leagueId=1&startTabNum=1,3,9
+K1-2025-0824-SEO-ULS,2025,K리그1,27,2025-08-24,서울 월드컵 경기장,FC 서울,울산 HD FC,3,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=160&leagueId=1&startTabNum=1,7,8
+K1-2025-0824-POH-JEO,2025,K리그1,27,2025-08-24,포항 스틸야드,포항 스틸러스,전북 현대 모터스,3,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=161&leagueId=1&startTabNum=1,9,6
+K1-2025-0824-ANY-DAE,2025,K리그1,27,2025-08-24,안양 종합 운동장,FC 안양,대전 하나 시티즌,3,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=162&leagueId=1&startTabNum=1,4,7
+K1-2025-0830-ULS-JEO,2025,K리그1,28,2025-08-30,울산 문수 축구경기장,울산 HD FC,전북 현대 모터스,0,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=163&leagueId=1&startTabNum=1,2,9
+K1-2025-0830-DAG-SFC,2025,K리그1,28,2025-08-30,대구iM뱅크PARK,대구 FC,수원 FC,3,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=164&leagueId=1&startTabNum=1,6,10
+K1-2025-0830-JEJ-GWA,2025,K리그1,28,2025-08-30,제주 월드컵 경기장,제주 SK FC,광주 FC,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=165&leagueId=1&startTabNum=1,3,13
+K1-2025-0831-SEO-ANY,2025,K리그1,28,2025-08-31,서울 월드컵 경기장,FC 서울,FC 안양,1,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=166&leagueId=1&startTabNum=1,5,7
+K1-2025-0831-GAN-POH,2025,K리그1,28,2025-08-31,강릉하이원아레나,강원 FC,포항 스틸러스,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=167&leagueId=1&startTabNum=1,2,5
+K1-2025-0831-DAE-GIM,2025,K리그1,28,2025-08-31,대전 월드컵 경기장,대전 하나 시티즌,김천 상무 FC,2,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=168&leagueId=1&startTabNum=1,4,11
+K1-2025-0913-GAN-SEO,2025,K리그1,29,2025-09-13,강릉하이원아레나,강원 FC,FC 서울,3,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=169&leagueId=1&startTabNum=1,3,9
+K1-2025-0913-POH-ULS,2025,K리그1,29,2025-09-13,포항 스틸야드,포항 스틸러스,울산 HD FC,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=170&leagueId=1&startTabNum=1,5,4
+K1-2025-0913-JEO-DAE,2025,K리그1,29,2025-09-13,전주 월드컵 경기장,전북 현대 모터스,대전 하나 시티즌,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=171&leagueId=1&startTabNum=1,2,10
+K1-2025-0914-ANY-JEJ,2025,K리그1,29,2025-09-14,안양 종합 운동장,FC 안양,제주 SK FC,2,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=172&leagueId=1&startTabNum=1,8,6
+K1-2025-0914-GIM-DAG,2025,K리그1,29,2025-09-14,김천 종합 운동장,김천 상무 FC,대구 FC,1,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=173&leagueId=1&startTabNum=1,4,14
+K1-2025-0914-SFC-GWA,2025,K리그1,29,2025-09-14,수원 종합 운동장,수원 FC,광주 FC,2,4,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=174&leagueId=1&startTabNum=1,9,15
+K1-2025-0920-JEO-GIM,2025,K리그1,30,2025-09-20,전주 월드컵 경기장,전북 현대 모터스,김천 상무 FC,1,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=175&leagueId=1&startTabNum=1,5,13
+K1-2025-0920-DAE-DAG,2025,K리그1,30,2025-09-20,대전 월드컵 경기장,대전 하나 시티즌,대구 FC,3,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=176&leagueId=1&startTabNum=1,2,12
+K1-2025-0921-ULS-ANY,2025,K리그1,30,2025-09-21,울산 문수 축구경기장,울산 HD FC,FC 안양,0,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=177&leagueId=1&startTabNum=1,3,8
+K1-2025-0921-SFC-GAN,2025,K리그1,30,2025-09-21,수원 종합 운동장,수원 FC,강원 FC,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=178&leagueId=1&startTabNum=1,4,8
+K1-2025-0921-SEO-GWA,2025,K리그1,30,2025-09-21,서울 월드컵 경기장,FC 서울,광주 FC,3,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=179&leagueId=1&startTabNum=1,3,11
+K1-2025-0921-POH-JEJ,2025,K리그1,30,2025-09-21,포항 스틸야드,포항 스틸러스,제주 SK FC,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=180&leagueId=1&startTabNum=1,2,5
+K1-2025-0927-GAN-DAE,2025,K리그1,31,2025-09-27,강릉하이원아레나,강원 FC,대전 하나 시티즌,0,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=181&leagueId=1&startTabNum=1,1,6
+K1-2025-0927-GIM-POH,2025,K리그1,31,2025-09-27,김천 종합 운동장,김천 상무 FC,포항 스틸러스,2,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=182&leagueId=1&startTabNum=1,6,5
+K1-2025-0927-DAG-ULS,2025,K리그1,31,2025-09-27,대구iM뱅크PARK,대구 FC,울산 HD FC,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=183&leagueId=1&startTabNum=1,4,6
+K1-2025-0927-SEO-JEO,2025,K리그1,31,2025-09-27,서울 월드컵 경기장,FC 서울,전북 현대 모터스,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=184&leagueId=1&startTabNum=1,5,10
+K1-2025-0928-JEJ-SFC,2025,K리그1,31,2025-09-28,제주 월드컵 경기장,제주 SK FC,수원 FC,3,4,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=185&leagueId=1&startTabNum=1,7,18
+K1-2025-0928-ANY-GWA,2025,K리그1,31,2025-09-28,안양 종합 운동장,FC 안양,광주 FC,0,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=186&leagueId=1&startTabNum=1,3,4
+K1-2025-1003-JEJ-JEO,2025,K리그1,32,2025-10-03,제주 월드컵 경기장,제주 SK FC,전북 현대 모터스,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=187&leagueId=1&startTabNum=1,2,10
+K1-2025-1004-GWA-DAG,2025,K리그1,32,2025-10-04,광주 월드컵 경기장,광주 FC,대구 FC,2,3,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=188&leagueId=1&startTabNum=1,6,10
+K1-2025-1005-GIM-ULS,2025,K리그1,32,2025-10-05,김천 종합 운동장,김천 상무 FC,울산 HD FC,3,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=189&leagueId=1&startTabNum=1,1,6
+K1-2025-1005-POH-DAE,2025,K리그1,32,2025-10-05,포항 스틸야드,포항 스틸러스,대전 하나 시티즌,1,3,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=190&leagueId=1&startTabNum=1,4,5
+K1-2025-1005-GAN-ANY,2025,K리그1,32,2025-10-05,강릉하이원아레나,강원 FC,FC 안양,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=191&leagueId=1&startTabNum=1,4,4
+K1-2025-1005-SFC-SEO,2025,K리그1,32,2025-10-05,수원 종합 운동장,수원 FC,FC 서울,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=192&leagueId=1&startTabNum=1,3,6
+K1-2025-1018-ULS-GWA,2025,K리그1,33,2025-10-18,울산 문수 축구경기장,울산 HD FC,광주 FC,2,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=193&leagueId=1&startTabNum=1,3,14
+K1-2025-1018-SEO-POH,2025,K리그1,33,2025-10-18,서울 월드컵 경기장,FC 서울,포항 스틸러스,1,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=194&leagueId=1&startTabNum=1,5,6
+K1-2025-1018-DAE-JEJ,2025,K리그1,33,2025-10-18,대전 월드컵 경기장,대전 하나 시티즌,제주 SK FC,3,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=195&leagueId=1&startTabNum=1,4,6
+K1-2025-1018-JEO-SFC,2025,K리그1,33,2025-10-18,전주 월드컵 경기장,전북 현대 모터스,수원 FC,2,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=196&leagueId=1&startTabNum=1,11,10
+K1-2025-1018-DAG-GAN,2025,K리그1,33,2025-10-18,대구iM뱅크PARK,대구 FC,강원 FC,2,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=197&leagueId=1&startTabNum=1,12,12
+K1-2025-1018-ANY-GIM,2025,K리그1,33,2025-10-18,안양 종합 운동장,FC 안양,김천 상무 FC,4,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=198&leagueId=1&startTabNum=1,7,6
+K1-2025-1025-JEO-GIM,2025,K리그1,34,2025-10-25,전주 월드컵 경기장,전북 현대 모터스,김천 상무 FC,2,3,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=199&leagueId=1&startTabNum=1,2,6
+K1-2025-1025-GWA-ANY,2025,K리그1,34,2025-10-25,광주 월드컵 경기장,광주 FC,FC 안양,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=200&leagueId=1&startTabNum=1,4,13
+K1-2025-1025-SFC-JEJ,2025,K리그1,34,2025-10-25,수원 종합 운동장,수원 FC,제주 SK FC,1,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=201&leagueId=1&startTabNum=1,6,12
+K1-2025-1026-ULS-DAG,2025,K리그1,34,2025-10-26,울산 문수 축구경기장,울산 HD FC,대구 FC,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=202&leagueId=1&startTabNum=1,3,8
+K1-2025-1026-SEO-GAN,2025,K리그1,34,2025-10-26,서울 월드컵 경기장,FC 서울,강원 FC,4,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=203&leagueId=1&startTabNum=1,6,14
+K1-2025-1026-DAE-POH,2025,K리그1,34,2025-10-26,대전 월드컵 경기장,대전 하나 시티즌,포항 스틸러스,2,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=204&leagueId=1&startTabNum=1,6,6
+K1-2025-1101-GAN-JEO,2025,K리그1,35,2025-11-01,강릉하이원아레나,강원 FC,전북 현대 모터스,0,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=205&leagueId=1&startTabNum=1,2,4
+K1-2025-1101-DAE-SEO,2025,K리그1,35,2025-11-01,대전 월드컵 경기장,대전 하나 시티즌,FC 서울,3,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=206&leagueId=1&startTabNum=1,8,6
+K1-2025-1101-GIM-POH,2025,K리그1,35,2025-11-01,김천 종합 운동장,김천 상무 FC,포항 스틸러스,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=207&leagueId=1&startTabNum=1,3,5
+K1-2025-1101-ANY-ULS,2025,K리그1,35,2025-11-01,안양 종합 운동장,FC 안양,울산 HD FC,3,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=208&leagueId=1&startTabNum=1,11,5
+K1-2025-1102-GWA-JEJ,2025,K리그1,35,2025-11-02,광주 월드컵 경기장,광주 FC,제주 SK FC,2,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=209&leagueId=1&startTabNum=1,3,5
+K1-2025-1102-SFC-DAG,2025,K리그1,35,2025-11-02,수원 종합 운동장,수원 FC,대구 FC,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=210&leagueId=1&startTabNum=1,3,13
+K1-2025-1108-JEJ-ANY,2025,K리그1,36,2025-11-08,제주 월드컵 경기장,제주 SK FC,FC 안양,1,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=211&leagueId=1&startTabNum=1,4,10
+K1-2025-1108-DAG-GWA,2025,K리그1,36,2025-11-08,대구iM뱅크PARK,대구 FC,광주 FC,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=212&leagueId=1&startTabNum=1,1,6
+K1-2025-1108-GIM-GAN,2025,K리그1,36,2025-11-08,김천 종합 운동장,김천 상무 FC,강원 FC,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=213&leagueId=1&startTabNum=1,5,4
+K1-2025-1108-JEO-DAE,2025,K리그1,36,2025-11-08,전주 월드컵 경기장,전북 현대 모터스,대전 하나 시티즌,3,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=214&leagueId=1&startTabNum=1,3,11
+K1-2025-1109-POH-SEO,2025,K리그1,36,2025-11-09,포항 스틸야드,포항 스틸러스,FC 서울,0,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=215&leagueId=1&startTabNum=1,1,3
+K1-2025-1109-ULS-SFC,2025,K리그1,36,2025-11-09,울산 문수 축구경기장,울산 HD FC,수원 FC,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=216&leagueId=1&startTabNum=1,1,10
+K1-2025-1122-ANY-SFC,2025,K리그1,37,2025-11-22,안양 종합 운동장,FC 안양,수원 FC,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=217&leagueId=1&startTabNum=1,3,7
+K1-2025-1122-SEO-GIM,2025,K리그1,37,2025-11-22,서울 월드컵 경기장,FC 서울,김천 상무 FC,1,3,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=218&leagueId=1&startTabNum=1,3,5
+K1-2025-1122-DAE-GAN,2025,K리그1,37,2025-11-22,대전 월드컵 경기장,대전 하나 시티즌,강원 FC,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=219&leagueId=1&startTabNum=1,2,8
+K1-2025-1122-GWA-ULS,2025,K리그1,37,2025-11-22,광주 월드컵 경기장,광주 FC,울산 HD FC,2,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=220&leagueId=1&startTabNum=1,7,4
+K1-2025-1122-POH-JEO,2025,K리그1,37,2025-11-22,포항 스틸야드,포항 스틸러스,전북 현대 모터스,0,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=221&leagueId=1&startTabNum=1,1,6
+K1-2025-1123-JEJ-DAG,2025,K리그1,37,2025-11-23,제주 월드컵 경기장,제주 SK FC,대구 FC,1,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=222&leagueId=1&startTabNum=1,1,13
+K1-2025-1130-DAG-ANY,2025,K리그1,38,2025-11-30,대구iM뱅크PARK,대구 FC,FC 안양,2,2,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=223&leagueId=1&startTabNum=1,4,16
+K1-2025-1130-SFC-GWA,2025,K리그1,38,2025-11-30,수원 종합 운동장,수원 FC,광주 FC,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=224&leagueId=1&startTabNum=1,1,8
+K1-2025-1130-ULS-JEJ,2025,K리그1,38,2025-11-30,울산 문수 축구경기장,울산 HD FC,제주 SK FC,0,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=225&leagueId=1&startTabNum=1,5,6
+K1-2025-1130-JEO-SEO,2025,K리그1,38,2025-11-30,전주 월드컵 경기장,전북 현대 모터스,FC 서울,2,1,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=226&leagueId=1&startTabNum=1,5,15
+K1-2025-1130-GIM-DAE,2025,K리그1,38,2025-11-30,김천 종합 운동장,김천 상무 FC,대전 하나 시티즌,0,3,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=227&leagueId=1&startTabNum=1,2,4
+K1-2025-1130-GAN-POH,2025,K리그1,38,2025-11-30,강릉하이원아레나,강원 FC,포항 스틸러스,1,0,,https://www.kleague.com/match.do?year=2025&meetSeq=1&gameId=228&leagueId=1&startTabNum=1,3,6

@@ -26,7 +26,7 @@ for p in P:
     elif byname.get(p['team']) != m[1]: errs.append(f"{p['player_id']}: 소속 팀 {p['team']} 와 코드 불일치")
     elif int(m[3]) != int(p['shirt_no']): errs.append(f"{p['player_id']}: 등번호 {p['shirt_no']} 와 ID 불일치")
     if p['birth_date'] and not re.match(r'^\d{4}-\d{2}-\d{2}$', p['birth_date']): errs.append(f"생년월일 형식: {p['player_id']}")
-kl = Counter((p.get('kleague_id'), p['team'], p['shirt_no']) for p in P if p.get('kleague_id'))
+kl = Counter((p.get('kleague_id'), p['team'], p['shirt_no'], p['player_id'].split('-')[1]) for p in P if p.get('kleague_id'))
 errs += [f'kleague_id 중복(같은 팀·번호): {k}' for k, n in kl.items() if n > 1]
 for m in M:
     x = re.match(r'^K[1-4]-\d{4}-\d{4}-([A-Z]{3})-([A-Z]{3})$', m['match_id'])
